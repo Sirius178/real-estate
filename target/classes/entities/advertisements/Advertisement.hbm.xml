@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.advertisements.entities.Advertisement" table="advertisements" schema="real-estate-site">
+        <id name="id" column="id"/>
+        <property name="accountType" column="account_type"/>
+        <property name="address" column="address"/>
+        <property name="buildingType" column="building_type"/>
+        <property name="commercial" column="commercial"/>
+        <property name="communalPayments" column="communal_payments"/>
+        <property name="dateTime" column="date_time"/>
+        <property name="dealType" column="deal_type"/>
+        <property name="description" column="description"/>
+        <property name="district" column="district"/>
+        <property name="floor" column="floor"/>
+        <property name="living" column="living"/>
+        <property name="numberOfRooms" column="number_of_rooms"/>
+        <property name="photo" column="photo"/>
+        <property name="price" column="price"/>
+        <property name="realEstateType" column="real_estate_type"/>
+        <property name="rentType" column="rent_type"/>
+        <property name="repairs" column="repairs"/>
+        <property name="square" column="square"/>
+        <property name="title" column="title"/>
+        <one-to-one name="addition" class="com.advertisements.entities.Addition"/>
+
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+        <!--<property name="connection.driver_class">com.mysql.jdbc.Driver</property>-->
+        <!--<property name="connection.url">jdbc:mysql://localhost/real-estate-site</property>-->
+        <!--<property name="connection.username">root</property>-->
+        <!--<property name="connection.password">root</property>-->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="show_sql">true</property>
+        <property name="hibernate.show_sql">true</property>
+        <property name="hbm2ddl.auto">update</property>
+
+        <mapping resource="entities/advertisements/Advertisement.hbm.xml"/>
+        <mapping resource="entities/advertisements/Addition.hbm.xml"/>
+        <mapping resource="entities/new_buildings/NewBuilding.hbm.xml"/>
+        <mapping resource="entities/new_buildings/Address.hbm.xml"/>
+        <mapping resource="entities/users/Admin.hbm.xml"/>
+        <mapping resource="entities/users/User.hbm.xml"/>
+        <mapping resource="entities/users/Customer.hbm.xml"/>
+        <!--<mapping resource="entities/BaseEntity.hbm.xml"/>-->
+        <!--<mapping resource="entities/Person.hbm.xml"/>-->
+    </session-factory>
+</hibernate-configuration>

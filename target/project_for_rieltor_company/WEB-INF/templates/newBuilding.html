@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/head :: head"></head>
+<body>
+<div th:replace="fragments/header :: header"></div>
+
+<section class="probootstrap-section probootstrap-section-lighter">
+    <div>
+        <label>Список квартир на продажу</label>
+        <div th:if="${not #lists.isEmpty(listOfHouseInNewComplex)}">
+            <div class="container">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th> Название комплекса</th>
+                        <th> Адрес</th>
+                        <th> Этаж</th>
+                        <th> Номер квартиры</th>
+                        <th> Номер комнаты/th>
+                        <th> Площадь</th>
+                        <th> Цена за квадрат</th>
+                        <th> Полна цена</th>
+                        <th>  Статус</th>
+
+                        <th> Заявка на осмотр</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr th:each="house : ${listOfHouseInNewComplex}">
+                        <td th:text="${house.nameOfComplex}">nameOfComplex</td>
+                        <td th:text="${house.nameOfHouse}"></td>
+                        <td th:text="${house.floor}"></td>
+                        <td th:text="${house.numberOfApartment}"></td>
+                        <td th:text="${house.numberOfRoom}"></td>
+                        <td th:text="${house.square}"></td>
+                        <td th:text="${house.pricePerSquare}"></td>
+                        <td th:text="${house.fullPrice}"></td>
+                        <td th:text="${house.status}"></td>
+
+                        <div th:switch="${house.status}">
+                            <td th:case="${house.status.AVAILABLE}"> <a th:href="@{'/customer/' + ${house.idHouse}}">заявка</a></td>
+                        </div>
+
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</section>
+<div th:replace="fragments/footer :: footer"></div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/head :: head"></head>
+<body>
+<div th:replace="fragments/header :: header"></div>
+<section class="probootstrap-section probootstrap-section-lighter">
+
+    <div class="container">
+        <label>edit House</label>
+        <form th:object="${newBuilding}" th:action="@{'/updateHouseInNewComplex/' + ${newBuilding.idHouse}}" , method="post" >
+            <div class="form-group">
+                String nameOfComplex <input type="text" name="nameOfComplex" id="nameOfComplex" th:value="${newBuilding.nameOfComplex}">
+                String nameOfHouse <input type="text" name="nameOfHouse" id="nameOfHouse" th:value="${newBuilding.nameOfHouse}" >
+                int floor <input type="number" name="floor" id="floor" th:value="${newBuilding.floor}">
+                int numberOfApartment <input type="number" name="numberOfApartment" id="numberOfApartment" th:value="${newBuilding.numberOfApartment}">
+                int numberOfRoom <input type="number" name="numberOfRoom" id="numberOfRoom" th:value="${newBuilding.numberOfRoom}">
+                double square <input type="number" name="square" id="square" th:value="${newBuilding.square}">
+                int pricePerSquare <input type="number" name="pricePerSquare" id="pricePerSquare" th:value="${newBuilding.pricePerSquare}">
+                int fullPrice <input type="number" name="fullPrice" id="fullPrice" th:value="${newBuilding.fullPrice}">
+                Status status
+                <option th:value="${newBuilding.status}"></option>
+                <select name="status" id="status">
+                    <option th:each="status : ${T(com.new_buildings.entities.Status).values()}"
+                            th:value="${status}"
+                            th:text="${status.getValue()}">
+                    </option>
+                </select>
+            </div>
+            <input type="submit" value="Save"/>
+            <input type="reset" value="Reset"/>
+        </form>
+    </div>
+</section>
+
+
+<div th:replace="fragments/footer :: footer"></div>
+</body>
+</html>
