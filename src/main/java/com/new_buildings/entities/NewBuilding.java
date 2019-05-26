@@ -5,6 +5,7 @@ import com.model.BaseEntity;
 import lombok.*;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Set;
 
 
@@ -13,12 +14,15 @@ import java.util.Set;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-
-public class NewBuilding extends BaseEntity {
-
+@Entity
+public class NewBuilding implements Serializable {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+//    @Column(name = "id",unique=true, nullable = false)
+    private Long id;
 //    @ManyToOne
 //  @JoinTable(name = "addresses_id")
-    private Address address;
+    private String address;
     @Lob
 //    @Column(name = "image")
     private Byte[] image;

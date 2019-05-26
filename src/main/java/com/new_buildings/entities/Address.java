@@ -12,7 +12,7 @@ import java.util.Set;
 
 
 @Data
-
+@Entity
 public class Address extends BaseEntity {
 
 //    @Column(name = "address")
