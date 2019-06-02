@@ -1,9 +1,7 @@
 package com.users.entities;
 
-import com.model.Person;
+import com.parent.Person;
 import lombok.Data;
-
-import javax.persistence.*;
 
 @Data
 public class User extends Person {

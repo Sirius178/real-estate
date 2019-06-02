@@ -1,6 +1,6 @@
 package com.users.services.interfaces;
 
-import com.model.CrudService;
+import com.parent.CrudService;
 import com.new_buildings.entities.NewBuilding;
 import com.users.entities.Customer;
 

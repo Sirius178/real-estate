@@ -4,7 +4,9 @@
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
     <class name="com.users.entities.Admin" table="admins" schema="real-estate-site">
-        <id name="id" column="id"/>
+        <id name="id" column="id">
+            <generator class="native"/>
+        </id>
         <property name="username" column="username"/>
         <property name="password" column="password"/>
     </class>

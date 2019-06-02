@@ -1,7 +1,6 @@
 package com.users.dao.interfaces;
 
-import com.model.CrudService;
-import com.users.entities.Customer;
+import com.parent.CrudService;
 
 public interface CustomerDAO extends CrudService {
 

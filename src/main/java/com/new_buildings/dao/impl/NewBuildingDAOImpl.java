@@ -80,9 +80,15 @@ public class NewBuildingDAOImpl implements NewBuildingDAO {
         session.delete(aLong);
     }
 
+    @Override
+    public NewBuilding findCommandById(Long id) {
+        return null;
+    }
+
     @Transactional
     public NewBuilding saveNewBuildingCommand(NewBuilding object) {
         session = sessionFactory.getCurrentSession();
+        System.out.println(object.toString());
         session.save(object);
         return object;
     }

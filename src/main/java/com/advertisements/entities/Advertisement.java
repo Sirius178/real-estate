@@ -2,10 +2,9 @@ package com.advertisements.entities;
 
 
 import com.advertisements.entities.enums.*;
-import com.model.BaseEntity;
+import com.parent.BaseEntity;
 import lombok.*;
 
-import javax.persistence.*;
 import java.time.LocalDateTime;
 
 

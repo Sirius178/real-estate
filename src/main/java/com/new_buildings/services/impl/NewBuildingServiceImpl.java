@@ -6,11 +6,13 @@ import com.new_buildings.converters.NewBuildingToNewBuildingCommand;
 import com.new_buildings.dao.interfaces.NewBuildingDAO;
 import com.new_buildings.entities.NewBuilding;
 import com.new_buildings.services.interfaces.NewBuildingService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Set;
-
+@Slf4j
 @Component
 @Service
 public class NewBuildingServiceImpl implements NewBuildingService {
@@ -19,7 +21,9 @@ public class NewBuildingServiceImpl implements NewBuildingService {
     private final NewBuildingCommandToNewBuilding newBuildingCommandToNewBuilding;
     private final NewBuildingToNewBuildingCommand newBuildingToNewBuildingCommand;
 
-    public NewBuildingServiceImpl(NewBuildingDAO newBuildingDAO, NewBuildingCommandToNewBuilding newBuildingCommandToNewBuilding, NewBuildingToNewBuildingCommand newBuildingToNewBuildingCommand) {
+    public NewBuildingServiceImpl(NewBuildingDAO newBuildingDAO,
+                                  NewBuildingCommandToNewBuilding newBuildingCommandToNewBuilding,
+                                  NewBuildingToNewBuildingCommand newBuildingToNewBuildingCommand) {
         this.newBuildingDAO = newBuildingDAO;
         this.newBuildingCommandToNewBuilding = newBuildingCommandToNewBuilding;
         this.newBuildingToNewBuildingCommand = newBuildingToNewBuildingCommand;
@@ -38,7 +42,7 @@ public class NewBuildingServiceImpl implements NewBuildingService {
 
 
     public NewBuildingCommand save() {
-        return save();
+        return null;
     }
 
     @Override
@@ -57,9 +61,15 @@ public class NewBuildingServiceImpl implements NewBuildingService {
     }
 
     @Override
+    public NewBuildingCommand findCommandById(Long id) {
+        return null;
+    }
+
+    @Override
     public NewBuildingCommand saveNewBuildingCommand (NewBuildingCommand object) {
         NewBuilding detachedNewBuilding = newBuildingCommandToNewBuilding.convert(object);
         NewBuilding savedNewBuilding = newBuildingDAO.saveNewBuildingCommand(detachedNewBuilding);
+        log.debug("Saved id: " + savedNewBuilding.getId());
         return newBuildingToNewBuildingCommand.convert(savedNewBuilding);
     }
 }

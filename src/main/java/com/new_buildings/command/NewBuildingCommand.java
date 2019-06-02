@@ -1,5 +1,6 @@
 package com.new_buildings.command;
 
+import com.new_buildings.entities.Address;
 import com.new_buildings.entities.Status;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -13,7 +14,7 @@ import javax.persistence.Lob;
 @NoArgsConstructor
 public class NewBuildingCommand {
     private Long id;
-    private String address;
+    private Address address;
     private Byte[] image;
     private int floor;
     private int numberOfApartment;

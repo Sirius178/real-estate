@@ -1,12 +1,10 @@
 package com.new_buildings.entities;
 
 
-import com.model.BaseEntity;
 import lombok.*;
 
 import javax.persistence.*;
-import java.io.Serializable;
-import java.util.Set;
+import java.util.Arrays;
 
 
 @Getter
@@ -15,15 +13,14 @@ import java.util.Set;
 @AllArgsConstructor
 @Builder
 @Entity
-public class NewBuilding implements Serializable {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+public class NewBuilding  {
+
 //    @Column(name = "id",unique=true, nullable = false)
     private Long id;
 //    @ManyToOne
 //  @JoinTable(name = "addresses_id")
-    private String address;
-    @Lob
+    private Address address;
+
 //    @Column(name = "image")
     private Byte[] image;
 //    @Column(name = "floor")
@@ -39,8 +36,22 @@ public class NewBuilding implements Serializable {
 //    @Column(name = "full_price")
     private int fullPrice;
 //    @Column(name = "status")
-    @Enumerated(value = EnumType.STRING)
+
     private Status status;
 
-
+    @Override
+    public String toString() {
+        return "NewBuilding{" +
+                "id=" + id +
+                ", address='" + address + '\'' +
+                ", image=" + Arrays.toString(image) +
+                ", floor=" + floor +
+                ", numberOfApartment=" + numberOfApartment +
+                ", numberOfRooms=" + numberOfRooms +
+                ", square=" + square +
+                ", pricePerSquare=" + pricePerSquare +
+                ", fullPrice=" + fullPrice +
+                ", status=" + status +
+                '}';
+    }
 }

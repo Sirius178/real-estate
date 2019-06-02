@@ -30,6 +30,7 @@ public class NewBuildingToNewBuildingCommand implements Converter<NewBuilding, N
         newBuildingCommand.setPricePerSquare(source.getPricePerSquare());
         newBuildingCommand.setFullPrice(source.getFullPrice());
         newBuildingCommand.setStatus(source.getStatus());
+
         return newBuildingCommand;
     }
 }

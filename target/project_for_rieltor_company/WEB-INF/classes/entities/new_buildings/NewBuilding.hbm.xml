@@ -1,11 +1,13 @@
 <?xml version='1.0' encoding='utf-8'?>
 <!DOCTYPE hibernate-mapping PUBLIC
-    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
-    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
 
     <class name="com.new_buildings.entities.NewBuilding" table="new_buildings" schema="real-estate-site">
-        <id name="id" column="id"/>
+        <id name="id" column="id">
+            <generator class="native"/>
+        </id>
         <many-to-one name="address" class="com.new_buildings.entities.Address">
             <column name="address_id"/>
         </many-to-one>
@@ -18,4 +20,5 @@
         <property name="square" column="square"/>
         <property name="status" column="status"/>
     </class>
+
 </hibernate-mapping>

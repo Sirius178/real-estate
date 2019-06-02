@@ -1,7 +1,7 @@
 package com.advertisements.services;
 
 import com.advertisements.entities.Advertisement;
-import com.model.CrudService;
+import com.parent.CrudService;
 
 public interface AdvertisementService extends CrudService<Advertisement, Long> {
 

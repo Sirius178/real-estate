@@ -2,12 +2,8 @@ package com.advertisements.entities;
 
 
 
-import com.model.BaseEntity;
+import com.parent.BaseEntity;
 import lombok.*;
-
-
-import javax.persistence.Entity;
-import javax.persistence.Table;
 
 @Getter
 @Setter

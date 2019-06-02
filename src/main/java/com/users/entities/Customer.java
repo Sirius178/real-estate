@@ -1,10 +1,9 @@
 package com.users.entities;
 
-import com.model.Person;
+import com.parent.Person;
 import com.new_buildings.entities.NewBuilding;
 import lombok.Data;
 
-import javax.persistence.*;
 import java.time.LocalDateTime;
 
 @Data
