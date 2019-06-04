@@ -3,12 +3,13 @@ package com.users.dao.impl;
 import com.users.dao.interfaces.AdminDAO;
 import com.users.entities.Admin;
 
+import java.util.List;
 import java.util.Set;
 
 public class AdminDAOImpl implements AdminDAO {
 
     @Override
-    public Set<Admin> findAll() {
+    public List<Admin> findAll() {
         return null;
     }
 

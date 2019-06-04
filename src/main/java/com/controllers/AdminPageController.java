@@ -28,7 +28,8 @@ public class AdminPageController {
 
     @GetMapping("/table")
     public String tablesPage(Model model){
-//        model.addAttribute("listOfNewBuilding", newBuildingService.findAll());
+        model.addAttribute("listOfNewBuilding", newBuildingService.findAll());
+        System.out.println(model);
         return "admin-pages/tables";
     }
 
@@ -41,6 +42,7 @@ public class AdminPageController {
 
     @GetMapping("/address")
     public String addressesPage(Model model){
+        model.addAttribute("listOfAddresses", addressService.findAll());
         return "admin-pages/address";
     }
 
@@ -49,4 +51,6 @@ public class AdminPageController {
         addressService.saveAddressCommand(addressCommand);
         return "redirect:/address";
     }
+
+
 }

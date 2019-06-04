@@ -3,11 +3,12 @@ package com.users.services.impl;
 import com.users.entities.Admin;
 import com.users.services.interfaces.AdminService;
 
+import java.util.List;
 import java.util.Set;
 
 public class AdminServiceImpl implements AdminService {
     @Override
-    public Set<Admin> findAll() {
+    public List<Admin> findAll() {
         return null;
     }
 

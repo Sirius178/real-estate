@@ -5,6 +5,7 @@ import com.users.entities.User;
 import com.users.services.interfaces.UserService;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Set;
 
 @Service
@@ -13,7 +14,7 @@ public class UserServiceImpl implements UserService {
     UserDAO userDAO;
 
     @Override
-    public Set<User> findAll() {
+    public List<User> findAll() {
         return null;
     }
 

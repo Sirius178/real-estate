@@ -8,6 +8,7 @@ import com.new_buildings.entities.Address;
 import com.new_buildings.services.interfaces.AddressService;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Set;
 
 @Service
@@ -37,8 +38,9 @@ public class AddressServiceImpl implements AddressService {
     }
 
     @Override
-    public Set<Address> findAll() {
-        return null;
+    public List<Address> findAll() {
+        List<Address> addresses = addressDAO.findAll();
+        return addresses;
     }
 
     @Override

@@ -1,6 +1,6 @@
 package com.new_buildings.dao.impl;
 
-import com.new_buildings.command.AddressCommand;
+
 import com.new_buildings.dao.interfaces.AddressDAO;
 import com.new_buildings.entities.Address;
 import org.hibernate.Session;
@@ -8,7 +8,8 @@ import org.hibernate.SessionFactory;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.Set;
+import java.util.List;
+
 @Transactional
 @Repository
 public class AddressDAOImpl implements AddressDAO {
@@ -36,8 +37,10 @@ public class AddressDAOImpl implements AddressDAO {
     }
 
     @Override
-    public Set<Address> findAll() {
-        return null;
+    public List<Address> findAll() {
+        session = sessionFactory.getCurrentSession();
+        List<Address> addresses = session.createNativeQuery("select * from addresses", Address.class).list();
+        return addresses;
     }
 
     @Override

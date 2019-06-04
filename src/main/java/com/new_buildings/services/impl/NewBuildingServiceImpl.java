@@ -11,7 +11,9 @@ import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
 import java.util.Set;
+
 @Slf4j
 @Component
 @Service
@@ -31,7 +33,7 @@ public class NewBuildingServiceImpl implements NewBuildingService {
 
 
     @Override
-    public Set<NewBuilding> findAll() {
+    public List<NewBuilding> findAll() {
         return newBuildingDAO.findAll();
     }
 
@@ -66,7 +68,7 @@ public class NewBuildingServiceImpl implements NewBuildingService {
     }
 
     @Override
-    public NewBuildingCommand saveNewBuildingCommand (NewBuildingCommand object) {
+    public NewBuildingCommand saveNewBuildingCommand(NewBuildingCommand object) {
         NewBuilding detachedNewBuilding = newBuildingCommandToNewBuilding.convert(object);
         NewBuilding savedNewBuilding = newBuildingDAO.saveNewBuildingCommand(detachedNewBuilding);
         log.debug("Saved id: " + savedNewBuilding.getId());

@@ -3,6 +3,7 @@ package com.advertisements.services;
 import com.advertisements.entities.Advertisement;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Set;
 
 @Service
@@ -10,7 +11,7 @@ public class AdvertisementServiceImpl implements AdvertisementService {
 
 
     @Override
-    public Set<Advertisement> findAll() {
+    public List<Advertisement> findAll() {
         return null;
     }
 

@@ -7,6 +7,7 @@ import org.hibernate.SessionFactory;
 import org.springframework.stereotype.Component;
 
 import javax.jws.soap.SOAPBinding;
+import java.util.List;
 import java.util.Set;
 
 @Component
@@ -21,7 +22,7 @@ public class UserDAOImpl implements UserDAO {
 
 
     @Override
-    public Set<User> findAll() {
+    public List<User> findAll() {
         return null;
     }
 

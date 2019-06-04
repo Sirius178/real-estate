@@ -388,9 +388,9 @@
                     <td th:text="${house.fullPrice}"></td>
                     <td th:text="${house.status}"></td>
 
-                    <div th:switch="${house.status}">
-                      <td th:case="${house.status.AVAILABLE}"> <a th:href="@{'/customer/' + ${house.idHouse}}">заявка</a></td>
-                    </div>
+                    <!--<div th:switch="${house.status}">-->
+                      <!--<td th:case="${house.status.AVAILABLE}"> <a th:href="@{'/customer/' + ${house.idHouse}}">заявка</a></td>-->
+                    <!--</div>-->
 
                   </tr>
                   </tbody>

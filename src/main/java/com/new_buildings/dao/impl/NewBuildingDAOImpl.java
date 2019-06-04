@@ -15,6 +15,7 @@ import org.springframework.transaction.annotation.Transactional;
 import javax.persistence.Entity;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -31,26 +32,37 @@ public class NewBuildingDAOImpl implements NewBuildingDAO {
 
     private Session session;
 
-    public Set<NewBuilding> findAll() {
-        Set<NewBuilding> newBuilding = new HashSet<>();
-        try {
-            session = sessionFactory.getCurrentSession();
-            sessionFactory.openSession();
-            session.beginTransaction();
-            newBuilding = (Set<NewBuilding>) session.createNativeQuery("SELECT * FROM new_buildings", NewBuilding.class).getResultList();
-            session.getTransaction().commit();
-        }catch ( Exception e){
 
-            session.getTransaction().rollback();
-            logger.error("msg error: cant get list of new buildings", e);
-//            e.printStackTrace();
-        }finally {
-            session.close();
-            sessionFactory.close();
-        }
-
-//        List<NewBuilding> newBuildings  = session.createQuery("from new_buildings").list();
-        return newBuilding;
+//    public List<NewBuilding> findAll() {
+//
+//        List<NewBuilding> newBuildings = null;
+//        try {
+//            session = sessionFactory.getCurrentSession();
+//            sessionFactory.openSession();
+//            session.beginTransaction();
+//            newBuildings = session.createNativeQuery("SELECT * FROM new_buildings", NewBuilding.class).list();
+//            session.getTransaction().commit();
+//
+//        } catch (Exception e) {
+//
+//            session.getTransaction().rollback();
+//            logger.error("msg error: cannot get list of new buildings", e);
+////            e.printStackTrace();
+//        } finally {
+//            session.close();
+//            sessionFactory.close();
+//        }
+//        System.out.println(newBuildings);
+////        List<NewBuilding> newBuildings  = session.createQuery("from new_buildings").list();
+//        return newBuildings;
+//    }
+    @Transactional
+    @Override
+    public List<NewBuilding> findAll() {
+        session = sessionFactory.getCurrentSession();
+        List<NewBuilding> newBuildings = session.createNativeQuery("select * from new_buildings",NewBuilding.class).list();
+        System.out.println(newBuildings);
+        return newBuildings;
     }
 
     @Transactional
