@@ -1,7 +1,7 @@
 package com.users.entities;
 
 import com.parent.Person;
-import com.new_buildings.entities.NewBuilding;
+import com.new_buildings.entities.Apartment;
 import lombok.Data;
 
 import java.time.LocalDateTime;
@@ -23,7 +23,7 @@ public class Customer extends Person{
     private boolean agreeToDataProcessing;
 //    @ManyToOne
 //    @JoinColumn(name = "new_building_id")
-    private NewBuilding newBuilding;
+    private Apartment apartment;
 
 
 }

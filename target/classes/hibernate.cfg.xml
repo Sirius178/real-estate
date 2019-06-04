@@ -16,7 +16,7 @@
 
         <mapping resource="entities/advertisements/Advertisement.hbm.xml"/>
         <mapping resource="entities/advertisements/Addition.hbm.xml"/>
-        <mapping resource="entities/new_buildings/NewBuilding.hbm.xml"/>
+        <mapping resource="entities/new_buildings/Apartment.hbm.xml"/>
         <mapping resource="entities/new_buildings/Address.hbm.xml"/>
         <mapping resource="entities/users/Admin.hbm.xml"/>
         <mapping resource="entities/users/User.hbm.xml"/>

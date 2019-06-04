@@ -1,6 +1,6 @@
 package com.users.services.impl;
 
-import com.new_buildings.entities.NewBuilding;
+import com.new_buildings.entities.Apartment;
 import com.users.dao.interfaces.CustomerDAO;
 import com.users.entities.Customer;
 import com.users.services.Postman;
@@ -9,7 +9,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Set;
 
 @Service
 public class CustomerServiceImpl implements CustomerService {
@@ -17,9 +16,9 @@ public class CustomerServiceImpl implements CustomerService {
     CustomerDAO customerDAO;
 
     @Override
-    public void sendEmail(Customer customer, NewBuilding newBuilding) {
+    public void sendEmail(Customer customer, Apartment apartment) {
         Postman postman = new Postman("sergeipopof178@Gmail.com", "Sirius178!");
-        postman.send("Заявка",customer, newBuilding,"sergeipopof178@Gmail.com", "siriusonestar@yandex.ru");
+        postman.send("Заявка",customer, apartment,"sergeipopof178@Gmail.com", "siriusonestar@yandex.ru");
     }
 
     @Override

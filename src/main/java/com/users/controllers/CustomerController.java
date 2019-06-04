@@ -1,17 +1,6 @@
 package com.users.controllers;
 
-import com.new_buildings.entities.NewBuilding;
-import com.users.entities.Customer;
-import com.users.services.interfaces.CustomerService;
-import com.new_buildings.services.interfaces.NewBuildingService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class CustomerController {
@@ -20,7 +9,7 @@ public class CustomerController {
 //    CustomerService service;
 //    @Qualifier("newBuildingServiceImpl")
 //    @Autowired
-//    NewBuildingService houseService;
+//    ApartmentService houseService;
 //
 //    @RequestMapping(value = "/customer/{idHouse}", method = RequestMethod.GET)
 //    public ModelAndView customerPage(@PathVariable("idHouse") int idHouse) {
@@ -40,7 +29,7 @@ public class CustomerController {
 //                                        Customer customer) {
 //        ModelAndView modelAndView = new ModelAndView("order");
 //
-//        NewBuilding newBuilding = houseService.getHouseByID(idHouse);
+//        Apartment apartment = houseService.getHouseByID(idHouse);
 //
 //        try {
 //            customer.setName(name);
@@ -51,7 +40,7 @@ public class CustomerController {
 //            customer.setAgreeToDataProcessing(agreeToDataProcessing);
 //            customer.setIdHouse(idHouse);
 //            service.saveCustomerRequest(customer);
-//            service.sendEmail(customer, newBuilding);
+//            service.sendEmail(customer, apartment);
 //
 //            modelAndView.addObject("messageForCustomerOk",customer.getName());
 //        }catch (Exception ex){

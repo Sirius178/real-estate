@@ -1,23 +1,24 @@
 package com.controllers;
 
 import com.new_buildings.command.AddressCommand;
-import com.new_buildings.command.NewBuildingCommand;
+import com.new_buildings.command.ApartmentCommand;
 import com.new_buildings.services.interfaces.AddressService;
-import com.new_buildings.services.interfaces.NewBuildingService;
+import com.new_buildings.services.interfaces.ApartmentService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
 public class AdminPageController {
 
-    private NewBuildingService newBuildingService;
+    private ApartmentService apartmentService;
     private AddressService addressService;
 
-    public AdminPageController(NewBuildingService newBuildingService, AddressService addressService) {
-        this.newBuildingService = newBuildingService;
+    public AdminPageController(ApartmentService apartmentService, AddressService addressService) {
+        this.apartmentService = apartmentService;
         this.addressService = addressService;
     }
 
@@ -26,17 +27,19 @@ public class AdminPageController {
         return "admin-pages/index";
     }
 
-    @GetMapping("/table")
-    public String tablesPage(Model model){
-        model.addAttribute("listOfNewBuilding", newBuildingService.findAll());
+    @GetMapping(value = "/apartments/{id}")
+    public String tablesPage(@PathVariable("id") Long id ,Model model){
+        model.addAttribute("listOfApartment", apartmentService.findAll());
         System.out.println(model);
-        return "admin-pages/tables";
+        return "admin-pages/apartment";
     }
 
 
     @PostMapping(value = "/save-apartment")
-    public String saveOrUpdate(@ModelAttribute NewBuildingCommand newBuildingCommand){
-        newBuildingService.saveNewBuildingCommand(newBuildingCommand);
+    public String saveOrUpdate(@ModelAttribute ApartmentCommand apartmentCommand){
+
+        apartmentService.saveNewBuildingCommand(apartmentCommand);
+
         return "redirect:/table";
     }
 

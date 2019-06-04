@@ -1,16 +1,16 @@
 package com.new_buildings.controllers;
 
-import com.new_buildings.services.interfaces.NewBuildingService;
+import com.new_buildings.services.interfaces.ApartmentService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 @Controller
 public class NewBuildingController {
 
-    private NewBuildingService newBuildingService;
+    private ApartmentService apartmentService;
 
-    public NewBuildingController(NewBuildingService newBuildingService) {
-        this.newBuildingService = newBuildingService;
+    public NewBuildingController(ApartmentService apartmentService) {
+        this.apartmentService = apartmentService;
     }
 
     @GetMapping("/new_building")
@@ -22,7 +22,7 @@ public class NewBuildingController {
 
 //    @Qualifier("newBuildingServiceImpl")
 //    @Autowired
-//    private NewBuildingService service;
+//    private ApartmentService service;
 //
 //    @RequestMapping(value = "/newBuildingAdmin", method = RequestMethod.GET)
 //    public ModelAndView newBuildingAdmin(){
@@ -37,9 +37,9 @@ public class NewBuildingController {
 //        return modelAndView;
 //    }
 //
-//    @RequestMapping(value = "/newBuilding", method = RequestMethod.GET)
+//    @RequestMapping(value = "/apartment", method = RequestMethod.GET)
 //    public ModelAndView newBuildingPage(){
-//        ModelAndView modelAndView = new ModelAndView("newBuilding");
+//        ModelAndView modelAndView = new ModelAndView("apartment");
 //        modelAndView.addObject("listOfHouseInNewComplex", service.listOfHouseInNewComplex());
 //        return modelAndView;
 //    }
@@ -54,20 +54,20 @@ public class NewBuildingController {
 //                                 @RequestParam(value = "pricePerSquare") int pricePerSquare,
 //                                 @RequestParam(value = "fullPrice") int fullPrice,
 //                                 @RequestParam(value = "status") Status status,
-//                                 NewBuilding newBuilding) throws Exception{
-//        ModelAndView modelAndView = new ModelAndView("redirect:/newBuilding");
+//                                 Apartment apartment) throws Exception{
+//        ModelAndView modelAndView = new ModelAndView("redirect:/apartment");
 //        try {
-//            newBuilding.setNameOfComplex(nameOfComplex);
-//            newBuilding.setNameOfHouse(nameOfHouse);
-//            newBuilding.setFloor(floor);
-//            newBuilding.setNumberOfApartment(numberOfApartment);
-//            newBuilding.setNumberOfRoom(numberOfRoom);
-//            newBuilding.setSquare(square);
-//            newBuilding.setPricePerSquare(pricePerSquare);
-//            newBuilding.setFullPrice(fullPrice);
-//            newBuilding.setStatus(status);
-//            service.addHouse(newBuilding);
-//            modelAndView.addObject("addMessage","House added " + newBuilding.getNameOfComplex());
+//            apartment.setNameOfComplex(nameOfComplex);
+//            apartment.setNameOfHouse(nameOfHouse);
+//            apartment.setFloor(floor);
+//            apartment.setNumberOfApartment(numberOfApartment);
+//            apartment.setNumberOfRoom(numberOfRoom);
+//            apartment.setSquare(square);
+//            apartment.setPricePerSquare(pricePerSquare);
+//            apartment.setFullPrice(fullPrice);
+//            apartment.setStatus(status);
+//            service.addHouse(apartment);
+//            modelAndView.addObject("addMessage","House added " + apartment.getNameOfComplex());
 //        }catch (Exception ex){
 //            ex.printStackTrace();
 //        }finally {
@@ -77,16 +77,16 @@ public class NewBuildingController {
 //    }
 //
 //    @RequestMapping(value = "/removeHouseFromNewComplex/{idHouse}", method = RequestMethod.GET)
-//    public String removeHouseFromNewComplex(@PathVariable("idHouse") int idHouse, NewBuilding newBuilding){
-//        newBuilding.setIdHouse(idHouse);
-//        service.deleteHouseByID(newBuilding);
+//    public String removeHouseFromNewComplex(@PathVariable("idHouse") int idHouse, Apartment apartment){
+//        apartment.setIdHouse(idHouse);
+//        service.deleteHouseByID(apartment);
 //        return "redirect:/";
 //    }
 //    @RequestMapping(value = "/edit/{idHouse}", method = RequestMethod.GET)
 //    public ModelAndView edit(@PathVariable("idHouse") int idHouse) {
 //        ModelAndView modelAndView = new ModelAndView("editHouse");
-//        NewBuilding newBuilding = service.getHouseByID(idHouse);
-//        modelAndView.addObject("houseInNewComplex", newBuilding);
+//        Apartment apartment = service.getHouseByID(idHouse);
+//        modelAndView.addObject("houseInNewComplex", apartment);
 //        return modelAndView;
 //    }
 //    @RequestMapping(value = "/updateHouseInNewComplex/{idHouse}", method = RequestMethod.POST)
@@ -100,20 +100,20 @@ public class NewBuildingController {
 //                                                @RequestParam(value = "pricePerSquare") int pricePerSquare,
 //                                                @RequestParam(value = "fullPrice") int fullPrice,
 //                                                @RequestParam(value = "status") Status status,
-//                                                NewBuilding newBuilding){
+//                                                Apartment apartment){
 //        ModelAndView modelAndView = new ModelAndView("redirect:/");
 //        try{
-//            newBuilding.setNameOfComplex(nameOfComplex);
-//            newBuilding.setNameOfHouse(nameOfHouse);
-//            newBuilding.setFloor(floor);
-//            newBuilding.setNumberOfApartment(numberOfApartment);
-//            newBuilding.setNumberOfRoom(numberOfRoom);
-//            newBuilding.setSquare(square);
-//            newBuilding.setPricePerSquare(pricePerSquare);
-//            newBuilding.setFullPrice(fullPrice);
-//            newBuilding.setStatus(status);
-//            newBuilding.setIdHouse(idHouse);
-//            service.updateHouseByID(newBuilding);
+//            apartment.setNameOfComplex(nameOfComplex);
+//            apartment.setNameOfHouse(nameOfHouse);
+//            apartment.setFloor(floor);
+//            apartment.setNumberOfApartment(numberOfApartment);
+//            apartment.setNumberOfRoom(numberOfRoom);
+//            apartment.setSquare(square);
+//            apartment.setPricePerSquare(pricePerSquare);
+//            apartment.setFullPrice(fullPrice);
+//            apartment.setStatus(status);
+//            apartment.setIdHouse(idHouse);
+//            service.updateHouseByID(apartment);
 //        }catch (Exception ex){
 //            ex.printStackTrace();
 //        }

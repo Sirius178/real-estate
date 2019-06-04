@@ -14,7 +14,7 @@
         <property name="email" column="email"/>
         <property name="mortgage" column="mortgage"/>
         <property name="phoneNumber" column="phone_number"/>
-        <many-to-one name="newBuilding" class="com.new_buildings.entities.NewBuilding">
+        <many-to-one name="apartment" class="com.new_buildings.entities.Apartment">
             <column name="new_building_id"/>
         </many-to-one>
     </class>

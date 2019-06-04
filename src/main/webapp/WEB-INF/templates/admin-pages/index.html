@@ -63,7 +63,7 @@
               <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                   <div class="bg-white py-2 collapse-inner rounded">
                       <h6 class="collapse-header">Custom Components:</h6>
-                      <a class="collapse-item" th:href="@{/table}">Таблица</a>
+                      <a class="collapse-item" th:href="@{/address}">Адрес объекта</a>
 
                   </div>
               </div>
@@ -123,7 +123,7 @@
 
           <!-- Nav Item - Tables -->
           <li class="nav-item">
-              <a class="nav-link" href="tables.html">
+              <a class="nav-link" href="apartment.html">
                   <i class="fas fa-fw fa-table"></i>
                   <span>Tables</span></a>
           </li>
@@ -170,51 +170,51 @@
 
       </div>
       <!-- End of Main Content -->
-            <section class="probootstrap-section probootstrap-section-lighter">
-                <div>
-                    <label>Список квартир на продажу</label>
-                    <div th:if="${not #lists.isEmpty(listOfHouseInNewComplex)}">
-                        <div class="container">
-                            <table class="table">
-                                <thead>
-                                <tr>
-                                    <th> Название комплекса</th>
-                                    <th> Адрес</th>
-                                    <th> Этаж</th>
-                                    <th> Номер квартиры</th>
-                                    <th> Номер комнаты/th>
-                                    <th> Площадь</th>
-                                    <th> Цена за квадрат</th>
-                                    <th> Полна цена</th>
-                                    <th>  Статус</th>
-                                    <th> Редактировать </th>
-                                    <th> Удалить </th>
+            <!--<section class="probootstrap-section probootstrap-section-lighter">-->
+                <!--<div>-->
+                    <!--<label>Список квартир на продажу</label>-->
+                    <!--<div th:if="${not #lists.isEmpty(listOfHouseInNewComplex)}">-->
+                        <!--<div class="container">-->
+                            <!--<table class="table">-->
+                                <!--<thead>-->
+                                <!--<tr>-->
+                                    <!--<th> Название комплекса</th>-->
+                                    <!--<th> Адрес</th>-->
+                                    <!--<th> Этаж</th>-->
+                                    <!--<th> Номер квартиры</th>-->
+                                    <!--<th> Номер комнаты/th>-->
+                                    <!--<th> Площадь</th>-->
+                                    <!--<th> Цена за квадрат</th>-->
+                                    <!--<th> Полна цена</th>-->
+                                    <!--<th>  Статус</th>-->
+                                    <!--<th> Редактировать </th>-->
+                                    <!--<th> Удалить </th>-->
 
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr th:each="house : ${listOfHouseInNewComplex}">
-                                    <td th:text="${house.nameOfComplex}">nameOfComplex</td>
-                                    <td th:text="${house.nameOfHouse}"></td>
-                                    <td th:text="${house.floor}"></td>
-                                    <td th:text="${house.numberOfApartment}"></td>
-                                    <td th:text="${house.numberOfRoom}"></td>
-                                    <td th:text="${house.square}"></td>
-                                    <td th:text="${house.pricePerSquare}"></td>
-                                    <td th:text="${house.fullPrice}"></td>
-                                    <td th:text="${house.status}"></td>
-                                    <td> <a th:href="@{'/edit/' + ${house.idHouse}}">редактировать</a></td>
-                                    <td> <a th:href="@{'/removeHouseFromNewComplex/' + ${house.idHouse}}">удалить</a></td>
+                                <!--</tr>-->
+                                <!--</thead>-->
+                                <!--<tbody>-->
+                                <!--<tr th:each="house : ${listOfHouseInNewComplex}">-->
+                                    <!--<td th:text="${house.nameOfComplex}">nameOfComplex</td>-->
+                                    <!--<td th:text="${house.nameOfHouse}"></td>-->
+                                    <!--<td th:text="${house.floor}"></td>-->
+                                    <!--<td th:text="${house.numberOfApartment}"></td>-->
+                                    <!--<td th:text="${house.numberOfRoom}"></td>-->
+                                    <!--<td th:text="${house.square}"></td>-->
+                                    <!--<td th:text="${house.pricePerSquare}"></td>-->
+                                    <!--<td th:text="${house.fullPrice}"></td>-->
+                                    <!--<td th:text="${house.status}"></td>-->
+                                    <!--<td> <a th:href="@{'/edit/' + ${house.idHouse}}">редактировать</a></td>-->
+                                    <!--<td> <a th:href="@{'/removeHouseFromNewComplex/' + ${house.idHouse}}">удалить</a></td>-->
 
 
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
+                                <!--</tr>-->
+                                <!--</tbody>-->
+                            <!--</table>-->
+                        <!--</div>-->
 
-                    </div>
-                </div>
-            </section>
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</section>-->
 
       <!-- Footer -->
       <footer class="sticky-footer bg-white">
