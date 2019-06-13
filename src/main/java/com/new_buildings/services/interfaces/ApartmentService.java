@@ -8,5 +8,5 @@ public interface ApartmentService extends CrudService<Apartment, Long> {
 
 
     ApartmentCommand findCommandById(Long id);
-    ApartmentCommand saveNewBuildingCommand (ApartmentCommand object);
+    ApartmentCommand saveApartmentCommand(ApartmentCommand object);
 }

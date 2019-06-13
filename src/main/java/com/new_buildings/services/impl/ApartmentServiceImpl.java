@@ -66,10 +66,10 @@ public class ApartmentServiceImpl implements ApartmentService {
     }
 
     @Override
-    public ApartmentCommand saveNewBuildingCommand(ApartmentCommand object) {
+    public ApartmentCommand saveApartmentCommand(ApartmentCommand object) {
         Apartment detachedApartment = apartmentCommandToApartment.convert(object);
         Apartment savedApartment = apartmentDAO.saveApartmentCommand(detachedApartment);
-        log.debug("Saved id: " + savedApartment.getId());
+//        log.debug("Saved id: " + savedApartment.getId());
         return apartmentToApartmentCommand.convert(savedApartment);
     }
 }

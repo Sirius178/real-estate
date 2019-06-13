@@ -9,5 +9,6 @@
         <property name="url" value="jdbc:mysql://localhost:3306/real-estate-site" />
         <property name="username" value="root" />
         <property name="password" value="root" />
+
     </bean>
 </beans>

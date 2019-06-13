@@ -10,6 +10,12 @@ import org.springframework.stereotype.Component;
 @Component
 public class ApartmentCommandToApartment implements Converter<ApartmentCommand, Apartment> {
 
+    private final AddressCommandToAddress addressCommandToAddress;
+
+    public ApartmentCommandToApartment(AddressCommandToAddress addressCommandToAddress) {
+        this.addressCommandToAddress = addressCommandToAddress;
+    }
+
     @Synchronized
     @Nullable
     @Override
@@ -19,7 +25,7 @@ public class ApartmentCommandToApartment implements Converter<ApartmentCommand, 
         }
         final Apartment apartment = new Apartment();
         apartment.setId(source.getId());
-        apartment.setAddress(source.getAddress());
+        apartment.setAddress(addressCommandToAddress.convert(source.getAddress()));
         apartment.setImage(source.getImage());
         apartment.setFloor(source.getFloor());
         apartment.setNumberOfApartment(source.getNumberOfApartment());

@@ -7,6 +7,7 @@ import com.new_buildings.dao.interfaces.AddressDAO;
 import com.new_buildings.entities.Address;
 import com.new_buildings.services.interfaces.AddressService;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Set;
@@ -24,10 +25,10 @@ public class AddressServiceImpl implements AddressService {
         this.addressToAddressCommand = addressToAddressCommand;
     }
 
-
-    @Override
+    @Transactional
     public AddressCommand findCommandById(Long id) {
-        return null;
+        Address detachedAddress = addressDAO.findCommandById(id);
+        return addressToAddressCommand.convert(detachedAddress);
     }
 
     @Override
@@ -45,7 +46,8 @@ public class AddressServiceImpl implements AddressService {
 
     @Override
     public Address findById(Long aLong) {
-        return null;
+        Address address = addressDAO.findById(aLong);
+        return address;
     }
 
     @Override

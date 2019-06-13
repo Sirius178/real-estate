@@ -22,16 +22,15 @@ public class AddressDAOImpl implements AddressDAO {
 
     private Session session;
 
-
-    @Override
+    
     public Address findCommandById(Long id) {
-        return null;
+        session = sessionFactory.getCurrentSession();
+        return session.load(Address.class, new Long(id));
     }
 
     @Override
     public Address saveAddressCommand(Address object) {
         session = sessionFactory.getCurrentSession();
-        System.out.println(object.toString());
         session.save(object);
         return object;
     }
@@ -45,7 +44,9 @@ public class AddressDAOImpl implements AddressDAO {
 
     @Override
     public Address findById(Long aLong) {
-        return null;
+        session = sessionFactory.getCurrentSession();
+        Address address = session.load(Address.class, new Long(aLong));
+        return address;
     }
 
     @Override

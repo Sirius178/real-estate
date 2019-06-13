@@ -350,14 +350,18 @@
             <!-- Begin Page Content -->
             <div class="container-fluid">
 
+
                 <!-- Page Heading -->
-                     <section class="probootstrap-section probootstrap-section-lighter">
+                <section class="probootstrap-section probootstrap-section-lighter">
 
                     <div>
                         <label class="h3 mb-2 text-gray-800">Добавить квартиру на продажу</label>
-                        <form action="/save-apartment" , method="post">
-                            <div>
 
+                        <form th:object="${address}" action="/save-apartment" , method="post">
+                            <div>
+                                <a>address</a><input type="hidden" th:field="*{id}"/>
+                                <!--<a>address</a> <input type="" name="address" id="address"-->
+                                                      <!--th:value="${address.id}"><br/>-->
                                 <a>image</a> <input type="file" name="image" id="image"><br/>
                                 <a>floor</a> <input type="number" name="floor" id="floor"><br/>
                                 <a>numberOfApartment</a><input type="number" name="numberOfApartment"
@@ -366,7 +370,7 @@
                                 <a>square</a> <input type="number" name="square" id="square"><br/>
                                 <a>pricePerSquare</a> <input type="number" name="pricePerSquare"
                                                              id="pricePerSquare"><br/>
-                                <a>fullPrice</a> <input type="number" name="fullPrice" id="fullPrice"><br/>
+                                <a>fullPrice</a> <input type="number" name="fullPrice" id="fullPrice">
                                 <a>status</a>
                                 <select name="status" id="status">
                                     <option value="" selected disabled hidden>Выберите статус</option>
@@ -374,56 +378,55 @@
                                             th:value="${status}"
                                             th:text="${status.getValue()}">
                                     </option>
-                                </select><br/>
+                                </select>
                             </div>
                             <input type="submit" value="Save"/>
                             <input type="reset" value="Reset"/>
                         </form>
-                        <br/>
                     </div>
                 </section>
 
-                <!-- DataTales Example -->
-                <div class="card shadow mb-4" th:if="${not #lists.isEmpty(listOfApartment)}">
-                    <div class="card-header py-3">
-                        <h6 class="m-0 font-weight-bold text-primary">DataTable</h6>
-                    </div>
-                    <div class="card-body" }>
-                        <div class="table-responsive">
-                            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                                <thead>
-                                <tr>
-                                    <th>address</th>
-                                    <th>image</th>
-                                    <th>floor</th>
-                                    <th>numberOfApartment</th>
-                                    <th>numberOfRooms</th>
-                                    <th>square</th>
-                                    <th>pricePerSquare</th>
-                                    <th>fullPrice</th>
-                                    <th>status</th>
-                                    <th>Редактировать</th>
-                                    <th>Удалить</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr th:each="house : ${listOfApartment}">
-                                    <td th:text="${house.address}"></td>
-                                    <td th:text="${house.image}"></td>
-                                    <td th:text="${house.floor}"></td>
-                                    <td th:text="${house.numberOfApartment}"></td>
-                                    <td th:text="${house.numberOfRooms}"></td>
-                                    <td th:text="${house.square}"></td>
-                                    <td th:text="${house.pricePerSquare}"></td>
-                                    <td th:text="${house.fullPrice}"></td>
-                                    <td th:text="${house.status}"></td>
+                <!--&lt;!&ndash; DataTales Example &ndash;&gt;-->
+                <!--<div class="card shadow mb-4" th:if="${not #lists.isEmpty(listOfApartment)}">-->
+                    <!--<div class="card-header py-3">-->
+                        <!--<h6 class="m-0 font-weight-bold text-primary">DataTable</h6>-->
+                    <!--</div>-->
+                    <!--<div class="card-body" }>-->
+                        <!--<div class="table-responsive">-->
+                            <!--<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">-->
+                                <!--<thead>-->
+                                <!--<tr>-->
+                                    <!--<th>address</th>-->
+                                    <!--<th>image</th>-->
+                                    <!--<th>floor</th>-->
+                                    <!--<th>numberOfApartment</th>-->
+                                    <!--<th>numberOfRooms</th>-->
+                                    <!--<th>square</th>-->
+                                    <!--<th>pricePerSquare</th>-->
+                                    <!--<th>fullPrice</th>-->
+                                    <!--<th>status</th>-->
+                                    <!--<th>Редактировать</th>-->
+                                    <!--<th>Удалить</th>-->
+                                <!--</tr>-->
+                                <!--</thead>-->
+                                <!--<tbody>-->
+                                <!--<tr th:each="house : ${listOfApartment}">-->
+                                    <!--<td th:text="${house.address}"></td>-->
+                                    <!--<td th:text="${house.image}"></td>-->
+                                    <!--<td th:text="${house.floor}"></td>-->
+                                    <!--<td th:text="${house.numberOfApartment}"></td>-->
+                                    <!--<td th:text="${house.numberOfRooms}"></td>-->
+                                    <!--<td th:text="${house.square}"></td>-->
+                                    <!--<td th:text="${house.pricePerSquare}"></td>-->
+                                    <!--<td th:text="${house.fullPrice}"></td>-->
+                                    <!--<td th:text="${house.status}"></td>-->
 
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
+                                <!--</tr>-->
+                                <!--</tbody>-->
+                            <!--</table>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
 
             </div>
             <!-- /.container-fluid -->

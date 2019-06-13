@@ -28,19 +28,20 @@ public class AdminPageController {
     }
 
     @GetMapping(value = "/apartments/{id}")
-    public String tablesPage(@PathVariable("id") Long id ,Model model){
-        model.addAttribute("listOfApartment", apartmentService.findAll());
-        System.out.println(model);
+    public String apartmentsPage(@PathVariable("id") Long id ,Model model){
+
+        model.addAttribute( "address", addressService.findCommandById(id));
+//        model.addAttribute("listOfApartment", apartmentService.findAll());
         return "admin-pages/apartment";
     }
 
 
     @PostMapping(value = "/save-apartment")
     public String saveOrUpdate(@ModelAttribute ApartmentCommand apartmentCommand){
+        System.out.println(apartmentCommand);
+        apartmentService.saveApartmentCommand(apartmentCommand);
 
-        apartmentService.saveNewBuildingCommand(apartmentCommand);
-
-        return "redirect:/table";
+        return "redirect:/address";
     }
 
     @GetMapping("/address")

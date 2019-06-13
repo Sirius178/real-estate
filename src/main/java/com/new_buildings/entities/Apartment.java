@@ -1,6 +1,7 @@
 package com.new_buildings.entities;
 
 
+import com.parent.BaseEntity;
 import lombok.*;
 
 import javax.persistence.*;
@@ -13,9 +14,8 @@ import java.util.Arrays;
 @AllArgsConstructor
 @Builder
 @Entity
-public class Apartment {
+public class Apartment extends BaseEntity {
 
-    private Long id;
     private Address address;
     private Byte[] image;
     private int floor;
@@ -29,8 +29,7 @@ public class Apartment {
     @Override
     public String toString() {
         return "Apartment{" +
-                "id=" + id +
-                ", address='" + address + '\'' +
+                "address=" + address +
                 ", image=" + Arrays.toString(image) +
                 ", floor=" + floor +
                 ", numberOfApartment=" + numberOfApartment +

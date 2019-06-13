@@ -90,7 +90,6 @@ public class ApartmentDAOImpl implements ApartmentDAO {
     @Transactional
     public Apartment saveApartmentCommand(Apartment object) {
         session = sessionFactory.getCurrentSession();
-//        System.out.println(object.toString());
         session.save(object);
         return object;
     }
