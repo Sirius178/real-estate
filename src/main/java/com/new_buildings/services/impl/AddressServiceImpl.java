@@ -44,7 +44,7 @@ public class AddressServiceImpl implements AddressService {
         return addresses;
     }
 
-    @Override
+    @Transactional
     public Address findById(Long aLong) {
         Address address = addressDAO.findById(aLong);
         return address;

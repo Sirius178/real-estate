@@ -357,11 +357,12 @@
                     <div>
                         <label class="h3 mb-2 text-gray-800">Добавить квартиру на продажу</label>
 
-                        <form th:object="${address}" action="/save-apartment" , method="post">
+                        <form th:object="${address}" th:action="@{'/save-apartment/' + ${address.id}}" , method="post">
                             <div>
-                                <a>address</a><input type="hidden" th:field="*{id}"/>
-                                <!--<a>address</a> <input type="" name="address" id="address"-->
-                                                      <!--th:value="${address.id}"><br/>-->
+                                <!--<a>address</a><input type="hidden" th:value="${address.id}"/>-->
+
+                                <!--<a>address</a> <input type="hidden" id="address"-->
+                                                      <!--th:value="${address}"><br/>-->
                                 <a>image</a> <input type="file" name="image" id="image"><br/>
                                 <a>floor</a> <input type="number" name="floor" id="floor"><br/>
                                 <a>numberOfApartment</a><input type="number" name="numberOfApartment"

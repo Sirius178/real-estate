@@ -1,25 +1,25 @@
 package com.controllers;
 
 import com.new_buildings.command.AddressCommand;
-import com.new_buildings.command.ApartmentCommand;
+import com.new_buildings.converters.AddressCommandToAddress;
+import com.new_buildings.entities.Address;
+import com.new_buildings.entities.Apartment;
 import com.new_buildings.services.interfaces.AddressService;
 import com.new_buildings.services.interfaces.ApartmentService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.*;
 
 @Controller
 public class AdminPageController {
 
     private ApartmentService apartmentService;
     private AddressService addressService;
-
-    public AdminPageController(ApartmentService apartmentService, AddressService addressService) {
+    private AddressCommandToAddress addressCommandToAddress;
+    public AdminPageController(ApartmentService apartmentService, AddressService addressService, AddressCommandToAddress addressCommandToAddress) {
         this.apartmentService = apartmentService;
         this.addressService = addressService;
+        this.addressCommandToAddress = addressCommandToAddress;
     }
 
     @GetMapping("/admin-page")
@@ -30,17 +30,17 @@ public class AdminPageController {
     @GetMapping(value = "/apartments/{id}")
     public String apartmentsPage(@PathVariable("id") Long id ,Model model){
 
-        model.addAttribute( "address", addressService.findCommandById(id));
+        model.addAttribute( "address", addressService.findById(id));
 //        model.addAttribute("listOfApartment", apartmentService.findAll());
         return "admin-pages/apartment";
     }
 
-
-    @PostMapping(value = "/save-apartment")
-    public String saveOrUpdate(@ModelAttribute ApartmentCommand apartmentCommand){
-        System.out.println(apartmentCommand);
-        apartmentService.saveApartmentCommand(apartmentCommand);
-
+    @PostMapping(value = "/save-apartment/{id}")
+    public String saveOrUpdate(@PathVariable("id") Long id, @ModelAttribute Apartment apartment){
+        AddressCommand addressCommand = addressService.findCommandById(id);
+        Address address = addressCommandToAddress.convert(addressCommand);
+        apartment.setAddress(address);
+        apartmentService.save(apartment);
         return "redirect:/address";
     }
 

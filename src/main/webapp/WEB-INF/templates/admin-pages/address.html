@@ -385,10 +385,10 @@
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <tr th:each="house : ${listOfAddresses}">
-                                    <td th:text="${house.address}"></td>
-                                    <td th:text="${house.image}"></td>
-                                    <td><a th:href="@{'/apartments/' + ${house.id}}"> add </a></td>
+                                <tr th:each="address : ${listOfAddresses}">
+                                    <td th:text="${address.address}"></td>
+                                    <td th:text="${address.image}"></td>
+                                    <td><a th:href="@{'/apartments/' + ${address.id}}"> add </a></td>
                                 </tr>
                                 </tbody>
                             </table>

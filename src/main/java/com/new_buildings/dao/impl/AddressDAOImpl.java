@@ -10,7 +10,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
-@Transactional
+
 @Repository
 public class AddressDAOImpl implements AddressDAO {
 
@@ -20,21 +20,21 @@ public class AddressDAOImpl implements AddressDAO {
         this.sessionFactory = sessionFactory;
     }
 
-    private Session session;
+    private static Session session;
 
     
     public Address findCommandById(Long id) {
         session = sessionFactory.getCurrentSession();
         return session.load(Address.class, new Long(id));
     }
-
+    @Transactional
     @Override
     public Address saveAddressCommand(Address object) {
         session = sessionFactory.getCurrentSession();
         session.save(object);
         return object;
     }
-
+    @Transactional
     @Override
     public List<Address> findAll() {
         session = sessionFactory.getCurrentSession();
@@ -42,23 +42,24 @@ public class AddressDAOImpl implements AddressDAO {
         return addresses;
     }
 
-    @Override
-    public Address findById(Long aLong) {
+    @Transactional
+    public Address findById(Long id) {
+
         session = sessionFactory.getCurrentSession();
-        Address address = session.load(Address.class, new Long(aLong));
+        Address address = session.load(Address.class, new Long(id));
         return address;
     }
-
+    @Transactional
     @Override
     public Address save(Address object) {
         return null;
     }
-
+    @Transactional
     @Override
     public void delete(Address object) {
 
     }
-
+    @Transactional
     @Override
     public void deleteById(Long aLong) {
 

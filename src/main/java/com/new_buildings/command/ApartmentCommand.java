@@ -14,7 +14,7 @@ import java.util.Arrays;
 public class ApartmentCommand {
 
     private Long id;
-    private AddressCommand address;
+    private AddressCommand addressCommand;
     private Byte[] image;
     private int floor;
     private int numberOfApartment;
@@ -24,19 +24,5 @@ public class ApartmentCommand {
     private int fullPrice;
     private Status status;
 
-    @Override
-    public String toString() {
-        return "ApartmentCommand{" +
-                "id=" + id +
-                ", address=" + address +
-                ", image=" + Arrays.toString(image) +
-                ", floor=" + floor +
-                ", numberOfApartment=" + numberOfApartment +
-                ", numberOfRooms=" + numberOfRooms +
-                ", square=" + square +
-                ", pricePerSquare=" + pricePerSquare +
-                ", fullPrice=" + fullPrice +
-                ", status=" + status +
-                '}';
-    }
+
 }

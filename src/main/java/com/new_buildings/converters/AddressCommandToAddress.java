@@ -10,6 +10,9 @@ import org.springframework.stereotype.Component;
 @Component
 public class AddressCommandToAddress implements Converter<AddressCommand, Address> {
 
+    ApartmentCommandToApartment apartmentCommandToApartment;
+    ApartmentToApartmentCommand apartmentToApartmentCommand;
+
     @Synchronized
     @Nullable
     @Override

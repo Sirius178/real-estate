@@ -1,6 +1,7 @@
 package com.new_buildings.dao.impl;
 
 import com.new_buildings.dao.interfaces.ApartmentDAO;
+import com.new_buildings.entities.Address;
 import com.new_buildings.entities.Apartment;
 import org.hibernate.*;
 import org.slf4j.Logger;
@@ -55,19 +56,20 @@ public class ApartmentDAOImpl implements ApartmentDAO {
         return apartments;
     }
 
-    @Transactional
+
     public Apartment findById(Long aLong) {
         session = sessionFactory.getCurrentSession();
         Apartment apartment = session.find(Apartment.class, aLong);
         return apartment;
     }
 
+
     @Transactional
     public Apartment save(Apartment object) {
-//        session = sessionFactory.getCurrentSession();
-//        session.save(object);
-//        return object;
-        return null;
+        session = sessionFactory.getCurrentSession();
+        session.save(object);
+        return object;
+
     }
 
     @Transactional
@@ -91,6 +93,7 @@ public class ApartmentDAOImpl implements ApartmentDAO {
     public Apartment saveApartmentCommand(Apartment object) {
         session = sessionFactory.getCurrentSession();
         session.save(object);
+
         return object;
     }
 }

@@ -27,7 +27,7 @@ public class ApartmentToApartmentCommand implements Converter<Apartment, Apartme
         final ApartmentCommand apartmentCommand = new ApartmentCommand();
 
         apartmentCommand.setId(source.getId());
-        apartmentCommand.setAddress(addressToAddressCommand.convert(source.getAddress()));
+        apartmentCommand.setAddressCommand(addressToAddressCommand.convert(source.getAddress()));
         apartmentCommand.setImage(source.getImage());
         apartmentCommand.setFloor(source.getFloor());
         apartmentCommand.setNumberOfApartment(source.getNumberOfApartment());

@@ -47,7 +47,8 @@ public class ApartmentServiceImpl implements ApartmentService {
 
     @Override
     public Apartment save(Apartment apartment) {
-        return null;
+        apartmentDAO.save(apartment);
+        return apartment;
     }
 
     @Override

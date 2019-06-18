@@ -11,6 +11,7 @@
         </id>
         <property name="address" column="address"/>
         <property name="image" column="image"/>
-        
+
     </class>
+
 </hibernate-mapping>

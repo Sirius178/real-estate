@@ -6,6 +6,7 @@ import lombok.*;
 
 import javax.persistence.Entity;
 import java.util.Arrays;
+import java.util.Set;
 
 
 @Data
@@ -14,7 +15,6 @@ public class Address extends BaseEntity {
 
     private String address;
     private Byte[] image;
-    private Apartment apartment;
 
 
 }
