@@ -7,20 +7,47 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="23a85b11-6cec-465c-a1c3-9dc900f17bff" name="Default Changelist" comment="added table">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/services/ImageService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ffc07326-9262-4efa-85d2-32f6e9f72c5e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ffc07326-9262-4efa-85d2-32f6e9f72c5e.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/controllers/AdminPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controllers/AdminPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/new_buildings/command/AddressCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/new_buildings/command/AddressCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/new_buildings/command/ApartmentCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/new_buildings/command/ApartmentCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/new_buildings/converters/AddressCommandToAddress.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/new_buildings/converters/AddressCommandToAddress.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/new_buildings/converters/ApartmentCommandToApartment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/new_buildings/converters/ApartmentCommandToApartment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/new_buildings/converters/ApartmentToApartmentCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/new_buildings/converters/ApartmentToApartmentCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/new_buildings/dao/impl/AddressDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/new_buildings/dao/impl/AddressDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/new_buildings/dao/impl/ApartmentDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/new_buildings/dao/impl/ApartmentDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/new_buildings/entities/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/new_buildings/entities/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/new_buildings/services/impl/AddressServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/new_buildings/services/impl/AddressServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/new_buildings/services/impl/ApartmentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/new_buildings/services/impl/ApartmentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/entities/new_buildings/Address.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/entities/new_buildings/Address.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/entities/new_buildings/Apartment.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/entities/new_buildings/Apartment.hbm.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/admin-pages/address.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/admin-pages/address.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/controllers/AdminPageController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entities/BaseEntity.hbm.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entities/Person.hbm.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entities/new_buildings/NewBuilding.hbm.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/admin-pages/apartment.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/admin-pages/apartment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/controllers/AdminPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/controllers/AdminPageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/new_buildings/command/AddressCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/new_buildings/command/AddressCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/new_buildings/command/ApartmentCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/new_buildings/command/ApartmentCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/new_buildings/converters/AddressCommandToAddress.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/new_buildings/converters/AddressCommandToAddress.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/new_buildings/converters/ApartmentCommandToApartment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/new_buildings/converters/ApartmentCommandToApartment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/new_buildings/converters/ApartmentToApartmentCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/new_buildings/converters/ApartmentToApartmentCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/new_buildings/dao/impl/ApartmentDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/new_buildings/dao/impl/ApartmentDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/new_buildings/entities/Address.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/new_buildings/entities/Address.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/new_buildings/services/impl/ApartmentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/new_buildings/services/impl/ApartmentServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/new_buildings/Address.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entities/new_buildings/Address.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/new_buildings/Apartment.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entities/new_buildings/Apartment.hbm.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company.war" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/controllers/AdminPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/controllers/AdminPageController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/entities/BaseEntity.hbm.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/entities/Person.hbm.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/entities/new_buildings/NewBuilding.hbm.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/templates/admin-pages/address.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/templates/admin-pages/address.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/new_buildings/command/AddressCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/new_buildings/command/AddressCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/new_buildings/command/ApartmentCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/new_buildings/command/ApartmentCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/new_buildings/converters/AddressCommandToAddress.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/new_buildings/converters/AddressCommandToAddress.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/new_buildings/converters/ApartmentCommandToApartment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/new_buildings/converters/ApartmentCommandToApartment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/new_buildings/converters/ApartmentToApartmentCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/new_buildings/converters/ApartmentToApartmentCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/new_buildings/dao/impl/ApartmentDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/new_buildings/dao/impl/ApartmentDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/new_buildings/entities/Address.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/new_buildings/entities/Address.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/new_buildings/services/impl/ApartmentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/new_buildings/services/impl/ApartmentServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/entities/new_buildings/Address.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/entities/new_buildings/Address.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/entities/new_buildings/Apartment.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/entities/new_buildings/Apartment.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/templates/admin-pages/apartment.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/templates/admin-pages/apartment.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -173,7 +200,7 @@
     <session id="-198968261">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="20" />
+          <entry key="project.closed" value="19" />
           <entry key="project.open.time.100" value="2" />
           <entry key="project.open.time.102" value="1" />
           <entry key="project.open.time.103" value="1" />
@@ -211,12 +238,11 @@
           <entry key="class" value="90" />
           <entry key="customers" value="2" />
           <entry key="fxml" value="1" />
-          <entry key="html" value="86" />
-          <entry key="java" value="625" />
+          <entry key="html" value="84" />
+          <entry key="java" value="617" />
           <entry key="js" value="3" />
           <entry key="new_buildings" value="3" />
-          <entry key="properties" value="1" />
-          <entry key="rnc" value="2" />
+          <entry key="rnc" value="1" />
           <entry key="sql" value="5" />
           <entry key="users" value="1" />
           <entry key="xml" value="192" />
@@ -228,12 +254,11 @@
         <counts>
           <entry key="CLASS" value="90" />
           <entry key="Database Element" value="14" />
-          <entry key="HTML" value="86" />
-          <entry key="JAVA" value="625" />
+          <entry key="HTML" value="84" />
+          <entry key="JAVA" value="617" />
           <entry key="JavaScript" value="3" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Properties" value="1" />
-          <entry key="RNG Compact" value="2" />
+          <entry key="RNG Compact" value="1" />
           <entry key="Scratch" value="5" />
           <entry key="UML" value="6" />
           <entry key="XML" value="193" />
@@ -244,8 +269,8 @@
         <counts>
           <entry key="LICENSE" value="1" />
           <entry key="dummy" value="205" />
-          <entry key="html" value="931" />
-          <entry key="java" value="5879" />
+          <entry key="html" value="913" />
+          <entry key="java" value="5485" />
           <entry key="sql" value="324" />
           <entry key="txt" value="87" />
           <entry key="xml" value="1224" />
@@ -253,8 +278,8 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="930" />
-          <entry key="JAVA" value="5879" />
+          <entry key="HTML" value="912" />
+          <entry key="JAVA" value="5485" />
           <entry key="PLAIN_TEXT" value="293" />
           <entry key="SQL" value="324" />
           <entry key="ThymeleafExpressions" value="1" />
@@ -268,74 +293,44 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/controllers/AdminPageController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="59" column="13" lean-forward="true" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
+            <state relative-caret-position="124">
+              <caret line="40" column="43" lean-forward="true" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.3.RELEASE/spring-web-5.0.3.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="219" selection-start-line="219" selection-end-line="219" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/admin-pages/address.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="771">
-              <caret line="364" column="63" lean-forward="true" selection-start-line="364" selection-start-column="63" selection-end-line="364" selection-end-column="63" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/controllers/MainPageController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/new_buildings/dao/interfaces/AddressDAO.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/controllers/SecurityController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/new_buildings/services/interfaces/AddressService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="73" column="28" lean-forward="true" selection-start-line="73" selection-start-column="28" selection-end-line="73" selection-end-column="28" />
+            <state relative-caret-position="75">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/new_buildings/controllers/NewBuildingController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/new_buildings/dao/impl/ApartmentDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="55" column="66" selection-start-line="55" selection-start-column="66" selection-end-line="55" selection-end-column="66" />
+            <state relative-caret-position="243">
+              <caret line="58" selection-start-line="58" selection-end-line="58" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/addHouse.html">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/admin-pages/apartment.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="25" lean-forward="true" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/new_buildings/command/AddressCommand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="122">
+              <caret line="359" column="85" lean-forward="true" selection-start-line="359" selection-start-column="85" selection-end-line="359" selection-end-column="85" />
             </state>
           </provider>
         </entry>
@@ -344,16 +339,43 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/new_buildings/services/impl/AddressServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
-              <caret line="27" column="18" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
+              <caret line="27" column="18" lean-forward="true" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/new_buildings/services/impl/ApartmentServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/new_buildings/entities/Address.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+            <state relative-caret-position="120">
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/new_buildings/converters/AddressToAddressCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/new_buildings/converters/AddressCommandToAddress.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/new_buildings/dao/impl/AddressDAOImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="333">
+              <caret line="44" column="4" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -390,6 +412,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/admin-pages/LICENSE" />
         <option value="$PROJECT_DIR$/src/main/java/com/new_buildings/controllers/NewBuildingController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/model/BaseEntity.java" />
         <option value="$PROJECT_DIR$/src/main/resources/entities/users/Admin.hbm.xml" />
@@ -434,12 +457,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/new_buildings/services/impl/ApartmentServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/parent/CrudService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/new_buildings/entities/Address.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/admin-pages/address.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/admin-pages/apartment.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/new_buildings/dao/impl/ApartmentDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/new_buildings/services/impl/AddressServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/new_buildings/dao/impl/AddressDAOImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/services/ImageService.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/admin-pages/address.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/controllers/AdminPageController.java" />
       </list>
     </option>
@@ -453,8 +475,8 @@
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
-    <option name="FILTER_INFO" value="false" />
-    <option name="FILTER_DEBUG" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="MavenImportPreferences">
@@ -489,9 +511,9 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="132" />
-    <option name="y" value="111" />
-    <option name="width" value="1346" />
+    <option name="x" value="134" />
+    <option name="y" value="76" />
+    <option name="width" value="1201" />
     <option name="height" value="556" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -566,15 +588,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="advertisements" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="realEstateBoard-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="realEstateBoard-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -585,26 +598,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="new_buildings" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="realEstateBoard-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="realEstateBoard-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="new_buildings" type="462c0819:PsiDirectoryNode" />
-              <item name="command" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="realEstateBoard-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="realEstateBoard-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="new_buildings" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="realEstateBoard-master" type="b2602c69:ProjectViewProjectNode" />
@@ -615,6 +608,38 @@
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="new_buildings" type="462c0819:PsiDirectoryNode" />
               <item name="converters" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="realEstateBoard-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="realEstateBoard-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="new_buildings" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="realEstateBoard-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="realEstateBoard-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="new_buildings" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="realEstateBoard-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="realEstateBoard-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="new_buildings" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="interfaces" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="realEstateBoard-master" type="b2602c69:ProjectViewProjectNode" />
@@ -646,6 +671,41 @@
               <item name="new_buildings" type="462c0819:PsiDirectoryNode" />
               <item name="services" type="462c0819:PsiDirectoryNode" />
               <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="realEstateBoard-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="realEstateBoard-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="new_buildings" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+              <item name="interfaces" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="realEstateBoard-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="realEstateBoard-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="parent" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="realEstateBoard-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="realEstateBoard-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="realEstateBoard-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="realEstateBoard-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="entities" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="realEstateBoard-master" type="b2602c69:ProjectViewProjectNode" />
@@ -707,13 +767,13 @@
     <property name="SearchEverywhereHistoryKey" value="IdentifierGeneration&#9;PSI&#9;JAVA://org.hibernate.id.IdentifierGenerationException&#10;.SpelEvaluationException&#9;PSI&#9;JAVA://org.springframework.expression.spel.SpelEvaluationException&#10;org.springframework.expression.spel&#9;PSI&#9;JAVA://org.springframework.expression.spel.standard.SpelExpressionParser&#10;BeanFactory&#9;PSI&#9;JAVA://org.apache.commons.configuration.beanutils.BeanFactory&#10;cleardb&#9;null&#9;null&#10;map systemEnvironment&#9;null&#9;null&#10;map&#9;PSI&#9;JAVA://java.util.Map" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560894996404" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560885553379" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../java projects/SpringFileUpload" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../spring-hibernate-one-to-many-default-master" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -981,14 +1041,14 @@
       <workItem from="1560611725781" duration="580000" />
       <workItem from="1560613936793" duration="6239000" />
       <workItem from="1560684958459" duration="8049000" />
-      <workItem from="1560881522405" duration="12138000" />
+      <workItem from="1560881522405" duration="3859000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="504630000" />
+    <option name="totallyTimeSpent" value="496351000" />
   </component>
-  <component name="TodoView" selected-index="3">
+  <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
     </todo-panel>
@@ -999,6 +1059,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="30" width="1366" height="738" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="UI Designer" order="1" />
@@ -1011,19 +1072,19 @@
       <window_info id="Persistence" order="8" sideWeight="0.51480263" side_tool="true" weight="0.2931818" />
       <window_info anchor="bottom" id="Spring" order="0" weight="0.3295082" />
       <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.49848485" weight="0.34868422" />
-      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50151515" side_tool="true" weight="0.5707237" />
+      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50151515" side_tool="true" weight="0.35197368" />
       <window_info anchor="bottom" id="Java Enterprise" order="3" weight="0.32894737" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.32730263" />
       <window_info anchor="bottom" id="Database Changes" order="6" weight="0.32894737" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49924242" weight="0.32894737" />
-      <window_info anchor="bottom" id="Run" order="8" sideWeight="0.49621212" weight="0.60855263" />
+      <window_info active="true" anchor="bottom" id="Run" order="8" sideWeight="0.49621212" visible="true" weight="0.60855263" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.40953946" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
       <window_info anchor="bottom" id="Application Servers" order="12" weight="0.32894737" />
-      <window_info anchor="bottom" id="TODO" order="13" weight="0.32894737" />
-      <window_info anchor="bottom" id="Messages" order="14" sideWeight="0.49848485" weight="0.5707237" />
+      <window_info anchor="bottom" id="TODO" order="13" weight="0.3295082" />
+      <window_info anchor="bottom" id="Messages" order="14" sideWeight="0.49924242" weight="0.5707237" />
       <window_info anchor="bottom" id="Database Console" order="15" weight="0.3295082" />
       <window_info anchor="bottom" id="Inspection Results" order="16" weight="0.3295082" />
       <window_info anchor="bottom" id="Hibernate Console" order="17" weight="0.32894737" />
@@ -1128,14 +1189,6 @@
           <properties />
           <option name="timeStamp" value="12" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/com/controllers/AdminPageController.java</url>
-          <line>54</line>
-          <properties class="com.controllers.AdminPageController" method="saveOrUpdate">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -1153,6 +1206,20 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.4.RELEASE/spring-webmvc-5.0.4.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="73" selection-start-line="73" selection-end-line="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.4.RELEASE/spring-webmvc-5.0.4.RELEASE.jar!/org/springframework/web/servlet/mvc/method/AbstractHandlerMethodAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/editHouse.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
@@ -1183,6 +1250,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="141" selection-start-line="141" selection-end-line="141" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.3.RELEASE/spring-web-5.0.3.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="219" selection-start-line="219" selection-end-line="219" />
         </state>
       </provider>
     </entry>
@@ -1226,6 +1300,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/about.html">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/addHouse.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="69" selection-start-line="22" selection-start-column="69" selection-end-line="22" selection-end-column="69" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -1295,6 +1376,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/new_buildings/controllers/NewBuildingController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="79" column="87" selection-start-line="79" selection-start-column="87" selection-end-line="79" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/new_buildings/command/ApartmentCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -1305,10 +1393,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/new_buildings/command/AddressCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/new_buildings/converters/ApartmentCommandToApartment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="29" column="76" selection-start-line="29" selection-start-column="76" selection-end-line="29" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/web-forms2.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="507" column="22" selection-start-line="507" selection-start-column="22" selection-end-line="507" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -1326,6 +1431,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/controllers/SecurityController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="73" column="28" lean-forward="true" selection-start-line="73" selection-start-column="28" selection-end-line="73" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/admin-pages/forgot-password.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1336,6 +1448,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/controllers/MainPageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/parent/CrudService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -1343,10 +1462,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/new_buildings/entities/Apartment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="18" column="17" lean-forward="true" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/new_buildings/services/interfaces/ApartmentService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/new_buildings/services/impl/ApartmentServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -1364,6 +1497,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/admin-pages/address.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="390" column="82" selection-start-line="390" selection-start-column="82" selection-end-line="390" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/admin-pages/apartment.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="122">
@@ -1375,6 +1515,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/new_buildings/dao/impl/ApartmentDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/new_buildings/entities/Address.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1399,6 +1553,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/new_buildings/services/impl/AddressServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="27" column="18" lean-forward="true" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/new_buildings/dao/impl/AddressDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="333">
@@ -1406,118 +1567,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/new_buildings/dao/impl/ApartmentDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="58" selection-start-line="58" selection-end-line="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/services/ImageService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/new_buildings/entities/Apartment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-oracle/jre/lib/resources.jar!/com/sun/org/apache/xml/internal/serializer/HTMLEntities.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2444">
-          <caret line="201" selection-start-line="201" selection-end-line="201" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/new_buildings/entities/Address.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/web-forms2.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="604" column="16" selection-start-line="604" selection-start-column="16" selection-end-line="604" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/new_buildings/services/impl/AddressServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="27" column="18" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/new_buildings/services/impl/ApartmentServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/controllers/SecurityController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="73" column="28" lean-forward="true" selection-start-line="73" selection-start-column="28" selection-end-line="73" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/controllers/MainPageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/new_buildings/controllers/NewBuildingController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="55" column="66" selection-start-line="55" selection-start-column="66" selection-end-line="55" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/addHouse.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="25" lean-forward="true" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/admin-pages/address.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="771">
-          <caret line="364" column="63" lean-forward="true" selection-start-line="364" selection-start-column="63" selection-end-line="364" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.3.RELEASE/spring-web-5.0.3.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="219" selection-start-line="219" selection-end-line="219" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/new_buildings/command/AddressCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/controllers/AdminPageController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="59" column="13" lean-forward="true" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
+        <state relative-caret-position="124">
+          <caret line="40" column="43" lean-forward="true" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
         </state>
       </provider>
     </entry>
