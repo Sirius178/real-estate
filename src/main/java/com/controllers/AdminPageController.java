@@ -53,8 +53,7 @@ public class AdminPageController {
 
     @PostMapping(value = "/save-address")
     public String saveOrUpdate(@ModelAttribute AddressCommand addressCommand){
-<<<<<<< Updated upstream
-=======
+
 //        try{
 //            if (multipartFile == null){
 //                return null;
@@ -71,7 +70,7 @@ public class AdminPageController {
 //            e.printStackTrace();
 //        }
 //        addressCommand.setAddress(address);
->>>>>>> Stashed changes
+
         addressService.saveAddressCommand(addressCommand);
         return "redirect:/address";
     }
