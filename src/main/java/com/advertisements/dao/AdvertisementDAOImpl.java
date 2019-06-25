@@ -1,18 +1,30 @@
 package com.advertisements.dao;
 
 import com.advertisements.entities.Advertisement;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
 
+@Transactional
 @Repository
 public class AdvertisementDAOImpl implements AdvertisementDAO {
+
+    private SessionFactory sessionFactory;
+
+    public AdvertisementDAOImpl(SessionFactory sessionFactory) {
+        this.sessionFactory = sessionFactory;
+    }
 
 
     @Override
     public List<Advertisement> findAll() {
-        return null;
+        Session session = sessionFactory.getCurrentSession();
+        List<Advertisement> advertisements = session.createNativeQuery("select * from advertisements",Advertisement.class).list();
+        return advertisements;
     }
 
     @Override
@@ -22,7 +34,9 @@ public class AdvertisementDAOImpl implements AdvertisementDAO {
 
     @Override
     public Advertisement save(Advertisement object) {
-        return null;
+        Session session = sessionFactory.getCurrentSession();
+        session.save(object);
+        return object;
     }
 
     @Override
@@ -30,8 +44,5 @@ public class AdvertisementDAOImpl implements AdvertisementDAO {
 
     }
 
-    @Override
-    public void deleteById(Long aLong) {
 
-    }
 }

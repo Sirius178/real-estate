@@ -25,7 +25,27 @@
         <property name="repairs" column="repairs"/>
         <property name="square" column="square"/>
         <property name="title" column="title"/>
-        <one-to-one name="addition" class="com.advertisements.entities.Addition"/>
+        <property name="animal" column="animal"/>
+        <property name="balcony" column="balcony"/>
+        <property name="bath" column="bath"/>
+        <property name="combinedBathroom" column="combined_bathroom"/>
+        <property name="conditioner" column="conditioner"/>
+        <property name="deposit" column="deposit"/>
+        <property name="furniture" column="furniture"/>
+        <property name="internet" column="internet"/>
+        <property name="lift" column="lift"/>
+        <property name="loggia" column="loggia"/>
+        <property name="nameOfComplex" column="name_of_complex"/>
+        <property name="phone" column="phone"/>
+        <property name="ramp" column="ramp"/>
+        <property name="separateBathroom" column="separate_bathroom"/>
+        <property name="shower" column="shower"/>
+        <property name="squareOfKitchen" column="square_of_kitchen"/>
+        <property name="squareOfLiving" column="square_of_living"/>
+        <property name="tv" column="tv"/>
+        <property name="windowInside" column="windows_inside"/>
+        <property name="windowOutside" column="windows_outside"/>
+        <property name="yearOfConstruction" column="year_of_construction"/>
 
     </class>
 </hibernate-mapping>

@@ -47,16 +47,16 @@ public class ApartmentDAOImpl implements ApartmentDAO {
 ////        List<Apartment> newBuildings  = session.createQuery("from new_buildings").list();
 //        return newBuildings;
 //    }
-    @Transactional
     @Override
+    @Transactional
     public List<Apartment> findAll() {
         session = sessionFactory.getCurrentSession();
         List<Apartment> apartments = session.createNativeQuery("select * from apartments", Apartment.class).list();
-        System.out.println(apartments);
+
         return apartments;
     }
 
-
+    @Transactional
     public Apartment findById(Long aLong) {
         session = sessionFactory.getCurrentSession();
         Apartment apartment = session.find(Apartment.class, aLong);
@@ -95,5 +95,12 @@ public class ApartmentDAOImpl implements ApartmentDAO {
         session.save(object);
 
         return object;
+    }
+
+    @Transactional
+    public List<Apartment> findAllByID(long id) {
+        session = sessionFactory.getCurrentSession();
+        List<Apartment> apartments = session.createNativeQuery("select * from apartments where address_id =" + id, Apartment.class).list();
+        return apartments;
     }
 }

@@ -1,24 +1,27 @@
 package com.users.services.impl;
 
-import com.new_buildings.entities.Apartment;
 import com.users.dao.interfaces.CustomerDAO;
 import com.users.entities.Customer;
 import com.users.services.Postman;
 import com.users.services.interfaces.CustomerService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
 
 import java.util.List;
 
 @Service
 public class CustomerServiceImpl implements CustomerService {
-    @Autowired
-    CustomerDAO customerDAO;
+
+    private CustomerDAO customerDAO;
+
+    public CustomerServiceImpl(CustomerDAO customerDAO) {
+        this.customerDAO = customerDAO;
+    }
 
     @Override
-    public void sendEmail(Customer customer, Apartment apartment) {
-        Postman postman = new Postman("sergeipopof178@Gmail.com", "Sirius178!");
-        postman.send("Заявка",customer, apartment,"sergeipopof178@Gmail.com", "siriusonestar@yandex.ru");
+    public void sendEmail(Customer customer) {
+        Postman postman = new Postman("sergeipopof178@gmail.com", "Sirius178!");
+        postman.send("Заявка на осмотр", customer,"sergeipopof178@gmail.com", "siriusonestar@yandex.ru");
     }
 
     @Override
@@ -28,12 +31,12 @@ public class CustomerServiceImpl implements CustomerService {
 
     @Override
     public Customer findById(Long aLong) {
-        return (Customer) customerDAO.findById(aLong);
+        return  customerDAO.findById(aLong);
     }
 
-    @Override
     public Customer save(Customer object) {
-        return null;
+        Customer customer = customerDAO.save(object);
+        return customer;
     }
 
     @Override
@@ -41,8 +44,4 @@ public class CustomerServiceImpl implements CustomerService {
 
     }
 
-    @Override
-    public void deleteById(Long aLong) {
-
-    }
 }

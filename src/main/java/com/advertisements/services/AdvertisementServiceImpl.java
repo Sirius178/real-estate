@@ -1,15 +1,20 @@
 package com.advertisements.services;
 
+import com.advertisements.dao.AdvertisementDAO;
 import com.advertisements.entities.Advertisement;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Set;
 
 @Service
 public class AdvertisementServiceImpl implements AdvertisementService {
 
+    private AdvertisementDAO advertisementDAO;
 
+    public AdvertisementServiceImpl(AdvertisementDAO advertisementDAO) {
+        this.advertisementDAO = advertisementDAO;
+    }
+    //       todo service
     @Override
     public List<Advertisement> findAll() {
         return null;
@@ -22,7 +27,8 @@ public class AdvertisementServiceImpl implements AdvertisementService {
 
     @Override
     public Advertisement save(Advertisement object) {
-        return null;
+        advertisementDAO.save(object);
+        return object;
     }
 
     @Override
@@ -30,8 +36,4 @@ public class AdvertisementServiceImpl implements AdvertisementService {
 
     }
 
-    @Override
-    public void deleteById(Long aLong) {
-
-    }
 }

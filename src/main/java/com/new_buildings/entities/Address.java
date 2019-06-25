@@ -17,4 +17,11 @@ public class Address extends BaseEntity {
     private Byte[] image;
 
 
+    @Override
+    public String toString() {
+        return "Address{" +
+                "address='" + address + '\'' +
+                ", image=" + Arrays.toString(image) +
+                '}';
+    }
 }

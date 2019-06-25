@@ -43,8 +43,4 @@ public class UserDAOImpl implements UserDAO {
 
     }
 
-    @Override
-    public void deleteById(Long aLong) {
-
-    }
 }

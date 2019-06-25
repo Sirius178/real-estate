@@ -1,123 +1,44 @@
 package com.new_buildings.controllers;
 
+import com.new_buildings.entities.Apartment;
+import com.new_buildings.services.interfaces.AddressService;
 import com.new_buildings.services.interfaces.ApartmentService;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+
+import java.security.acl.LastOwnerException;
 
 @Controller
 public class NewBuildingController {
 
     private ApartmentService apartmentService;
+    private AddressService addressService;
 
-    public NewBuildingController(ApartmentService apartmentService) {
+
+    public NewBuildingController(ApartmentService apartmentService, AddressService addressService) {
         this.apartmentService = apartmentService;
+        this.addressService = addressService;
     }
 
-    @GetMapping("/new_building")
-    public String newBuildingPage(){
-        return "new_building";
+    @GetMapping("/address")
+    public String addressPage(Model model){
+        model.addAttribute("listOfAddress",addressService.findAll());
+        return "new_building_address";
     }
 
+    @GetMapping(value = "address/{id}/apartment")
+    public String apartmentPage(@PathVariable Long id, Model model){
+        model.addAttribute("listOfApartment", apartmentService.findAllByID(id));
 
+        return "new_building_apartment";
+    }
 
-//    @Qualifier("newBuildingServiceImpl")
-//    @Autowired
-//    private ApartmentService service;
-//
-//    @RequestMapping(value = "/newBuildingAdmin", method = RequestMethod.GET)
-//    public ModelAndView newBuildingAdmin(){
-//        ModelAndView modelAndView = new ModelAndView("admin-pages/index");
-//        modelAndView.addObject("listOfHouseInNewComplex", service.listOfHouseInNewComplex());
-//        return modelAndView;
-//    }
-//
-//    @RequestMapping(value = "/add", method = RequestMethod.GET)
-//    public ModelAndView addPage(){
-//        ModelAndView modelAndView = new ModelAndView("addHouse");
-//        return modelAndView;
-//    }
-//
-//    @RequestMapping(value = "/apartment", method = RequestMethod.GET)
-//    public ModelAndView newBuildingPage(){
-//        ModelAndView modelAndView = new ModelAndView("apartment");
-//        modelAndView.addObject("listOfHouseInNewComplex", service.listOfHouseInNewComplex());
-//        return modelAndView;
-//    }
-//
-//    @RequestMapping(value = "/addHouseInNewComplex" , method = RequestMethod.POST)
-//    public ModelAndView houseAdd(@RequestParam(value = "nameOfComplex") String nameOfComplex,
-//                                 @RequestParam(value = "nameOfHouse") String nameOfHouse,
-//                                 @RequestParam(value = "floor") int floor,
-//                                 @RequestParam(value =  "numberOfApartment") int numberOfApartment,
-//                                 @RequestParam(value =  "numberOfRoom") int numberOfRoom,
-//                                 @RequestParam(value = "square") double square,
-//                                 @RequestParam(value = "pricePerSquare") int pricePerSquare,
-//                                 @RequestParam(value = "fullPrice") int fullPrice,
-//                                 @RequestParam(value = "status") Status status,
-//                                 Apartment apartment) throws Exception{
-//        ModelAndView modelAndView = new ModelAndView("redirect:/apartment");
-//        try {
-//            apartment.setNameOfComplex(nameOfComplex);
-//            apartment.setNameOfHouse(nameOfHouse);
-//            apartment.setFloor(floor);
-//            apartment.setNumberOfApartment(numberOfApartment);
-//            apartment.setNumberOfRoom(numberOfRoom);
-//            apartment.setSquare(square);
-//            apartment.setPricePerSquare(pricePerSquare);
-//            apartment.setFullPrice(fullPrice);
-//            apartment.setStatus(status);
-//            service.addHouse(apartment);
-//            modelAndView.addObject("addMessage","House added " + apartment.getNameOfComplex());
-//        }catch (Exception ex){
-//            ex.printStackTrace();
-//        }finally {
-//            return modelAndView;
-//        }
-//
-//    }
-//
-//    @RequestMapping(value = "/removeHouseFromNewComplex/{idHouse}", method = RequestMethod.GET)
-//    public String removeHouseFromNewComplex(@PathVariable("idHouse") int idHouse, Apartment apartment){
-//        apartment.setIdHouse(idHouse);
-//        service.deleteHouseByID(apartment);
-//        return "redirect:/";
-//    }
-//    @RequestMapping(value = "/edit/{idHouse}", method = RequestMethod.GET)
-//    public ModelAndView edit(@PathVariable("idHouse") int idHouse) {
-//        ModelAndView modelAndView = new ModelAndView("editHouse");
-//        Apartment apartment = service.getHouseByID(idHouse);
-//        modelAndView.addObject("houseInNewComplex", apartment);
-//        return modelAndView;
-//    }
-//    @RequestMapping(value = "/updateHouseInNewComplex/{idHouse}", method = RequestMethod.POST)
-//    public ModelAndView updateHouseInNewComplex(@PathVariable("idHouse") int idHouse,
-//                                                @RequestParam(value = "nameOfComplex") String nameOfComplex,
-//                                                @RequestParam(value = "nameOfHouse") String nameOfHouse,
-//                                                @RequestParam(value = "floor") int floor,
-//                                                @RequestParam(value =  "numberOfApartment") int numberOfApartment,
-//                                                @RequestParam(value =  "numberOfRoom") int numberOfRoom,
-//                                                @RequestParam(value = "square") double square,
-//                                                @RequestParam(value = "pricePerSquare") int pricePerSquare,
-//                                                @RequestParam(value = "fullPrice") int fullPrice,
-//                                                @RequestParam(value = "status") Status status,
-//                                                Apartment apartment){
-//        ModelAndView modelAndView = new ModelAndView("redirect:/");
-//        try{
-//            apartment.setNameOfComplex(nameOfComplex);
-//            apartment.setNameOfHouse(nameOfHouse);
-//            apartment.setFloor(floor);
-//            apartment.setNumberOfApartment(numberOfApartment);
-//            apartment.setNumberOfRoom(numberOfRoom);
-//            apartment.setSquare(square);
-//            apartment.setPricePerSquare(pricePerSquare);
-//            apartment.setFullPrice(fullPrice);
-//            apartment.setStatus(status);
-//            apartment.setIdHouse(idHouse);
-//            service.updateHouseByID(apartment);
-//        }catch (Exception ex){
-//            ex.printStackTrace();
-//        }
-//        return modelAndView;
-//    }
+    @GetMapping("/apartment/{id}/order")
+    public String orderPage(@PathVariable Long id, Model model){
+        model.addAttribute("apartment", apartmentService.findById(id));
+        return "new_building_order";
+    }
+
 
 }

@@ -354,10 +354,15 @@
                 <h1 class="h3 mb-2 text-gray-800">Tables</h1>
 
                 <section class="probootstrap-section probootstrap-section-lighter">
+                    
 
                     <div>
                         <label>Добавить новостройку</label>
+<<<<<<< Updated upstream
                         <form action="/save-address" , method="post">
+=======
+                        <form action="/save-address"  method="post" >
+>>>>>>> Stashed changes
                             <div>
                                 <a>address</a><input type="text" name="address" id="address"><br/>
                                 <a>image</a> <input type="file" name="image" id="image"><br/>
@@ -388,7 +393,7 @@
                                 <tr th:each="address : ${listOfAddresses}">
                                     <td th:text="${address.address}"></td>
                                     <td th:text="${address.image}"></td>
-                                    <td><a th:href="@{'/apartments/' + ${address.id}}"> add </a></td>
+                                    <td><a th:href="@{'/admin/apartments/' + ${address.id}}"> add </a></td>
                                 </tr>
                                 </tbody>
                             </table>

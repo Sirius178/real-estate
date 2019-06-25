@@ -5,16 +5,16 @@ import com.advertisements.entities.enums.*;
 import com.parent.BaseEntity;
 import lombok.*;
 
+import javax.persistence.Entity;
 import java.time.LocalDateTime;
 
 
-@Getter
-@Setter
-@NoArgsConstructor
-@AllArgsConstructor
-@Builder
-
+@Data
+@Entity
 public class Advertisement extends BaseEntity {
+
+    //todo 1 add String washer
+    //todo 2 correct design add advertisement
 
     private String title;
     private LocalDateTime dateTime;
@@ -35,7 +35,26 @@ public class Advertisement extends BaseEntity {
     private Repairs repairs;
     private int floor;
     private double square;
-    private Addition addition;
-
+    private int deposit;
+    private String nameOfComplex;
+    private int yearOfConstruction;
+    private double squareOfLiving;
+    private double squareOfKitchen;
+    private boolean animal;
+    private boolean furniture;
+    private boolean windowInside;
+    private boolean windowOutside;
+    private boolean balcony;
+    private boolean loggia;
+    private boolean tv;
+    private boolean phone;
+    private boolean bath;
+    private boolean shower;
+    private boolean conditioner;
+    private boolean internet;
+    private boolean separateBathroom;
+    private boolean combinedBathroom;
+    private boolean lift;
+    private boolean ramp;
 
 }

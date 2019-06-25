@@ -20,7 +20,7 @@ public class AddressDAOImpl implements AddressDAO {
         this.sessionFactory = sessionFactory;
     }
 
-    private static Session session;
+    private Session session;
 
     
     public Address findCommandById(Long id) {
@@ -57,11 +57,9 @@ public class AddressDAOImpl implements AddressDAO {
     @Transactional
     @Override
     public void delete(Address object) {
+        session = sessionFactory.getCurrentSession();
+        session.delete(object);
 
     }
-    @Transactional
-    @Override
-    public void deleteById(Long aLong) {
 
-    }
 }
