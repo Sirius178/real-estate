@@ -7,9 +7,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="23a85b11-6cec-465c-a1c3-9dc900f17bff" name="Default Changelist" comment="added table">
+<<<<<<< Updated upstream
+=======
+      <change afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/templates/new_building_address.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/templates/new_building_apartment.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/resources/css/hide-select.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/resources/js/hide-select.js" afterDir="false" />
+>>>>>>> Stashed changes
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/ffc07326-9262-4efa-85d2-32f6e9f72c5e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ffc07326-9262-4efa-85d2-32f6e9f72c5e.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/advertisements/controllers/AdvertisementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/advertisements/controllers/AdvertisementController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/advertisements/dao/AdvertisementDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/advertisements/dao/AdvertisementDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/advertisements/entities/Advertisement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/advertisements/entities/Advertisement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/advertisements/services/AdvertisementServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/advertisements/services/AdvertisementServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/controllers/AdminPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controllers/AdminPageController.java" afterDir="false" />
+<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/src/main/java/com/new_buildings/command/AddressCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/new_buildings/command/AddressCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/new_buildings/command/ApartmentCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/new_buildings/command/ApartmentCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/new_buildings/converters/AddressCommandToAddress.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/new_buildings/converters/AddressCommandToAddress.java" afterDir="false" />
@@ -48,6 +60,133 @@
       <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/entities/new_buildings/Address.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/entities/new_buildings/Address.hbm.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/entities/new_buildings/Apartment.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/entities/new_buildings/Apartment.hbm.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/templates/admin-pages/apartment.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/templates/admin-pages/apartment.html" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/controllers/MainPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controllers/MainPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/new_buildings/controllers/NewBuildingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/new_buildings/controllers/NewBuildingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/new_buildings/dao/impl/AddressDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/new_buildings/dao/impl/AddressDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/new_buildings/dao/impl/ApartmentDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/new_buildings/dao/impl/ApartmentDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/new_buildings/dao/interfaces/ApartmentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/new_buildings/dao/interfaces/ApartmentDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/new_buildings/entities/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/new_buildings/entities/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/new_buildings/entities/Apartment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/new_buildings/entities/Apartment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/new_buildings/services/impl/AddressServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/new_buildings/services/impl/AddressServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/new_buildings/services/impl/ApartmentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/new_buildings/services/impl/ApartmentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/new_buildings/services/interfaces/ApartmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/new_buildings/services/interfaces/ApartmentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parent/CrudService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parent/CrudService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parent/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parent/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/users/controllers/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/users/controllers/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/users/dao/impl/AdminDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/users/dao/impl/AdminDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/users/dao/impl/CustomerDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/users/dao/impl/CustomerDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/users/dao/impl/UserDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/users/dao/impl/UserDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/users/dao/interfaces/CustomerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/users/dao/interfaces/CustomerDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/users/entities/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/users/entities/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/users/services/Postman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/users/services/Postman.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/users/services/impl/AdminServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/users/services/impl/AdminServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/users/services/impl/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/users/services/impl/CustomerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/users/services/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/users/services/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/users/services/interfaces/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/users/services/interfaces/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/entities/advertisements/Advertisement.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/entities/advertisements/Advertisement.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/add_advertisement.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/add_advertisement.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/admin-pages/address.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/admin-pages/address.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/admin-pages/apartment.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/admin-pages/apartment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/admin-pages/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/admin-pages/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/fragments/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/fragments/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/fragments/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/fragments/head.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/fragments/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/fragments/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/new_building_address.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/new_building_address.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/new_building_apartment.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/new_building_apartment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/new_building_order.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/new_building_order.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/hide-select.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/hide-select.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/hide-select.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/hide-select.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/advertisements/controllers/AdvertisementController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/advertisements/controllers/AdvertisementController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/advertisements/dao/AdvertisementDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/advertisements/dao/AdvertisementDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/advertisements/entities/Addition$AdditionBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/advertisements/entities/Addition.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/advertisements/entities/Advertisement$AdvertisementBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/advertisements/entities/Advertisement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/advertisements/entities/Advertisement.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/advertisements/services/AdvertisementServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/advertisements/services/AdvertisementServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/controllers/AdminPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/controllers/AdminPageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/controllers/MainPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/controllers/MainPageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/new_buildings/controllers/NewBuildingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/new_buildings/controllers/NewBuildingController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/new_buildings/dao/impl/AddressDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/new_buildings/dao/impl/AddressDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/new_buildings/dao/impl/ApartmentDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/new_buildings/dao/impl/ApartmentDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/new_buildings/dao/interfaces/ApartmentDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/new_buildings/dao/interfaces/ApartmentDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/new_buildings/entities/Address.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/new_buildings/entities/Address.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/new_buildings/entities/Apartment$ApartmentBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/new_buildings/entities/Apartment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/new_buildings/entities/Apartment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/new_buildings/services/impl/AddressServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/new_buildings/services/impl/AddressServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/new_buildings/services/impl/ApartmentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/new_buildings/services/impl/ApartmentServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/new_buildings/services/interfaces/ApartmentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/new_buildings/services/interfaces/ApartmentService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/parent/CrudService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/parent/CrudService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/parent/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/parent/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/users/controllers/CustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/users/controllers/CustomerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/users/dao/impl/AdminDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/users/dao/impl/AdminDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/users/dao/impl/CustomerDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/users/dao/impl/CustomerDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/users/dao/impl/UserDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/users/dao/impl/UserDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/users/dao/interfaces/CustomerDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/users/dao/interfaces/CustomerDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/users/entities/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/users/entities/Customer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/users/services/Postman$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/users/services/Postman$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/users/services/Postman.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/users/services/Postman.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/users/services/impl/AdminServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/users/services/impl/AdminServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/users/services/impl/CustomerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/users/services/impl/CustomerServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/users/services/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/users/services/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/users/services/interfaces/CustomerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/users/services/interfaces/CustomerService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/advertisements/Addition.hbm.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/advertisements/Advertisement.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entities/advertisements/Advertisement.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/advertisements/controllers/AdvertisementController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/advertisements/controllers/AdvertisementController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/advertisements/dao/AdvertisementDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/advertisements/dao/AdvertisementDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/advertisements/entities/Addition$AdditionBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/advertisements/entities/Addition.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/advertisements/entities/Advertisement$AdvertisementBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/advertisements/entities/Advertisement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/advertisements/entities/Advertisement.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/advertisements/services/AdvertisementServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/advertisements/services/AdvertisementServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/controllers/AdminPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/controllers/AdminPageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/controllers/MainPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/controllers/MainPageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/new_buildings/controllers/NewBuildingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/new_buildings/controllers/NewBuildingController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/new_buildings/dao/impl/AddressDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/new_buildings/dao/impl/AddressDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/new_buildings/dao/impl/ApartmentDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/new_buildings/dao/impl/ApartmentDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/new_buildings/dao/interfaces/ApartmentDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/new_buildings/dao/interfaces/ApartmentDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/new_buildings/entities/Address.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/new_buildings/entities/Address.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/new_buildings/entities/Apartment$ApartmentBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/new_buildings/entities/Apartment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/new_buildings/entities/Apartment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/new_buildings/services/impl/AddressServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/new_buildings/services/impl/AddressServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/new_buildings/services/impl/ApartmentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/new_buildings/services/impl/ApartmentServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/new_buildings/services/interfaces/ApartmentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/new_buildings/services/interfaces/ApartmentService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/parent/CrudService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/parent/CrudService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/parent/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/parent/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/users/controllers/CustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/users/controllers/CustomerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/users/dao/impl/AdminDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/users/dao/impl/AdminDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/users/dao/impl/CustomerDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/users/dao/impl/CustomerDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/users/dao/impl/UserDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/users/dao/impl/UserDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/users/dao/interfaces/CustomerDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/users/dao/interfaces/CustomerDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/users/entities/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/users/entities/Customer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/users/services/Postman$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/users/services/Postman$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/users/services/Postman.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/users/services/Postman.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/users/services/impl/AdminServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/users/services/impl/AdminServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/users/services/impl/CustomerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/users/services/impl/CustomerServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/users/services/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/users/services/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/users/services/interfaces/CustomerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/users/services/interfaces/CustomerService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/entities/advertisements/Addition.hbm.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/entities/advertisements/Advertisement.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/entities/advertisements/Advertisement.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/templates/addHouse.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/templates/addPoster.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/templates/add_advertisement.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/templates/admin-pages/address.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/templates/admin-pages/address.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/templates/admin-pages/apartment.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/templates/admin-pages/apartment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/templates/admin-pages/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/templates/admin-pages/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/templates/agents.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/templates/editHouse.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/templates/fragments/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/templates/fragments/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/templates/fragments/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/templates/fragments/head.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/templates/fragments/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/templates/fragments/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/templates/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/templates/newBuildingAdmin.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/templates/new_building.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/templates/order.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/templates/new_building_order.html" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -89,7 +228,7 @@
         <item name="real-estate-site@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="real-estate-site: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="apartments: table" type="98d5ac3d:MysqlImplModel$Table" />
+        <item name="advertisements: table" type="98d5ac3d:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -200,7 +339,11 @@
     <session id="-198968261">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+<<<<<<< Updated upstream
           <entry key="project.closed" value="19" />
+=======
+          <entry key="project.closed" value="22" />
+>>>>>>> Stashed changes
           <entry key="project.open.time.100" value="2" />
           <entry key="project.open.time.102" value="1" />
           <entry key="project.open.time.103" value="1" />
@@ -217,13 +360,15 @@
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.3" value="3" />
+          <entry key="project.open.time.61" value="1" />
           <entry key="project.open.time.63" value="1" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.88" value="1" />
-          <entry key="project.open.time.94" value="1" />
+          <entry key="project.open.time.94" value="2" />
           <entry key="project.open.time.95" value="2" />
+          <entry key="project.open.time.97" value="1" />
           <entry key="project.open.time.99" value="1" />
-          <entry key="project.opened" value="26" />
+          <entry key="project.opened" value="29" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -233,149 +378,253 @@
           <entry key="SCHEMA:real-estate-site" value="1" />
           <entry key="additions" value="2" />
           <entry key="admins" value="2" />
-          <entry key="advertisements" value="3" />
+          <entry key="advertisements" value="5" />
           <entry key="apartments" value="1" />
-          <entry key="class" value="90" />
+          <entry key="class" value="111" />
+          <entry key="css" value="2" />
           <entry key="customers" value="2" />
           <entry key="fxml" value="1" />
+<<<<<<< Updated upstream
           <entry key="html" value="84" />
           <entry key="java" value="617" />
           <entry key="js" value="3" />
+=======
+          <entry key="html" value="142" />
+          <entry key="java" value="842" />
+          <entry key="js" value="4" />
+>>>>>>> Stashed changes
           <entry key="new_buildings" value="3" />
           <entry key="rnc" value="1" />
           <entry key="sql" value="5" />
           <entry key="users" value="1" />
-          <entry key="xml" value="192" />
+          <entry key="xml" value="206" />
           <entry key="xml/realEstateBoard-master/hibernate/Hibernate/PersistenceModel" value="4" />
           <entry key="yml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+<<<<<<< Updated upstream
           <entry key="CLASS" value="90" />
           <entry key="Database Element" value="14" />
           <entry key="HTML" value="84" />
           <entry key="JAVA" value="617" />
           <entry key="JavaScript" value="3" />
+=======
+          <entry key="CLASS" value="111" />
+          <entry key="CSS" value="2" />
+          <entry key="Database Element" value="16" />
+          <entry key="HTML" value="142" />
+          <entry key="JAVA" value="842" />
+          <entry key="JavaScript" value="4" />
+>>>>>>> Stashed changes
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="RNG Compact" value="1" />
           <entry key="Scratch" value="5" />
           <entry key="UML" value="6" />
-          <entry key="XML" value="193" />
+          <entry key="XML" value="207" />
           <entry key="YAML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="LICENSE" value="1" />
+          <entry key="css" value="54" />
           <entry key="dummy" value="205" />
+<<<<<<< Updated upstream
           <entry key="html" value="913" />
           <entry key="java" value="5485" />
           <entry key="sql" value="324" />
+=======
+          <entry key="html" value="1872" />
+          <entry key="java" value="8344" />
+          <entry key="js" value="116" />
+          <entry key="sql" value="331" />
+>>>>>>> Stashed changes
           <entry key="txt" value="87" />
-          <entry key="xml" value="1224" />
+          <entry key="xml" value="1225" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+<<<<<<< Updated upstream
           <entry key="HTML" value="912" />
           <entry key="JAVA" value="5485" />
+=======
+          <entry key="CSS" value="54" />
+          <entry key="HTML" value="1869" />
+          <entry key="JAVA" value="8344" />
+          <entry key="JavaScript" value="116" />
+>>>>>>> Stashed changes
           <entry key="PLAIN_TEXT" value="293" />
-          <entry key="SQL" value="324" />
-          <entry key="ThymeleafExpressions" value="1" />
-          <entry key="XML" value="1224" />
+          <entry key="SQL" value="331" />
+          <entry key="ThymeleafExpressions" value="3" />
+          <entry key="XML" value="1225" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/controllers/AdminPageController.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/advertisements/controllers/AdvertisementController.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="124">
               <caret line="40" column="43" lean-forward="true" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
+=======
+            <state relative-caret-position="258">
+              <caret line="24" column="76" selection-start-line="24" selection-start-column="76" selection-end-line="24" selection-end-column="76" />
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< Updated upstream
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/new_buildings/dao/interfaces/AddressDAO.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
               <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+=======
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/advertisements/entities/Advertisement.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="19" column="35" lean-forward="true" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< Updated upstream
         <entry file="file://$PROJECT_DIR$/src/main/java/com/new_buildings/services/interfaces/AddressService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
               <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+=======
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/services/ImageService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< Updated upstream
         <entry file="file://$PROJECT_DIR$/src/main/java/com/new_buildings/dao/impl/ApartmentDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="243">
               <caret line="58" selection-start-line="58" selection-end-line="58" />
+=======
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/advertisements/services/AdvertisementService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< Updated upstream
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/admin-pages/apartment.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="122">
               <caret line="359" column="85" lean-forward="true" selection-start-line="359" selection-start-column="85" selection-end-line="359" selection-end-column="85" />
+=======
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/advertisements/services/AdvertisementServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+              <folding>
+                <element signature="e#409#410#0" expanded="true" />
+                <element signature="e#465#466#0" expanded="true" />
+              </folding>
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< Updated upstream
         <entry file="file://$PROJECT_DIR$/src/main/java/com/new_buildings/services/impl/AddressServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
               <caret line="27" column="18" lean-forward="true" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
+=======
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/add_advertisement.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-500">
+              <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< Updated upstream
         <entry file="file://$PROJECT_DIR$/src/main/java/com/new_buildings/entities/Address.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
               <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+=======
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/new_building_apartment.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="34" column="48" lean-forward="true" selection-start-line="34" selection-start-column="48" selection-end-line="34" selection-end-column="48" />
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< Updated upstream
         <entry file="file://$PROJECT_DIR$/src/main/java/com/new_buildings/converters/AddressToAddressCommand.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
               <caret line="24" selection-start-line="24" selection-end-line="24" />
+=======
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/new_building_address.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="53" lean-forward="true" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< Updated upstream
         <entry file="file://$PROJECT_DIR$/src/main/java/com/new_buildings/converters/AddressCommandToAddress.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
               <caret line="27" selection-start-line="27" selection-end-line="27" />
+=======
+        <entry file="file://$PROJECT_DIR$/src/main/resources/entities/advertisements/Advertisement.hbm.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="93">
+              <caret line="7" column="35" lean-forward="true" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< Updated upstream
         <entry file="file://$PROJECT_DIR$/src/main/java/com/new_buildings/dao/impl/AddressDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="333">
               <caret line="44" column="4" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="4" />
+=======
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/advertisements/dao/AdvertisementDAOImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="38" column="21" lean-forward="true" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
@@ -385,8 +634,6 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
-        <option value="CSS File" />
         <option value="Enum" />
         <option value="spring-beans.schema" />
         <option value="webflow.2_4" />
@@ -395,6 +642,8 @@
         <option value="Arquillian JUnit Test Class" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -412,6 +661,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< Updated upstream
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/admin-pages/LICENSE" />
         <option value="$PROJECT_DIR$/src/main/java/com/new_buildings/controllers/NewBuildingController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/model/BaseEntity.java" />
@@ -447,22 +697,68 @@
         <option value="$PROJECT_DIR$/src/main/java/com/new_buildings/converters/AddressCommandToAddress.java" />
         <option value="$PROJECT_DIR$/src/main/resources/entities/new_buildings/Address.hbm.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/entities/new_buildings/Apartment.hbm.xml" />
+=======
+>>>>>>> Stashed changes
         <option value="$PROJECT_DIR$/src/main/java/com/new_buildings/command/AddressCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/new_buildings/command/ApartmentCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/new_buildings/converters/ApartmentToApartmentCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/new_buildings/converters/ApartmentCommandToApartment.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/new_buildings/dao/interfaces/ApartmentDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/new_buildings/services/interfaces/ApartmentService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/new_buildings/entities/Apartment.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/new_buildings/services/impl/ApartmentServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/services/ImageService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/parent/CrudService.java" />
+<<<<<<< Updated upstream
         <option value="$PROJECT_DIR$/src/main/java/com/new_buildings/entities/Address.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/admin-pages/address.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/admin-pages/apartment.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/new_buildings/dao/impl/ApartmentDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/new_buildings/services/impl/AddressServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/new_buildings/dao/impl/AddressDAOImpl.java" />
+=======
+        <option value="$PROJECT_DIR$/src/main/java/com/new_buildings/dao/impl/AddressDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/users/dao/impl/UserDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/new_buildings/services/impl/AddressServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/users/services/impl/AdminServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/users/services/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/users/dao/impl/AdminDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/new_building.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/new_building_address.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/admin-pages/index.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/admin-pages/address.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/admin-pages/apartment.html" />
+>>>>>>> Stashed changes
         <option value="$PROJECT_DIR$/src/main/java/com/controllers/AdminPageController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/new_buildings/dao/interfaces/ApartmentDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/new_buildings/services/interfaces/ApartmentService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/new_buildings/services/impl/ApartmentServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/new_building_apartment.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/new_buildings/dao/impl/ApartmentDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/new_buildings/controllers/NewBuildingController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/users/dao/interfaces/CustomerDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/new_building_order.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/parent/Person.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/new_buildings/entities/Address.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/users/dao/impl/CustomerDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/users/services/interfaces/CustomerService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/users/services/impl/CustomerServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/users/services/Postman.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/users/controllers/CustomerController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/new_buildings/entities/Apartment.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/users/entities/Customer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/controllers/MainPageController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/main.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/advertisements/entities/Addition.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/entities/advertisements/Addition.hbm.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/entities/advertisements/Advertisement.hbm.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/fragments/header.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/fragments/head.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/fragments/footer.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/css/hide-select.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/hide-select.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/advertisements/entities/Advertisement.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/advertisements/dao/AdvertisementDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/advertisements/services/AdvertisementServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/add_advertisement.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/advertisements/controllers/AdvertisementController.java" />
       </list>
     </option>
   </component>
@@ -511,10 +807,17 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
+<<<<<<< Updated upstream
     <option name="x" value="134" />
     <option name="y" value="76" />
     <option name="width" value="1201" />
     <option name="height" value="556" />
+=======
+    <option name="x" value="30" />
+    <option name="y" value="146" />
+    <option name="width" value="1336" />
+    <option name="height" value="559" />
+>>>>>>> Stashed changes
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -547,7 +850,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -597,7 +899,12 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
+<<<<<<< Updated upstream
               <item name="new_buildings" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="advertisements" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+>>>>>>> Stashed changes
             </path>
             <path>
               <item name="realEstateBoard-master" type="b2602c69:ProjectViewProjectNode" />
@@ -606,6 +913,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
+<<<<<<< Updated upstream
               <item name="new_buildings" type="462c0819:PsiDirectoryNode" />
               <item name="converters" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -629,6 +937,10 @@
               <item name="new_buildings" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
               <item name="impl" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="advertisements" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+>>>>>>> Stashed changes
             </path>
             <path>
               <item name="realEstateBoard-master" type="b2602c69:ProjectViewProjectNode" />
@@ -637,19 +949,14 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
+<<<<<<< Updated upstream
               <item name="new_buildings" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
               <item name="interfaces" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="realEstateBoard-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="realEstateBoard-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="new_buildings" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="advertisements" type="462c0819:PsiDirectoryNode" />
               <item name="entities" type="462c0819:PsiDirectoryNode" />
+>>>>>>> Stashed changes
             </path>
             <path>
               <item name="realEstateBoard-master" type="b2602c69:ProjectViewProjectNode" />
@@ -658,7 +965,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="new_buildings" type="462c0819:PsiDirectoryNode" />
+              <item name="advertisements" type="462c0819:PsiDirectoryNode" />
               <item name="services" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -668,15 +975,21 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="new_buildings" type="462c0819:PsiDirectoryNode" />
               <item name="services" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="realEstateBoard-master" type="b2602c69:ProjectViewProjectNode" />
               <item name="realEstateBoard-master" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="realEstateBoard-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="realEstateBoard-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+<<<<<<< Updated upstream
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="new_buildings" type="462c0819:PsiDirectoryNode" />
@@ -713,6 +1026,34 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="entities" type="462c0819:PsiDirectoryNode" />
+>>>>>>> Stashed changes
+            </path>
+            <path>
+              <item name="realEstateBoard-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="realEstateBoard-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="entities" type="462c0819:PsiDirectoryNode" />
+              <item name="advertisements" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="realEstateBoard-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="realEstateBoard-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="realEstateBoard-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="realEstateBoard-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="realEstateBoard-master" type="b2602c69:ProjectViewProjectNode" />
@@ -721,40 +1062,13 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="realEstateBoard-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="realEstateBoard-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="realEstateBoard-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="realEstateBoard-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="realEstateBoard-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="realEstateBoard-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="admin-pages" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -767,13 +1081,21 @@
     <property name="SearchEverywhereHistoryKey" value="IdentifierGeneration&#9;PSI&#9;JAVA://org.hibernate.id.IdentifierGenerationException&#10;.SpelEvaluationException&#9;PSI&#9;JAVA://org.springframework.expression.spel.SpelEvaluationException&#10;org.springframework.expression.spel&#9;PSI&#9;JAVA://org.springframework.expression.spel.standard.SpelExpressionParser&#10;BeanFactory&#9;PSI&#9;JAVA://org.apache.commons.configuration.beanutils.BeanFactory&#10;cleardb&#9;null&#9;null&#10;map systemEnvironment&#9;null&#9;null&#10;map&#9;PSI&#9;JAVA://java.util.Map" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+<<<<<<< Updated upstream
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560885553379" />
+=======
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561500429199" />
+>>>>>>> Stashed changes
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
+<<<<<<< Updated upstream
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../spring-hibernate-one-to-many-default-master" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+>>>>>>> Stashed changes
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -794,23 +1116,23 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/admin-pages" />
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates" />
-      <recent name="$PROJECT_DIR$/src/main/java/com/advertisment/entities" />
-      <recent name="$PROJECT_DIR$/src/main/java/com/new_building/entities" />
-      <recent name="$PROJECT_DIR$/src/main/java/com" />
+      <recent name="$PROJECT_DIR$/src/main/resources/entities/new_buildings" />
+      <recent name="$PROJECT_DIR$/src/main/resources/entities/advertisements" />
+      <recent name="$PROJECT_DIR$/src/main/resources/entities/users" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/resources/adminPanelStyle" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.model" />
       <recent name="com.user.entities" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources/entities/new_buildings" />
-      <recent name="$PROJECT_DIR$/src/main/resources/entities/advertisements" />
-      <recent name="$PROJECT_DIR$/src/main/resources/entities/users" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/resources/adminPanelStyle" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/resources/adminStyle" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/security" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/admin-pages" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/advertisment/entities" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/new_building/entities" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1041,12 +1363,23 @@
       <workItem from="1560611725781" duration="580000" />
       <workItem from="1560613936793" duration="6239000" />
       <workItem from="1560684958459" duration="8049000" />
+<<<<<<< Updated upstream
       <workItem from="1560881522405" duration="3859000" />
+=======
+      <workItem from="1560881522405" duration="12138000" />
+      <workItem from="1561298868242" duration="1709000" />
+      <workItem from="1561372793067" duration="9000" />
+      <workItem from="1561455152744" duration="40315000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< Updated upstream
     <option name="totallyTimeSpent" value="496351000" />
+=======
+    <option name="totallyTimeSpent" value="546663000" />
+>>>>>>> Stashed changes
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1078,10 +1411,17 @@
       <window_info anchor="bottom" id="Find" order="5" weight="0.32730263" />
       <window_info anchor="bottom" id="Database Changes" order="6" weight="0.32894737" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49924242" weight="0.32894737" />
+<<<<<<< Updated upstream
       <window_info active="true" anchor="bottom" id="Run" order="8" sideWeight="0.49621212" visible="true" weight="0.60855263" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.40953946" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
+=======
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.40953946" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="11" sideWeight="0.49621212" weight="0.71710527" />
+>>>>>>> Stashed changes
       <window_info anchor="bottom" id="Application Servers" order="12" weight="0.32894737" />
       <window_info anchor="bottom" id="TODO" order="13" weight="0.3295082" />
       <window_info anchor="bottom" id="Messages" order="14" sideWeight="0.49924242" weight="0.5707237" />
@@ -1096,10 +1436,10 @@
       <window_info anchor="right" id="Palette" order="5" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Maven Projects" order="7" weight="0.32954547" />
-      <window_info anchor="right" id="Database" order="8" weight="0.26818183" />
-      <window_info anchor="right" id="Ant Build" order="9" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="10" weight="0.25" />
-      <window_info anchor="right" id="Bean Validation" order="11" />
+      <window_info anchor="right" id="Database" order="8" weight="0.3189394" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
+      <window_info anchor="right" id="Bean Validation" order="10" />
+      <window_info anchor="right" id="Ant Build" order="11" weight="0.25" />
     </layout>
     <layout-to-restore>
       <window_info id="Image Layers" order="0" />
@@ -1108,24 +1448,24 @@
       <window_info id="Capture Tool" order="3" />
       <window_info id="Web" order="4" sideWeight="0.5045372" side_tool="true" weight="0.24242425" />
       <window_info id="Designer" order="5" />
-      <window_info active="true" content_ui="combo" id="Project" order="6" sideWeight="0.48519737" visible="true" weight="0.2931818" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" sideWeight="0.48519737" visible="true" weight="0.2560606" />
       <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
       <window_info id="Persistence" order="8" sideWeight="0.51480263" side_tool="true" weight="0.2931818" />
       <window_info anchor="bottom" id="Spring" order="0" weight="0.3295082" />
       <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.49848485" weight="0.34868422" />
-      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50151515" side_tool="true" weight="0.35197368" />
+      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50151515" side_tool="true" weight="0.5707237" />
       <window_info anchor="bottom" id="Java Enterprise" order="3" weight="0.32894737" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.32730263" />
       <window_info anchor="bottom" id="Database Changes" order="6" weight="0.32894737" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49924242" weight="0.32894737" />
-      <window_info anchor="bottom" id="Run" order="8" sideWeight="0.49621212" weight="0.6694079" />
-      <window_info anchor="bottom" id="Debug" order="9" weight="0.40953946" />
-      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.40953946" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="11" sideWeight="0.49621212" weight="0.71710527" />
       <window_info anchor="bottom" id="Application Servers" order="12" weight="0.32894737" />
-      <window_info anchor="bottom" id="TODO" order="13" weight="0.3295082" />
-      <window_info anchor="bottom" id="Messages" order="14" sideWeight="0.49924242" weight="0.5707237" />
+      <window_info anchor="bottom" id="TODO" order="13" weight="0.32894737" />
+      <window_info anchor="bottom" id="Messages" order="14" sideWeight="0.49848485" weight="0.5707237" />
       <window_info anchor="bottom" id="Database Console" order="15" weight="0.3295082" />
       <window_info anchor="bottom" id="Inspection Results" order="16" weight="0.3295082" />
       <window_info anchor="bottom" id="Hibernate Console" order="17" weight="0.32894737" />
@@ -1137,10 +1477,10 @@
       <window_info anchor="right" id="Palette" order="5" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Maven Projects" order="7" weight="0.32954547" />
-      <window_info anchor="right" id="Database" order="8" weight="0.26818183" />
-      <window_info anchor="right" id="Ant Build" order="9" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="10" weight="0.25" />
-      <window_info anchor="right" id="Bean Validation" order="11" />
+      <window_info anchor="right" id="Database" order="8" weight="0.3189394" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
+      <window_info anchor="right" id="Bean Validation" order="10" />
+      <window_info anchor="right" id="Ant Build" order="11" weight="0.25" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1183,11 +1523,21 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
+<<<<<<< Updated upstream
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/advertisements/controllers/AdvertisementController.java</url>
           <line>125</line>
           <properties />
           <option name="timeStamp" value="12" />
+=======
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/advertisements/controllers/AdvertisementController.java</url>
+          <line>24</line>
+          <properties class="com.advertisements.controllers.AdvertisementController" method="saveOrUpdate">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="33" />
+>>>>>>> Stashed changes
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -1206,6 +1556,7 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
+<<<<<<< Updated upstream
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.4.RELEASE/spring-webmvc-5.0.4.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="93">
@@ -1221,38 +1572,43 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/editHouse.html">
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/users/controllers/CustomerController.java">
+>>>>>>> Stashed changes
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="12" column="48" lean-forward="true" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
+        <state relative-caret-position="363">
+          <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/entities/users/User.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/entities/BaseEntity.hbm.xml" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/entities/Person.hbm.xml" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.0.4.RELEASE/spring-aop-5.0.4.RELEASE.jar!/org/springframework/aop/support/AopUtils.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/users/dao/interfaces/AdminDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="186" selection-start-line="186" selection-end-line="186" />
+        <state relative-caret-position="60">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/5.0.4.RELEASE/spring-tx-5.0.4.RELEASE.jar!/org/springframework/transaction/interceptor/TransactionAspectSupport.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/users/services/Postman.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="181" selection-start-line="181" selection-end-line="181" />
+        <state relative-caret-position="522">
+          <caret line="46" column="9" lean-forward="true" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.0.4.RELEASE/spring-aop-5.0.4.RELEASE.jar!/org/springframework/aop/framework/JdkDynamicAopProxy.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/users/services/interfaces/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="141" selection-start-line="141" selection-end-line="141" />
+        <state relative-caret-position="60">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.3.RELEASE/spring-web-5.0.3.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -1261,46 +1617,66 @@
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.4.RELEASE/spring-webmvc-5.0.4.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class">
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/users/dao/interfaces/UserDAO.java">
+>>>>>>> Stashed changes
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="568" selection-start-line="568" selection-end-line="568" />
+        <state relative-caret-position="60">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.4.RELEASE/spring-webmvc-5.0.4.RELEASE.jar!/org/springframework/web/servlet/FrameworkServlet.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/users/dao/interfaces/CustomerDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41">
-          <caret line="496" column="34" lean-forward="true" selection-start-line="496" selection-start-column="34" selection-end-line="496" selection-end-column="34" />
+        <state relative-caret-position="75">
+          <caret line="5" column="63" selection-start-line="5" selection-start-column="63" selection-end-line="5" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.4.RELEASE/spring-webmvc-5.0.4.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/users/entities/Admin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="425" selection-start-line="425" selection-end-line="425" />
+        <state relative-caret-position="105">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/parent/BaseEntity.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/users/services/interfaces/AdminService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+        <state relative-caret-position="60">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/entities/advertisements/Advertisement.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/mysql-datasource.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/users/services/interfaces/CustomerService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="90">
+          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/about.html">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/users/services/impl/CustomerServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#507#508#0" expanded="true" />
+            <element signature="e#553#554#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/users/services/impl/AdminServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/addHouse.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -1309,73 +1685,30 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/parent/Person.java">
+>>>>>>> Stashed changes
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="120">
+          <caret line="12" column="34" lean-forward="true" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="das://ffc07326-9262-4efa-85d2-32f6e9f72c5e/schema/real-estate-site/table/apartments" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/entities/new_buildings/Apartments.java" />
-    <entry file="uml://Persistence/JavaeeElement:/e444188b/hibernate.cfg.xml/realEstateBoard-master/hibernate/Hibernate/PersistenceModel">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>Persistence</ID>
-          <OriginalElement>JavaeeElement:/e444188b/hibernate.cfg.xml/realEstateBoard-master/hibernate/Hibernate/PersistenceModel</OriginalElement>
-          <nodes>
-            <node x="0.0" y="586.0">Advertisement#file:///home/sirius/Документы/realEstateBoard-master/src/main/java/com/advertisements/entities/Advertisement.java</node>
-            <node x="302.0" y="333.0">Address#file:///home/sirius/Документы/realEstateBoard-master/src/main/java/com/new_buildings/entities/Address.java</node>
-            <node x="376.25" y="0.0">Apartment#file:///home/sirius/Документы/realEstateBoard-master/src/main/java/com/new_buildings/entities/Apartment.java</node>
-            <node x="752.0" y="0.0">User#file:///home/sirius/Документы/realEstateBoard-master/src/main/java/com/users/entities/User.java</node>
-            <node x="950.0" y="0.0">Admin#file:///home/sirius/Документы/realEstateBoard-master/src/main/java/com/users/entities/Admin.java</node>
-            <node x="16.0" y="0.0">Addition#file:///home/sirius/Документы/realEstateBoard-master/src/main/java/com/advertisements/entities/Addition.java</node>
-            <node x="462.0" y="287.0">Customer#file:///home/sirius/Документы/realEstateBoard-master/src/main/java/com/users/entities/Customer.java</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="Address#file:///home/sirius/Документы/realEstateBoard-master/src/main/java/com/new_buildings/entities/Address.java" target="Apartment#file:///home/sirius/Документы/realEstateBoard-master/src/main/java/com/new_buildings/entities/Apartment.java">
-              <point x="0.0" y="-49.5" />
-              <point x="372.0" y="262.0" />
-              <point x="427.25" y="262.0" />
-              <point x="-51.0" y="118.5" />
-            </edge>
-            <edge source="Customer#file:///home/sirius/Документы/realEstateBoard-master/src/main/java/com/users/entities/Customer.java" target="Apartment#file:///home/sirius/Документы/realEstateBoard-master/src/main/java/com/new_buildings/entities/Apartment.java">
-              <point x="0.0" y="-95.5" />
-              <point x="584.5" y="262.0" />
-              <point x="529.25" y="262.0" />
-              <point x="51.0" y="118.5" />
-            </edge>
-            <edge source="Addition#file:///home/sirius/Документы/realEstateBoard-master/src/main/java/com/advertisements/entities/Addition.java" target="Advertisement#file:///home/sirius/Документы/realEstateBoard-master/src/main/java/com/advertisements/entities/Advertisement.java">
-              <point x="56.25" y="268.0" />
-              <point x="184.75" y="561.0" />
-              <point x="192.75" y="561.0" />
-              <point x="64.25" y="-245.0" />
-            </edge>
-            <edge source="Advertisement#file:///home/sirius/Документы/realEstateBoard-master/src/main/java/com/advertisements/entities/Advertisement.java" target="Addition#file:///home/sirius/Документы/realEstateBoard-master/src/main/java/com/advertisements/entities/Addition.java">
-              <point x="-64.25" y="-245.0" />
-              <point x="64.25" y="561.0" />
-              <point x="72.25" y="561.0" />
-              <point x="-56.25" y="268.0" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="1.0" x="668.0" y="166.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Properties</Category>
-            <Category>Embeddables</Category>
-            <Category>Superclasses</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/new_buildings/converters/ApartmentToApartmentCommand.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/users/entities/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="29" column="94" selection-start-line="29" selection-start-column="94" selection-end-line="29" selection-end-column="94" />
+        <state relative-caret-position="75">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/users/dao/impl/CustomerDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/src/main/java/com/new_buildings/controllers/NewBuildingController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="552">
@@ -1384,15 +1717,19 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/new_buildings/command/ApartmentCommand.java">
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/new_buildings/command/AddressCommand.java">
+>>>>>>> Stashed changes
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+        <state relative-caret-position="180">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/src/main/java/com/new_buildings/command/AddressCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -1404,12 +1741,16 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/new_buildings/converters/ApartmentCommandToApartment.java">
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/new_buildings/command/ApartmentCommand.java">
+>>>>>>> Stashed changes
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="29" column="76" selection-start-line="29" selection-start-column="76" selection-end-line="29" selection-end-column="76" />
+        <state relative-caret-position="120">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/web-forms2.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
@@ -1418,19 +1759,23 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/entities/new_buildings/Address.hbm.xml">
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/users/entities/Customer.java">
+>>>>>>> Stashed changes
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="90">
+          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/new_buildings/entities/Status.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        <state relative-caret-position="265">
+          <caret line="27" column="38" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/src/main/java/com/controllers/SecurityController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -1442,12 +1787,16 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/entities/new_buildings/Apartment.hbm.xml">
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/advertisements/entities/Addition.java">
+>>>>>>> Stashed changes
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="88" selection-start-line="10" selection-start-column="88" selection-end-line="10" selection-end-column="88" />
+        <state relative-caret-position="195">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/src/main/java/com/controllers/MainPageController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -1456,12 +1805,16 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/parent/CrudService.java">
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
+>>>>>>> Stashed changes
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+        <state relative-caret-position="255">
+          <caret line="17" selection-start-line="17" selection-end-line="17" selection-end-column="74" />
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/src/main/java/com/new_buildings/entities/Apartment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -1470,12 +1823,16 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/new_buildings/services/interfaces/ApartmentService.java">
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/resources/entities/advertisements/Addition.hbm.xml">
+>>>>>>> Stashed changes
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        <state relative-caret-position="135">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/src/main/java/com/new_buildings/services/impl/ApartmentServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -1484,40 +1841,58 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/new_buildings/dao/interfaces/ApartmentDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+=======
+    <entry file="das://ffc07326-9262-4efa-85d2-32f6e9f72c5e/schema/real-estate-site/table/advertisements">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.16.16/lombok-1.16.16.jar!/lombok/Data.class">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/poster.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/new_buildings/entities/Address.java">
+>>>>>>> Stashed changes
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        <state relative-caret-position="300">
+          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/new_buildings/entities/Apartment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/admin-pages/address.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="327">
           <caret line="390" column="82" selection-start-line="390" selection-start-column="82" selection-end-line="390" selection-end-column="82" />
         </state>
+=======
+        <state relative-caret-position="-360" />
+>>>>>>> Stashed changes
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/admin-pages/apartment.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="359" column="85" lean-forward="true" selection-start-line="359" selection-start-column="85" selection-end-line="359" selection-end-column="85" />
+        <state relative-caret-position="216">
+          <caret line="373" column="99" lean-forward="true" selection-start-line="373" selection-start-column="99" selection-end-line="373" selection-end-column="99" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/new_buildings/services/interfaces/AddressService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/controllers/SecurityController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/src/main/java/com/new_buildings/dao/impl/ApartmentDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
@@ -1564,13 +1939,171 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="333">
           <caret line="44" column="4" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="4" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/new_building_order.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/fragments/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="36" column="47" selection-start-line="36" selection-start-column="47" selection-end-line="36" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/advertisements/entities/enums/District.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/advertisements/entities/enums/DealType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="7" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/fragments/head.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="65" selection-start-line="14" selection-start-column="65" selection-end-line="14" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/fragments/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="15" lean-forward="true" selection-start-column="15" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/advertisements/entities/enums/RealEstateType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="14" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/advertisements/entities/enums/NumberOfRooms.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/hide-select.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
+          <caret line="63" column="46" selection-start-line="63" selection-start-column="46" selection-end-line="63" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/hide-select.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/controllers/AdminPageController.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/controllers/MainPageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="16" column="18" lean-forward="true" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/advertisements/dao/AdvertisementDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/advertisements/dao/AdvertisementDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="38" column="21" lean-forward="true" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/services/ImageService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/advertisements/services/AdvertisementService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/advertisements/services/AdvertisementServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+          <folding>
+            <element signature="e#409#410#0" expanded="true" />
+            <element signature="e#465#466#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/add_advertisement.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-500">
+          <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/new_building_apartment.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="48" lean-forward="true" selection-start-line="34" selection-start-column="48" selection-end-line="34" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/new_building_address.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="53" lean-forward="true" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
+>>>>>>> Stashed changes
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/entities/advertisements/Advertisement.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="7" column="35" lean-forward="true" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/advertisements/controllers/AdvertisementController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="24" column="76" selection-start-line="24" selection-start-column="76" selection-end-line="24" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/advertisements/entities/Advertisement.java">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="124">
           <caret line="40" column="43" lean-forward="true" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
+=======
+        <state relative-caret-position="18">
+          <caret line="19" column="35" lean-forward="true" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>

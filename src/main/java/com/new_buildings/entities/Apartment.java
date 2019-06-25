@@ -8,12 +8,7 @@ import javax.persistence.*;
 import java.util.Arrays;
 
 
-@Getter
-@Setter
-@NoArgsConstructor
-@AllArgsConstructor
-@Builder
-@Entity
+@Data
 public class Apartment extends BaseEntity {
 
     private Address address;
@@ -26,18 +21,5 @@ public class Apartment extends BaseEntity {
     private int fullPrice;
     private Status status;
 
-    @Override
-    public String toString() {
-        return "Apartment{" +
-                "address=" + address +
-                ", image=" + Arrays.toString(image) +
-                ", floor=" + floor +
-                ", numberOfApartment=" + numberOfApartment +
-                ", numberOfRooms=" + numberOfRooms +
-                ", square=" + square +
-                ", pricePerSquare=" + pricePerSquare +
-                ", fullPrice=" + fullPrice +
-                ", status=" + status +
-                '}';
-    }
+
 }

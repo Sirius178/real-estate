@@ -28,8 +28,4 @@ public class AdminDAOImpl implements AdminDAO {
 
     }
 
-    @Override
-    public void deleteById(Long aLong) {
-
-    }
 }

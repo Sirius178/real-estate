@@ -11,6 +11,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 @Controller
+@RequestMapping(value = "/admin")
 public class AdminPageController {
 
     private ApartmentService apartmentService;
@@ -41,7 +42,7 @@ public class AdminPageController {
         Address address = addressCommandToAddress.convert(addressCommand);
         apartment.setAddress(address);
         apartmentService.save(apartment);
-        return "redirect:/address";
+        return "redirect:/admin/address";
     }
 
     @GetMapping("/address")
@@ -52,6 +53,25 @@ public class AdminPageController {
 
     @PostMapping(value = "/save-address")
     public String saveOrUpdate(@ModelAttribute AddressCommand addressCommand){
+<<<<<<< Updated upstream
+=======
+//        try{
+//            if (multipartFile == null){
+//                return null;
+//            }
+//            Byte[] byteObjects = new Byte[multipartFile.getBytes().length];
+//            int i = 0;
+//            for (byte b: multipartFile.getBytes()){
+//                byteObjects[i++] = b;
+//            }
+//            System.out.println(byteObjects.length);
+//            addressCommand.setImage(byteObjects);
+//
+//        }catch (Exception e){
+//            e.printStackTrace();
+//        }
+//        addressCommand.setAddress(address);
+>>>>>>> Stashed changes
         addressService.saveAddressCommand(addressCommand);
         return "redirect:/address";
     }

@@ -53,17 +53,7 @@ public class ApartmentServiceImpl implements ApartmentService {
 
     @Override
     public void delete(Apartment object) {
-        apartmentDAO.save(object);
-    }
-
-    @Override
-    public void deleteById(Long aLong) {
-        apartmentDAO.deleteById(aLong);
-    }
-
-    @Override
-    public ApartmentCommand findCommandById(Long id) {
-        return null;
+        apartmentDAO.delete(object);
     }
 
     @Override
@@ -72,5 +62,14 @@ public class ApartmentServiceImpl implements ApartmentService {
         Apartment savedApartment = apartmentDAO.saveApartmentCommand(detachedApartment);
 //        log.debug("Saved id: " + savedApartment.getId());
         return apartmentToApartmentCommand.convert(savedApartment);
+    }
+
+    @Override
+    public ApartmentCommand findCommandById(Long id) {
+        return null;
+    }
+
+    public List<Apartment> findAllByID(long id){
+        return apartmentDAO.findAllByID(id);
     }
 }

@@ -12,7 +12,7 @@
 
 <div class="clearfix visible-sm-block"></div>
 
-<section  th:if="${not #lists.isEmpty(listOfPoster)}" class="probootstrap-section probootstrap-section-lighter">
+<section  th:if="${not #lists.isEmpty(listOfAdvertisement)}" class="probootstrap-section probootstrap-section-lighter">
   <div id="poster" class="container" >
     <div class="row heading">
       <h2 class="mt0 mb50 text-center">Новые обьявления</h2>
@@ -20,30 +20,30 @@
     <div class="row">
       <div class="col-md-4 col-sm-6">
           <div >
-              <div  th:each="poster : ${listOfPoster}" class="probootstrap-card probootstrap-listing">
+              <div th:each="advertisement : ${listOfAdvertisement}" class="probootstrap-card probootstrap-listing">
                   <div >
 
                       <div class="probootstrap-card-media">
-                          <a th:href="@{'/poster/' + ${poster.idPoster}}">Подробнее</a>
-                          <img  th:src="@{'/posterImage?idPoster='+ ${poster.idPoster}}"/>
+                          <a th:href="@{'/poster/' + ${advertisement.id}}">Подробнее</a>
+                          <img  th:src="@{'/posterImage?idPoster='+ ${advertisement.id}}"/>
                       </div>
                       <div class="probootstrap-card-text">
-                          <h2 class="probootstrap-card-heading"><a th:text="${poster.title}"></a></h2>
+                          <h2 class="probootstrap-card-heading"><a th:text="${advertisement.title}"></a></h2>
                           <div class="probootstrap-listing-location">
-                              <i class="icon-location2"></i> <a th:text="${poster.district}"></a>
+                              <i class="icon-location2"></i> <a th:text="${advertisement.district}"></a>
                           </div>
-                          <div class="probootstrap-listing-category for-sale"><span><a th:text="${poster.rentType}"></a></span></div>
-                          <div class="probootstrap-listing-price"><strong th:text="${poster.price}"></strong> / цена</div>
+                          <div class="probootstrap-listing-category for-sale"><span><a th:text="${advertisement.rentType}"></a></span></div>
+                          <div class="probootstrap-listing-price"><strong th:text="${advertisement.price}"></strong> / цена</div>
                       </div>
                       <div class="probootstrap-card-extra">
                           <ul>
                               <li>
                                   Площадь
-                                  <span><a th:text="${poster.square}"></a></span>
+                                  <span><a th:text="${advertisement.square}"></a></span>
                               </li>
                               <li>
                                   Комнат
-                                  <span><a th:text="${poster.numberOfRooms}"></a></span>
+                                  <span><a th:text="${advertisement.numberOfRooms}"></a></span>
                               </li>
 
                           </ul>

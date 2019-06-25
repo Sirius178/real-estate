@@ -60,8 +60,4 @@ public class AddressServiceImpl implements AddressService {
 
     }
 
-    @Override
-    public void deleteById(Long aLong) {
-
-    }
 }

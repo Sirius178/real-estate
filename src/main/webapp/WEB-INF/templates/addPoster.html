@@ -7,13 +7,13 @@
 <section class="probootstrap-section probootstrap-section-lighter">
     <label>add poster</label>
     <div>
-        <form action="/addPoster" method="post" class="container">
+        <form action="/save-advertisement" method="post" class="container">
             <div>
                 <div class="form-group">
                     <label>Тип аккаунта</label>
                     <select name="accountType" id="accountType">
                         <option value="" selected disabled hidden>Выберите статус</option>
-                        <option th:each="accountType:${T(com.advertisements.entities.AccountType).values()}"
+                        <option th:each="accountType:${T(com.advertisements.entities.enums.AccountType).values()}"
                                 th:value="${accountType}"
                                 th:text="${accountType.getValue()}">
                         </option>
@@ -21,20 +21,23 @@
                 </div>
                 <div class="form-group">
                     <label>Тип сделки</label>
+
                     <select name="dealType" id="dealType">
-                        <option th:each="dealType : ${T(com.advertisements.entities.DealType).values()}"
+                        <option th:each="dealType : ${T(com.advertisements.entities.enums.DealType).values()}"
                                 th:value="${dealType}"
                                 th:text="${dealType.getValue()}">
                         </option>
                     </select>
+
                 </div>
 
                 <div class="form-group">
                     <label>Тип аренды</label>
                     <select name="rentType" id="rentType">
-                        <option th:each="rentType : ${T(com.advertisements.entities.RentType).values()}"
+                        <option th:each="rentType : ${T(com.advertisements.entities.enums.RentType).values()}"
                                 th:value="${rentType}"
                                 th:text="${rentType.getValue()}">
+
                         </option>
                     </select>
                 </div>
@@ -43,7 +46,7 @@
                 <div class="form-group">
                     <label>Тип помещения</label>
                     <select name="realEstateType" id="realEstateType">
-                        <option th:each="realEstateType : ${T(com.advertisements.entities.RealEstateType).values()}"
+                        <option th:each="realEstateType : ${T(com.advertisements.entities.enums.RealEstateType).values()}"
                                 th:value="${realEstateType}"
                                 th:text="${realEstateType.getValue()}">
                         </option>
@@ -56,7 +59,7 @@
                 <div class="form-group">
                     <label>Жилая</label>
                     <select name="living" id="living">
-                        <option th:each="living : ${T(com.advertisements.entities.Living).values()}"
+                        <option th:each="living : ${T(com.advertisements.entities.enums.Living).values()}"
                                 th:value="${living}"
                                 th:text="${living.getValue()}">
                         </option>
@@ -66,7 +69,7 @@
                 <div class="form-group">
                     <label>Коммерческая</label>
                     <select name="commercial" id="commercial">
-                        <option th:each="commercial : ${T(com.advertisements.entities.Commercial).values()}"
+                        <option th:each="commercial : ${T(com.advertisements.entities.enums.Commercial).values()}"
                                 th:value="${commercial}"
                                 th:text="${commercial.getValue()}">
                         </option>
@@ -78,7 +81,7 @@
                 <div class="form-group">
                     <label>Район</label>
                     <select name="district" id="district">
-                        <option th:each="district : ${T(com.advertisements.entities.District).values()}"
+                        <option th:each="district : ${T(com.advertisements.entities.enums.District).values()}"
                                 th:value="${district}"
                                 th:text="${district.getValue()}">
                         </option>
@@ -92,7 +95,7 @@
                 <div class="form-group">
                     <label>Тип жилья</label>
                     <select name="buildingType" id="buildingType">
-                        <option th:each="buildingType : ${T(com.advertisements.entities.BuildingType).values()}"
+                        <option th:each="buildingType : ${T(com.advertisements.entities.enums.BuildingType).values()}"
                                 th:value="${buildingType}"
                                 th:text="${buildingType.getValue()}">
                         </option>
@@ -125,15 +128,11 @@
                     <input type="checkbox" name="communalPayments" id="communalPayments">
                 </div>
 
-                <div class="form-group">
-                    <label>Кадастровый номер</label>
-                    <input type="text" name="cadastrNumber" id="cadastrNumber">
-                </div>
 
                 <div class="form-group">
                     <label>Число комнат</label>
                     <select name="numberOfRooms" id="numberOfRooms">
-                        <option th:each="numberOfRooms : ${T(com.advertisements.entities.NumberOfRooms).values()}"
+                        <option th:each="numberOfRooms : ${T(com.advertisements.entities.enums.NumberOfRooms).values()}"
                                 th:value="${numberOfRooms}"
                                 th:text="${numberOfRooms.getValue()}">
                         </option>
@@ -163,14 +162,14 @@
                 <div class="form-group">
                     <label>Ремонт</label>
                     <select name="repairs" id="repairs">
-                        <option th:each="repairs : ${T(com.advertisements.entities.Repairs).values()}"
+                        <option th:each="repairs : ${T(com.advertisements.entities.enums.Repairs).values()}"
                                 th:value="${repairs}"
                                 th:text="${repairs.getValue()}">
                         </option>
                     </select>
                 </div>
 
-                <div>
+                <div class="table">
                     животные <input type="checkbox" name="animal" id="animal">
                     мебель <input type="checkbox" name="furniture" id="furniture">
                    кухонная мебель <input type="checkbox" name="furnitureInTheKitchen" id="furnitureInTheKitchen">
@@ -179,8 +178,7 @@
                     балкон <input type="checkbox" name="balcony" id="balcony">
                     лоджия <input type="checkbox" name="loggia" id="loggia">
                     холодильник <input type="checkbox" name="fridge" id="fridge">
-                    посудомоечная машина<input type="checkbox" name="dishwasher" id="dishwasher">
-                    стиральная машина <input type="checkbox" name="washer" id="washer">
+                    <!--стиральная машина <input type="checkbox" name="washer" id="washer">-->
                     телевизор <input type="checkbox" name="tv" id="tv">
                     телефон <input type="checkbox" name="phone" id="phone">
                     ванна <input type="checkbox" name="bath" id="bath">
@@ -209,11 +207,11 @@
             </div>
             <input type="submit" value="Подать объявление"/>
         </form>
-        <a th:text="${messageTitle}"></a>
+
     </div>
 </section>
 
-
+<div ></div>
 <div th:replace="fragments/footer :: footer"></div>
 </body>
 </html>

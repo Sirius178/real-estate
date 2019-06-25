@@ -6,6 +6,6 @@ import com.users.entities.Customer;
 
 public interface CustomerService extends CrudService<Customer, Long> {
 
-    void sendEmail(Customer customer, Apartment apartment);
+    void sendEmail(Customer customer);
 
 }

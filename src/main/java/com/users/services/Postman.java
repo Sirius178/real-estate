@@ -1,5 +1,7 @@
 package com.users.services;
 
+
+
 import javax.mail.*;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
@@ -23,7 +25,7 @@ public class Postman {
         props.put("mail.smtp.port", "465");
     }
 
-    public void send(String subject,Object text1, Object text2, String fromEmail, String toEmail) {
+    public void send(String subject,Object text,  String fromEmail, String toEmail) {
         Session session = Session.getDefaultInstance(props, new Authenticator() {
             protected PasswordAuthentication getPasswordAuthentication() {
                 return new PasswordAuthentication(username, password);
@@ -31,7 +33,7 @@ public class Postman {
         });
 
         Object fullText;
-        fullText = text1.toString() + text2.toString();
+        fullText = text;
         try {
             Message message = new MimeMessage(session);
             message.setFrom(new InternetAddress(fromEmail));

@@ -12,7 +12,7 @@ import javax.persistence.MappedSuperclass;
 @MappedSuperclass
 public class Person extends BaseEntity {
 
-    @Column(name = "username")
+//    @Column(name = "username")
     private String username;
 
 
