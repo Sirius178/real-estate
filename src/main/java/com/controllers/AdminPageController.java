@@ -9,6 +9,7 @@ import com.new_buildings.services.interfaces.ApartmentService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
 @Controller
 public class AdminPageController {
@@ -36,7 +37,7 @@ public class AdminPageController {
     }
 
     @PostMapping(value = "/save-apartment/{id}")
-    public String saveOrUpdate(@PathVariable("id") Long id, @ModelAttribute Apartment apartment){
+    public String saveOrUpdate(@PathVariable("id") Long id, @ModelAttribute Apartment apartment, MultipartFile multipartFile){
         AddressCommand addressCommand = addressService.findCommandById(id);
         Address address = addressCommandToAddress.convert(addressCommand);
         apartment.setAddress(address);
@@ -51,7 +52,24 @@ public class AdminPageController {
     }
 
     @PostMapping(value = "/save-address")
-    public String saveOrUpdate(@ModelAttribute AddressCommand addressCommand){
+    public String saveOrUpdate(@ModelAttribute AddressCommand addressCommand,
+                               @RequestParam(value = "image") MultipartFile multipartFile){
+        try{
+            if (multipartFile == null){
+                return null;
+            }
+            Byte[] byteObjects = new Byte[multipartFile.getBytes().length];
+            int i = 0;
+            for (byte b: multipartFile.getBytes()){
+                byteObjects[i++] = b;
+            }
+            System.out.println(byteObjects.length);
+            addressCommand.setImage(byteObjects);
+
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+//        addressCommand.setAddress(address);
         addressService.saveAddressCommand(addressCommand);
         return "redirect:/address";
     }
