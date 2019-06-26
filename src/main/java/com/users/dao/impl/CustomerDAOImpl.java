@@ -29,10 +29,12 @@ public class CustomerDAOImpl implements CustomerDAO {
 
     @Override
     public Customer findById(Long aLong) {
-        return null;
+        Session session = sessionFactory.getCurrentSession();
+        Customer customer = session.load(Customer.class, aLong);
+        return customer;
     }
 
-    @Override
+
     public Customer save(Customer object) {
         Session session = sessionFactory.getCurrentSession();
         session.save(object);

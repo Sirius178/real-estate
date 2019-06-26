@@ -2,9 +2,12 @@ package com.users.services;
 
 
 
+import com.new_buildings.entities.Apartment;
+
 import javax.mail.*;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
+import java.util.List;
 import java.util.Properties;
 
 public class Postman {
@@ -34,6 +37,7 @@ public class Postman {
 
         Object fullText;
         fullText = text;
+
         try {
             Message message = new MimeMessage(session);
             message.setFrom(new InternetAddress(fromEmail));

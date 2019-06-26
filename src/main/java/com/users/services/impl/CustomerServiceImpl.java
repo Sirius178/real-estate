@@ -5,6 +5,7 @@ import com.users.entities.Customer;
 import com.users.services.Postman;
 import com.users.services.interfaces.CustomerService;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 
 import java.util.List;

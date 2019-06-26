@@ -27,20 +27,4 @@ public class Customer extends Person{
 
     private Apartment apartment;
 
-
-    public Customer(String phoneNumber, String email, String comment, boolean mortgage, boolean agreeToDataProcessing, Apartment apartment) {
-
-        dateTime = LocalDateTime.now();
-        this.phoneNumber = phoneNumber;
-        this.email = email;
-        this.comment = comment;
-        this.mortgage = mortgage;
-        this.agreeToDataProcessing = agreeToDataProcessing;
-        this.apartment = apartment;
-    }
-
-    public Customer() {
-    }
-
-
 }

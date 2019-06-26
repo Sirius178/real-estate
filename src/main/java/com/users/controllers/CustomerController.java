@@ -1,6 +1,7 @@
 package com.users.controllers;
 
 import com.new_buildings.entities.Apartment;
+import com.new_buildings.services.interfaces.AddressService;
 import com.new_buildings.services.interfaces.ApartmentService;
 import com.users.entities.Customer;
 import com.users.services.interfaces.CustomerService;
@@ -14,10 +15,14 @@ public class CustomerController {
 
     private CustomerService customerService;
     private ApartmentService apartmentService;
+    private AddressService addressService;
 
-    public CustomerController(CustomerService customerService, ApartmentService apartmentService) {
+    public CustomerController(CustomerService customerService,
+                              ApartmentService apartmentService,
+                              AddressService addressService) {
         this.customerService = customerService;
         this.apartmentService = apartmentService;
+        this.addressService = addressService;
     }
 
     @PostMapping("/order/visit/{id}")
@@ -26,8 +31,7 @@ public class CustomerController {
         customer.setApartment(apartment);
         customerService.save(customer);
         customerService.sendEmail(customer);
-
-        return "redirect:/address";
+        return "redirect:/main";
     }
 
 
