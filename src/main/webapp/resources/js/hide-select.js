@@ -7,6 +7,7 @@ $(document).ready(function() {
             $("#rentType").css("display", "none");
         }
     });
+
     $('#realEstateType').change(function() {
         if ($("#realEstateType :selected").val()=="LIVING") {
             $("#living").css("display", "inline-block");

@@ -1,7 +1,7 @@
 package com.advertisements.entities.enums;
 
 public enum DealType {
-
+    NONE("-"),
     SELL ("Продажа"),
     RENT ("Аренда");
     private String value;

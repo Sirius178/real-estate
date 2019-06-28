@@ -5,14 +5,16 @@
 <div th:replace="fragments/header :: header"></div>
 
 <section class="probootstrap-section probootstrap-section-lighter">
-    <label>add poster</label>
     <div>
-        <form action="/save-advertisement" method="post" class="container">
+        <form class="container" action="/save-advertisement", method="post">
             <div>
                 <div class="form-group">
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
                     <label>Тип аккаунта</label>
                     <select name="accountType" id="accountType">
-                        <option value="" selected disabled hidden>Выберите статус</option>
                         <option th:each="accountType:${T(com.advertisements.entities.enums.AccountType).values()}"
                                 th:value="${accountType}"
                                 th:text="${accountType.getValue()}">
@@ -110,7 +112,7 @@
 
                 <div class="form-group">
                     <label>Фото</label>
-                    <input type="file" name="photo" id="photo" value="выберите фото">
+                    <input type="file" name="photo" id="photo" >
                 </div>
 
                 <div>
@@ -188,7 +190,7 @@
                     раздельный санузел<input type="checkbox" name="separateBathroom" id="separateBathroom">
                     совмещенный санузел<input type="checkbox" name="combinedBathroom" id="combinedBathroom">
                     лифт <input type="checkbox" name="lift" id="lift">
-                    трап <input type="checkbox" name="ramp" id="ramp">
+                    <!--трап <input type="checkbox" name="ramp" id="ramp">-->
                 </div>
 
                 <div class="form-group">
@@ -210,8 +212,6 @@
 
     </div>
 </section>
-
-<div ></div>
 <div th:replace="fragments/footer :: footer"></div>
 </body>
 </html>

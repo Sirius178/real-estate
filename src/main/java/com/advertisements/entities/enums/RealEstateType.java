@@ -1,6 +1,7 @@
 package com.advertisements.entities.enums;
 
 public enum RealEstateType {
+    NONE("-"),
     LIVING ("Жилая"),
     COMMERCIAL ("Коммерческая");
 

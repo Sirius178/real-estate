@@ -1,6 +1,7 @@
 package com.advertisements.entities.enums;
 
 public enum Living {
+    NONE("-"),
     APARTMENTinNewBuilding ("Квартира в новостройке"),
     APARTMENT("Квартира"),
     ROOM("Комната"),

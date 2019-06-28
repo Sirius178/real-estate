@@ -1,6 +1,7 @@
 package com.advertisements.entities.enums;
 
 public enum Repairs {
+    NONE("-"),
     COSMETIC("Косметический"),
     EURO("Евро"),
     DESIGNER("Дизайнерский"),
