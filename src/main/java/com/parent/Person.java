@@ -10,9 +10,8 @@ import javax.persistence.MappedSuperclass;
 @Getter
 @Setter
 @MappedSuperclass
-public class Person extends BaseEntity {
+public abstract class Person extends BaseEntity {
 
-//    @Column(name = "username")
     private String username;
 
 

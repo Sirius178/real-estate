@@ -6,6 +6,4 @@ import com.parent.CrudService;
 
 public interface AddressDAO extends CrudService<Address, Long> {
 
-    Address findCommandById(Long id);
-    Address saveAddressCommand (Address object);
 }

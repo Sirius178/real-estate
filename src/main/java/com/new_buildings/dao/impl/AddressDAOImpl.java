@@ -20,44 +20,32 @@ public class AddressDAOImpl implements AddressDAO {
         this.sessionFactory = sessionFactory;
     }
 
-    private Session session;
 
-    
-    public Address findCommandById(Long id) {
-        session = sessionFactory.getCurrentSession();
-        return session.load(Address.class, new Long(id));
-    }
-    @Transactional
-    @Override
-    public Address saveAddressCommand(Address object) {
-        session = sessionFactory.getCurrentSession();
-        session.save(object);
-        return object;
-    }
+
     @Transactional
     @Override
     public List<Address> findAll() {
-        session = sessionFactory.getCurrentSession();
+        Session session = sessionFactory.getCurrentSession();
         List<Address> addresses = session.createNativeQuery("select * from addresses", Address.class).list();
         return addresses;
     }
 
     @Transactional
     public Address findById(Long id) {
-
-        session = sessionFactory.getCurrentSession();
-        Address address = session.load(Address.class, new Long(id));
-        return address;
+        Session session = sessionFactory.getCurrentSession();
+        return session.load(Address.class, new Long(id));
     }
     @Transactional
     @Override
     public Address save(Address object) {
-        return null;
+        Session session = sessionFactory.getCurrentSession();
+        session.save(object);
+        return object;
     }
     @Transactional
     @Override
     public void delete(Address object) {
-        session = sessionFactory.getCurrentSession();
+        Session session = sessionFactory.getCurrentSession();
         session.delete(object);
 
     }

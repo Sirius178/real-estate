@@ -1,8 +1,6 @@
 package com.new_buildings.services.impl;
 
-import com.new_buildings.command.ApartmentCommand;
-import com.new_buildings.converters.ApartmentCommandToApartment;
-import com.new_buildings.converters.ApartmentToApartmentCommand;
+
 import com.new_buildings.dao.interfaces.ApartmentDAO;
 import com.new_buildings.entities.Apartment;
 import com.new_buildings.services.interfaces.ApartmentService;
@@ -18,15 +16,10 @@ import java.util.List;
 public class ApartmentServiceImpl implements ApartmentService {
 
     private final ApartmentDAO apartmentDAO;
-    private final ApartmentCommandToApartment apartmentCommandToApartment;
-    private final ApartmentToApartmentCommand apartmentToApartmentCommand;
 
-    public ApartmentServiceImpl(ApartmentDAO apartmentDAO,
-                                ApartmentCommandToApartment apartmentCommandToApartment,
-                                ApartmentToApartmentCommand apartmentToApartmentCommand) {
+
+    public ApartmentServiceImpl(ApartmentDAO apartmentDAO) {
         this.apartmentDAO = apartmentDAO;
-        this.apartmentCommandToApartment = apartmentCommandToApartment;
-        this.apartmentToApartmentCommand = apartmentToApartmentCommand;
     }
 
 
@@ -41,9 +34,6 @@ public class ApartmentServiceImpl implements ApartmentService {
     }
 
 
-    public ApartmentCommand save() {
-        return null;
-    }
 
     @Override
     public Apartment save(Apartment apartment) {
@@ -56,20 +46,8 @@ public class ApartmentServiceImpl implements ApartmentService {
         apartmentDAO.delete(object);
     }
 
-    @Override
-    public ApartmentCommand saveApartmentCommand(ApartmentCommand object) {
-        Apartment detachedApartment = apartmentCommandToApartment.convert(object);
-        Apartment savedApartment = apartmentDAO.saveApartmentCommand(detachedApartment);
-//        log.debug("Saved id: " + savedApartment.getId());
-        return apartmentToApartmentCommand.convert(savedApartment);
-    }
 
-    @Override
-    public ApartmentCommand findCommandById(Long id) {
-        return null;
-    }
-
-    public List<Apartment> findAllByID(long id){
+    public List<Apartment> findAllByID(long id) {
         return apartmentDAO.findAllByID(id);
     }
 }

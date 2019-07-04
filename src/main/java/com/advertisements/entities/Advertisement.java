@@ -4,6 +4,7 @@ package com.advertisements.entities;
 import com.advertisements.entities.enums.*;
 import com.parent.BaseEntity;
 import lombok.*;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.persistence.Entity;
 import java.time.LocalDateTime;
@@ -28,7 +29,7 @@ public class Advertisement extends BaseEntity {
     private String address;
     private BuildingType buildingType;
     private String description;
-    private Byte[] photo;
+    private MultipartFile[] photo;
     private int price;
     private boolean communalPayments;
     private NumberOfRooms numberOfRooms;

@@ -7,7 +7,6 @@ import com.parent.CrudService;
 import java.util.List;
 
 public interface ApartmentDAO extends CrudService<Apartment, Long> {
-    Apartment findCommandById(Long id);
-    Apartment saveApartmentCommand(Apartment object);
+
     List<Apartment> findAllByID(long id);
 }

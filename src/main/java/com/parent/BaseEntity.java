@@ -9,11 +9,10 @@ import java.io.Serializable;
 @Getter
 @Setter
 @MappedSuperclass
-public class BaseEntity implements Serializable {
+public abstract class BaseEntity implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-//    @Column(name = "id",unique=true, nullable = false)
     private Long id;
 
 }

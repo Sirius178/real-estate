@@ -348,31 +348,30 @@
             <!-- End of Topbar -->
 
             <!-- Begin Page Content -->
-            <div class="container-fluid">
+<div class="container-fluid">
 
-                <!-- Page Heading -->
-                <h1 class="h3 mb-2 text-gray-800">Tables</h1>
+    <!-- Page Heading -->
+    <h1 class="h3 mb-2 text-gray-800">Tables</h1>
 
-                <section class="probootstrap-section probootstrap-section-lighter">
-                    
 
-                    <div>
-                        <label>Добавить новостройку</label>
+    <div>
+        <label>Добавить новостройку</label>
 
-                        <form action="/admin/save-address"  method="post" enctype="multipart/form-data">
+        <form method="POST" action="/admin/save-address" enctype="multipart/form-data" >
 
-                            <div>
-                                <a>address</a><input type="text" name="address" id="address"><br/>
-                                <a>image</a> <input type="file" name="imagefile" id="imagefile" ><br/>
-                            </div>
-                            <input type="submit" value="Save"/>
-                            <input type="reset" value="Reset"/>
-                        </form>
-                        <br/>
-                    </div>
-                </section>
+            <div>
+                <a>address</a><input type="text" name="address" id="address"><br/>
+                <a>image</a><input type="file" name="image" id="image"><br/>
+            </div>
+            <input type="submit" value="Save"/>
+            <input type="reset" value="Reset"/>
+        </form>
+        <br/>
+    </div>
+</div>
 
-                DataTales Example
+
+    DataTales Example
                 <div class="card shadow mb-4" th:if="${not #lists.isEmpty(listOfAddresses)}">
                     <div class="card-header py-3">
                         <h6 class="m-0 font-weight-bold text-primary">DataTable</h6>

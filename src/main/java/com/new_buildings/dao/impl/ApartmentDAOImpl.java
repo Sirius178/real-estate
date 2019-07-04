@@ -21,44 +21,17 @@ public class ApartmentDAOImpl implements ApartmentDAO {
         this.sessionFactory = sessionFactory;
     }
 
-    private Session session;
-
-
-//    public List<Apartment> findAll() {
-//
-//        List<Apartment> newBuildings = null;
-//        try {
-//            session = sessionFactory.getCurrentSession();
-//            sessionFactory.openSession();
-//            session.beginTransaction();
-//            newBuildings = session.createNativeQuery("SELECT * FROM new_buildings", Apartment.class).list();
-//            session.getTransaction().commit();
-//
-//        } catch (Exception e) {
-//
-//            session.getTransaction().rollback();
-//            logger.error("msg error: cannot get list of new buildings", e);
-////            e.printStackTrace();
-//        } finally {
-//            session.close();
-//            sessionFactory.close();
-//        }
-//        System.out.println(newBuildings);
-////        List<Apartment> newBuildings  = session.createQuery("from new_buildings").list();
-//        return newBuildings;
-//    }
     @Override
     @Transactional
     public List<Apartment> findAll() {
-        session = sessionFactory.getCurrentSession();
+        Session session = sessionFactory.getCurrentSession();
         List<Apartment> apartments = session.createNativeQuery("select * from apartments", Apartment.class).list();
-
         return apartments;
     }
 
     @Transactional
     public Apartment findById(Long aLong) {
-        session = sessionFactory.getCurrentSession();
+        Session session = sessionFactory.getCurrentSession();
         Apartment apartment = session.find(Apartment.class, aLong);
         return apartment;
     }
@@ -66,7 +39,7 @@ public class ApartmentDAOImpl implements ApartmentDAO {
 
     @Transactional
     public Apartment save(Apartment object) {
-        session = sessionFactory.getCurrentSession();
+        Session session = sessionFactory.getCurrentSession();
         session.save(object);
         return object;
 
@@ -74,32 +47,19 @@ public class ApartmentDAOImpl implements ApartmentDAO {
 
     @Transactional
     public void delete(Apartment object) {
-        session = sessionFactory.getCurrentSession();
+        Session session = sessionFactory.getCurrentSession();
         session.delete(object);
     }
 
     @Transactional
     public void deleteById(Long aLong) {
-        session = sessionFactory.getCurrentSession();
+        Session session = sessionFactory.getCurrentSession();
         session.delete(aLong);
-    }
-
-    @Override
-    public Apartment findCommandById(Long id) {
-        return null;
-    }
-
-    @Transactional
-    public Apartment saveApartmentCommand(Apartment object) {
-        session = sessionFactory.getCurrentSession();
-        session.save(object);
-
-        return object;
     }
 
     @Transactional
     public List<Apartment> findAllByID(long id) {
-        session = sessionFactory.getCurrentSession();
+        Session session = sessionFactory.getCurrentSession();
         List<Apartment> apartments = session.createNativeQuery("select * from apartments where address_id =" + id, Apartment.class).list();
         return apartments;
     }

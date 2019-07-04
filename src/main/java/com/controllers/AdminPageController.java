@@ -1,7 +1,6 @@
 package com.controllers;
 
-import com.new_buildings.command.AddressCommand;
-import com.new_buildings.converters.AddressCommandToAddress;
+
 import com.new_buildings.entities.Address;
 import com.new_buildings.entities.Apartment;
 import com.new_buildings.services.interfaces.AddressService;
@@ -12,7 +11,9 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
-import java.io.IOException;
+import java.io.BufferedOutputStream;
+import java.io.FileInputStream;
+
 
 @Controller
 @RequestMapping(value = "/admin")
@@ -20,12 +21,11 @@ public class AdminPageController {
 
     private ApartmentService apartmentService;
     private AddressService addressService;
-    private AddressCommandToAddress addressCommandToAddress;
 
-    public AdminPageController(ApartmentService apartmentService, AddressService addressService, AddressCommandToAddress addressCommandToAddress) {
+
+    public AdminPageController(ApartmentService apartmentService, AddressService addressService) {
         this.apartmentService = apartmentService;
         this.addressService = addressService;
-        this.addressCommandToAddress = addressCommandToAddress;
     }
 
     @GetMapping("/admin-page")
@@ -41,14 +41,6 @@ public class AdminPageController {
         return "admin-pages/apartment";
     }
 
-    @PostMapping(value = "/save-apartment/{id}", consumes = {MediaType.ALL_VALUE})
-    public String saveOrUpdate(@PathVariable("id") Long id, @ModelAttribute Apartment apartment) {
-        AddressCommand addressCommand = addressService.findCommandById(id);
-        Address address = addressCommandToAddress.convert(addressCommand);
-        apartment.setAddress(address);
-        apartmentService.save(apartment);
-        return "redirect:/admin/address";
-    }
 
     @GetMapping("/address")
     public String addressesPage(Model model) {
@@ -56,26 +48,28 @@ public class AdminPageController {
         return "admin-pages/address";
     }
 
-    @RequestMapping(value = "/save-address", consumes = {MediaType.ALL_VALUE} , method = RequestMethod.POST)
-    public String saveOrUpdate( @RequestParam( value = "address") String address, @RequestParam( value = "imagefile") MultipartFile file , AddressCommand addressCommand) {
-        if (file == null) {
-            return null;
-        } else {
-            try {
-                Byte[] byteObjects = new Byte[file.getBytes().length];
-                int i = 0;
-                for (byte b : byteObjects) {
-                    byteObjects[i++] = b;
-                }
-                addressCommand.setImage(byteObjects);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-        addressCommand.setAddress(address);
-        addressService.saveAddressCommand(addressCommand);
-        return "redirect:/address";
+    @PostMapping(value = "/save-address")
+    public String saveOrUpdate(@RequestParam(value = "address") String address,
+                               @RequestParam(value = "image") MultipartFile multipartFile) {
+        saveImageFile(address, multipartFile);
+        return "redirect:/admin/address";
     }
 
+    void saveImageFile(String address, MultipartFile multipartFile) {
+        Address object = new Address();
+        try {
+
+            Byte[] byteObjects = new Byte[multipartFile.getBytes().length];
+            int i = 0;
+            for (byte b : multipartFile.getBytes()) {
+                byteObjects[i++] = b;
+            }
+            object.setAddress(address);
+            object.setImage(byteObjects);
+            addressService.save(object);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 
 }

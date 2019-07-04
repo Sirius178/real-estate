@@ -20,6 +20,13 @@
                     <tr th:each="address : ${listOfAddress}">
                         <td th:text="${address.address}">address</td>
                         <td><a th:href="@{'/address/' + ${address.id} + '/apartment'}">список квартир</a></td>
+                        <td>
+                            <div class="col-md-6">
+                            <img src="/resources/img/slider_4.jpg"
+                                 th:src="@{'/address/' + ${address.id} + '/address-image'}"
+                                 width="200" height="200">
+                            </div>
+                        </td>
                     </tr>
                     </tbody>
                 </table>
