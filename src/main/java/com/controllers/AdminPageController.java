@@ -41,7 +41,13 @@ public class AdminPageController {
         return "admin-pages/apartment";
     }
 
-    public  String saveOrUpdate
+    @PostMapping(value = "/save-apartment/{id}")
+    public  String saveOrUpdateApartment(@PathVariable("id") Long id, @ModelAttribute Apartment apartment){
+        Address address = addressService.findById(id);
+        apartment.setAddress(address);
+        apartmentService.save(apartment);
+        return "redirect:/admin/address";
+    }
     @GetMapping("/address")
     public String addressesPage(Model model) {
         model.addAttribute("listOfAddresses", addressService.findAll());
