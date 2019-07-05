@@ -30,10 +30,13 @@ public class AddressDAOImpl implements AddressDAO {
         return addresses;
     }
 
-    @Transactional
+
     public Address findById(Long id) {
-        Session session = sessionFactory.getCurrentSession();
-        return session.load(Address.class, new Long(id));
+        Session session = sessionFactory.openSession();
+        session.beginTransaction();
+        Address address =  session.load(Address.class, id);
+        session.getTransaction().commit();
+        return address;
     }
     @Transactional
     @Override

@@ -13,7 +13,7 @@ import java.util.Arrays;
 public class Apartment extends BaseEntity {
 
     private Address address;
-    private MultipartFile[] image;
+    private byte[] image;
     private int floor;
     private int numberOfApartment;
     private int numberOfRooms;

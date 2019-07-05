@@ -5,10 +5,13 @@ import com.new_buildings.entities.Apartment;
 import com.new_buildings.services.interfaces.AddressService;
 import com.new_buildings.services.interfaces.ApartmentService;
 import org.apache.commons.io.IOUtils;
+import org.hibernate.SessionFactory;
+import org.springframework.orm.hibernate5.support.OpenSessionInViewFilter;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletResponse;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
@@ -48,17 +51,21 @@ public class NewBuildingController {
     }
 
     @GetMapping("/address/{id}/address-image")
-    public void renderImageFromDB(@PathVariable String id, HttpServletResponse response) throws IOException {
-        Address address = addressService.findById(Long.valueOf(id));
+    public void renderImageFromDB(@PathVariable Long id, HttpServletResponse response) throws IOException {
+        Address address = addressService.findById(id);
+        ServletOutputStream outputStream =response.getOutputStream();
+        try {
+            response.setContentType("image/jpeg");
+            byte[] image = address.getImage();
 
-        byte[] byteArray = new byte[address.getImage().length];
-        int i = 0;
-        for (Byte wrappetByte : address.getImage()){
-            byteArray[i++] = wrappetByte;
+            outputStream.write(image);
+        }catch (Exception e){
+            e.printStackTrace();
+        }finally {
+            outputStream.close();
         }
-        response.setContentType("image/jpeg");
-        InputStream is =  new ByteArrayInputStream(byteArray);
-        IOUtils.copy(is, response.getOutputStream());
+
+
     }
 
 }

@@ -41,7 +41,7 @@ public class AdminPageController {
         return "admin-pages/apartment";
     }
 
-
+    public  String saveOrUpdate
     @GetMapping("/address")
     public String addressesPage(Model model) {
         model.addAttribute("listOfAddresses", addressService.findAll());
@@ -49,7 +49,7 @@ public class AdminPageController {
     }
 
     @PostMapping(value = "/save-address")
-    public String saveOrUpdate(@RequestParam(value = "address") String address,
+    public String saveOrUpdateAddress(@RequestParam(value = "address") String address,
                                @RequestParam(value = "image") MultipartFile multipartFile) {
         saveImageFile(address, multipartFile);
         return "redirect:/admin/address";
@@ -59,7 +59,7 @@ public class AdminPageController {
         Address object = new Address();
         try {
 
-            Byte[] byteObjects = new Byte[multipartFile.getBytes().length];
+            byte[] byteObjects = new byte[multipartFile.getBytes().length];
             int i = 0;
             for (byte b : multipartFile.getBytes()) {
                 byteObjects[i++] = b;

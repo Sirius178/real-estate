@@ -15,6 +15,6 @@ import java.util.Set;
 public class Address extends BaseEntity {
 
     private String address;
-    private Byte[] image;
+    private byte[] image;
 
 }
