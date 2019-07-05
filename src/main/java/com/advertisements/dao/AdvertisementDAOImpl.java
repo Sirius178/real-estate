@@ -9,7 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
 
-@Transactional
+
 @Repository
 public class AdvertisementDAOImpl implements AdvertisementDAO {
 
@@ -20,26 +20,30 @@ public class AdvertisementDAOImpl implements AdvertisementDAO {
     }
 
 
-    @Override
+    @Transactional
     public List<Advertisement> findAll() {
         Session session = sessionFactory.getCurrentSession();
         List<Advertisement> advertisements = session.createNativeQuery("select * from advertisements",Advertisement.class).list();
         return advertisements;
     }
 
-    @Override
+
     public Advertisement findById(Long aLong) {
-        return null;
+        Session session = sessionFactory.openSession();
+        session.beginTransaction();
+        Advertisement advertisement = session.load(Advertisement.class, aLong);
+        session.getTransaction().commit();
+        return advertisement;
     }
 
-    @Override
+    @Transactional
     public Advertisement save(Advertisement object) {
         Session session = sessionFactory.getCurrentSession();
         session.save(object);
         return object;
     }
 
-    @Override
+    @Transactional
     public void delete(Advertisement object) {
 
     }

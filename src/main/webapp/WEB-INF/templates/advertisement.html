@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head th:replace="fragments/head :: head"></head>
-<title>Главная страница</title>
 <body>
 
 <div th:replace="fragments/header :: header"></div>
+<br/>
+<br/><br/>
+<br/>
+<br/>
+<br/>
 
-<div>
 
+
+<div th:object="advertisement">
+    <table>
+        <td th:text="${advertisement.id}">
+
+        </td>
+    </table>
+    <a > </a>
 </div>
 
 <div th:replace="fragments/footer :: footer"></div>

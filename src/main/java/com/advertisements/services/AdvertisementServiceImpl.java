@@ -17,12 +17,12 @@ public class AdvertisementServiceImpl implements AdvertisementService {
     //       todo service
     @Override
     public List<Advertisement> findAll() {
-        return null;
+        return advertisementDAO.findAll();
     }
 
     @Override
     public Advertisement findById(Long aLong) {
-        return null;
+        return advertisementDAO.findById(aLong);
     }
 
     @Override

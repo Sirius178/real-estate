@@ -38,20 +38,20 @@ public class NewBuildingController {
     }
 
     @GetMapping(value = "address/{id}/apartment")
-    public String apartmentPage(@PathVariable Long id, Model model){
+    public String apartmentPage(@PathVariable("id")  Long id, Model model){
         model.addAttribute("listOfApartment", apartmentService.findAllByID(id));
 
         return "new_building_apartment";
     }
 
     @GetMapping("/apartment/{id}/order")
-    public String orderPage(@PathVariable Long id, Model model){
+    public String orderPage(@PathVariable("id")  Long id, Model model){
         model.addAttribute("apartment", apartmentService.findById(id));
         return "new_building_order";
     }
 
     @GetMapping("/address/{id}/address-image")
-    public void renderImageFromDB(@PathVariable Long id, HttpServletResponse response) throws IOException {
+    public void renderImageFromDB(@PathVariable("id")  Long id, HttpServletResponse response) throws IOException {
         Address address = addressService.findById(id);
         ServletOutputStream outputStream =response.getOutputStream();
         try {

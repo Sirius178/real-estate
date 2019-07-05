@@ -29,7 +29,7 @@ public class Advertisement extends BaseEntity {
     private String address;
     private BuildingType buildingType;
     private String description;
-    private MultipartFile[] photo;
+    private byte[] photo;
     private int price;
     private boolean communalPayments;
     private NumberOfRooms numberOfRooms;
