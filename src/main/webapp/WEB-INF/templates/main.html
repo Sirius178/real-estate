@@ -4,57 +4,46 @@
 <body>
 <div th:replace="fragments/header :: header"></div>
 
-<div class="clearfix visible-sm-block"></div>
+<div class="container">
+    <blockquote class="blockquote text-center">
+        <p class="mb-0">Объявления</p>
+    </blockquote>
 
-<section th:if="${not #lists.isEmpty(listOfAdvertisement)}" class="probootstrap-section probootstrap-section-lighter">
-    <div class="container">
-        <div class="row heading">
-            <h2 class="mt0 mb50 text-center">Обьявления</h2>
-        </div>
-        <div class="row">
-            <div class="col-md-3 col-sm-3">
-                <div>
-                    <div th:each="advertisement : ${listOfAdvertisement}"
-                         class="probootstrap-card probootstrap-listing">
-                        <div >
-                            <div class="probootstrap-card-media">
-                                <img class="img-responsive" src="/resources/img/slider_4.jpg"
-                                     th:src="@{'/advertisement/' + ${advertisement.id} + '/advertisement-image'}">
-                            </div>
-                            <div>
-                                <div class="probootstrap-card-text">
-                                    <h2 class="probootstrap-card-heading"><a th:href="@{'/advertisement/' + ${advertisement.id}}"
-                                                                             th:text="${advertisement.title}"></a></h2>
-                                    <div class="probootstrap-listing-location">
-                                        <i class="icon-location2"></i> <a th:text="${advertisement.district}"></a>
-                                    </div>
-                                    <div class="probootstrap-listing-category for-sale"><span><a
-                                            th:text="${advertisement.rentType}"></a></span></div>
-                                    <div class="probootstrap-listing-price"><strong
-                                            th:text="${advertisement.price}"></strong> / цена
-                                    </div>
-                                </div>
-                                <div class="probootstrap-card-extra">
-                                    <ul>
-                                        <li>
-                                            Площадь
-                                            <span><a th:text="${advertisement.square}"></a></span>
-                                        </li>
-                                        <li>
-                                            Комнат
-                                            <span><a th:text="${advertisement.numberOfRooms}"></a></span>
-                                        </li>
-
-                                    </ul>
-                                </div>
-                            </div>
+    <div class="row" th:if="${not #lists.isEmpty(listOfAdvertisement)}">
+        <div >
+            <div class="card-deck">
+                <div class="col-3" th:each="advertisement : ${listOfAdvertisement}">
+                    <div class="card text-center" >
+                        <div>
+                            <img class="card-img-top" src="" alt="Card image cap"
+                                 th:src="@{'/advertisement/' + ${advertisement.id} + '/advertisement-image'}">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title" th:text="${advertisement.title}">Card title</h5>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <h6 class="card-subtitle mb-2 text-muted" th:text="${advertisement.district}">Card
+                                    subtitle</h6>
+                            </li>
+                            <li class="list-group-item">
+                                <h6 class="card-subtitle mb-2 text-muted" th:text="${advertisement.price}">Card
+                                    subtitle</h6>
+                            </li>
+                        </ul>
+                        <div class="card-body">
+                            <a th:href="@{'/advertisement/' + ${advertisement.id}}" class="btn btn-primary">Подробнее</a>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Last updated 3 mins ago</small>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</section>
+
+</div>
 
 
 <div th:replace="fragments/footer :: footer"></div>

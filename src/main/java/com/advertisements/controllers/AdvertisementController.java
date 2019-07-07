@@ -41,7 +41,7 @@ public class AdvertisementController {
 //                                            @RequestParam(value = "address") String address,
 //                                            @RequestParam(value = "buildingType") BuildingType buildingType,
 //                                            @RequestParam(value = "description") String description,
-                                            @RequestParam(value = "photo") MultipartFile multipartFile,
+            @RequestParam(value = "photo") MultipartFile multipartFile,
 //                                            @RequestParam(value = "price") int price,
 //                                            @RequestParam(value = "deposit") int deposit,
 //                                            @RequestParam(value = "communalPayments") boolean communalPayments,
@@ -69,29 +69,29 @@ public class AdvertisementController {
 //                                            @RequestParam(value = "nameOfComplex") String nameOfComplex,
 //                                            @RequestParam(value = "yearOfConstruction") int yearOfConstruction,
 //                                            @RequestParam(value = "ramp") boolean ramp,
-                                            @RequestParam(value = "title") String title) {
-     saveImageFile(title,multipartFile);
+            @RequestParam(value = "title") String title) {
+        saveImageFile(title, multipartFile);
         return "redirect:/";
     }
 
     @GetMapping("/advertisement/{id}")
-    public String advertisementPage(@PathVariable("id")  Long id, Model model){
+    public String advertisementPage(@PathVariable("id") Long id, Model model) {
         Advertisement advertisement = advertisementService.findById(id);
-        model.addAttribute("advertisement", advertisement );
+        model.addAttribute("advertisement", advertisement);
         return "advertisement";
     }
 
     @GetMapping("/advertisement/{id}/advertisement-image")
-    public void showImageFromDB(@PathVariable("id")  Long id, HttpServletResponse response) throws IOException {
+    public void showImageFromDB(@PathVariable("id") Long id, HttpServletResponse response) throws IOException {
         Advertisement advertisement = advertisementService.findById(id);
-        ServletOutputStream outputStream =response.getOutputStream();
+        ServletOutputStream outputStream = response.getOutputStream();
         try {
             response.setContentType("image/jpeg");
             byte[] image = advertisement.getPhoto();
             outputStream.write(image);
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             outputStream.close();
         }
 
@@ -116,7 +116,6 @@ public class AdvertisementController {
             e.printStackTrace();
         }
     }
-
 
 
 }

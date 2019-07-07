@@ -14,7 +14,7 @@ public class AdvertisementServiceImpl implements AdvertisementService {
     public AdvertisementServiceImpl(AdvertisementDAO advertisementDAO) {
         this.advertisementDAO = advertisementDAO;
     }
-    //       todo service
+
     @Override
     public List<Advertisement> findAll() {
         return advertisementDAO.findAll();
@@ -33,7 +33,7 @@ public class AdvertisementServiceImpl implements AdvertisementService {
 
     @Override
     public void delete(Advertisement object) {
-
+        advertisementDAO.delete(object);
     }
 
 }

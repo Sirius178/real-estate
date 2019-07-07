@@ -1,42 +1,71 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org">
+<!-- Footer -->
+<head th:replace="fragments/head :: head"></head>
+<footer class="page-footer font-small stylish-color-dark pt-4">
 
-<footer th:fragment="footer" class="probootstrap-footer probootstrap-bg" style="background-image: url(img/slider_3.jpg)">
-    <div class="container">
-        <div class="row mb60">
+    <hr/>
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
 
-            <div class="col-md-3">
-                <div class="probootstrap-footer-widget probootstrap-link-wrap">
-                    <h4 class="heading">Наши контакты</h4>
-                    <ul class="stack-link">
-                        <li><a href="#">Адрес: г. Якутск, ул. Кирова 18, блок В, офис 203 и 303б</a></li>
-                        <li><a href="#">E-mail: can-ykt@mail.ru</a></li>
-                        <li><a href="#">Тел: 8 (4112) 219-618</a></li>
-                    </ul>
-                </div>
+        <!-- Grid row -->
+        <div class="row">
+
+            <!-- Grid column -->
+            <div class="col-md-4 mx-auto">
+
+                <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Наши контакты</h5>
+                <p>
+                    <a> Адрес: г. Якутск, ул. Кирова 18, блок В, офис 203 и 303б
+                    </a>
+                    <a> E-mail: can-ykt@mail.ru</a>
+                    <a> Тел: 8 (4112) 219-618
+                    </a>
+
+                <p>
+
+                </p>
+
             </div>
+            <!-- Grid column -->
+
+            <hr class="clearfix w-100 d-md-none">
+
+            <!-- Grid column -->
+            <div class="col-md-2 mx-auto">
+
+                <!-- Links -->
+                <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Cсылки</h5>
+
+                <ul class="list-unstyled">
+
+                    <a href="https://www.instagram.com/can14ykt/">Instagram</a>
+
+                </ul>
+
+            </div>
+            <!-- Grid column -->
 
 
         </div>
-        <div class="row copyright">
-            <div class="col-md-6">
-                <div class="probootstrap-footer-widget">
-                    <p> </p>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="probootstrap-footer-widget right">
-                    <ul class="probootstrap-footer-social">
-                        <li><a href="https://www.instagram.com/can14ykt/"><i class="icon-instagram2"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+        <!-- Grid row -->
+
     </div>
+
+
     <script src="/resources/js/hide-select.js"></script>
-    <script src="/resources/js/scripts.min.js"></script>
-    <script src="/resources/js/main.min.js"></script>
-    <script src="/resources/js/custom.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+
 </footer>
+
+
 </html>
