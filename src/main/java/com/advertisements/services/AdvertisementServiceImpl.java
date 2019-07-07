@@ -36,4 +36,13 @@ public class AdvertisementServiceImpl implements AdvertisementService {
         advertisementDAO.delete(object);
     }
 
+    @Override
+    public List<Advertisement> findAllSell() {
+        return advertisementDAO.findAllSell();
+    }
+
+    @Override
+    public List<Advertisement> findAllRent() {
+        return advertisementDAO.findAllRent();
+    }
 }

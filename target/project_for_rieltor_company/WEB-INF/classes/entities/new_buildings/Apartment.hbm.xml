@@ -18,7 +18,12 @@
         <property name="numberOfRooms" column="number_of_rooms"/>
         <property name="pricePerSquare" column="price_per_square"/>
         <property name="square" column="square"/>
-        <property name="status" column="status"/>
+        <property name="status" column="status">
+            <type name="org.hibernate.type.EnumType">
+                <param name="enumClass">com.new_buildings.entities.Status</param>
+                <param name="useNamed">true</param>
+            </type>
+        </property>
     </class>
 
 </hibernate-mapping>

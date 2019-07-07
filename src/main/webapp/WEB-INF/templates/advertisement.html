@@ -4,7 +4,7 @@
 <body>
 
 <div th:replace="fragments/header :: header"></div>
-
+<br/>
 <div class="container">
     <div th:object="${advertisement}" class="card">
         <img class="card-img-top" src="..." alt="Card image cap" th:src="@{'/advertisement/' + ${advertisement.id} + '/advertisement-image'}">

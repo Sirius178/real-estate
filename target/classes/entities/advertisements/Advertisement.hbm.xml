@@ -14,7 +14,12 @@
         <property name="commercial" column="commercial"/>
         <property name="communalPayments" column="communal_payments"/>
         <property name="dateTime" column="date_time"/>
-        <property name="dealType" column="deal_type"/>
+        <property name="dealType" column="deal_type">
+            <type name="org.hibernate.type.EnumType">
+                <param name="enumClass">com.advertisements.entities.enums.DealType</param>
+                <param name="useNamed">true</param>
+            </type>
+        </property>
         <property name="description" column="description"/>
         <property name="district" column="district"/>
         <property name="floor" column="floor"/>

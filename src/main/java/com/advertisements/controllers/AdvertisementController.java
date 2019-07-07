@@ -81,6 +81,7 @@ public class AdvertisementController {
         return "advertisement";
     }
 
+
     @GetMapping("/advertisement/{id}/advertisement-image")
     public void showImageFromDB(@PathVariable("id") Long id, HttpServletResponse response) throws IOException {
         Advertisement advertisement = advertisementService.findById(id);

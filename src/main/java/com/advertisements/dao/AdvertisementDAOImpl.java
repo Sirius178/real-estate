@@ -49,4 +49,17 @@ public class AdvertisementDAOImpl implements AdvertisementDAO {
     }
 
 
+    @Transactional
+    public List<Advertisement> findAllSell() {
+        Session session = sessionFactory.getCurrentSession();
+        List<Advertisement> advertisements = session.createNativeQuery("select * from advertisements where deal_type='SELL'  ",Advertisement.class).list();
+        return advertisements;
+    }
+
+    @Transactional
+    public List<Advertisement> findAllRent() {
+        Session session = sessionFactory.getCurrentSession();
+        List<Advertisement> advertisements = session.createNativeQuery("select * from advertisements where deal_type='RENT' ",Advertisement.class).list();
+        return advertisements;
+    }
 }

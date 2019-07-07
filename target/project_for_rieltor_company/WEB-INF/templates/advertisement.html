@@ -4,7 +4,7 @@
 <body>
 
 <div th:replace="fragments/header :: header"></div>
-
+<br/>
 <div class="container">
     <div th:object="${advertisement}" class="card">
         <img class="card-img-top" src="..." alt="Card image cap" th:src="@{'/advertisement/' + ${advertisement.id} + '/advertisement-image'}">
@@ -16,6 +16,7 @@
                 <li class="list-group-item" th:text="${advertisement.description}">Cras justo odio</li>
                 <li class="list-group-item">Dapibus ac facilisis in</li>
                 <li class="list-group-item"><h3 th:text="${advertisement.price}"></h3></li>
+                <li class="list-group-item"><h3 th:text="${advertisement.dateTime}"></h3></li>
             </ul>
         </div>
     </div>

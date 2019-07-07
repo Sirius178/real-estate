@@ -6,11 +6,6 @@ import com.advertisements.services.AdvertisementService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-
-import javax.servlet.ServletOutputStream;
-import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
 
 @Controller
 public class MainPageController {
@@ -25,6 +20,16 @@ public class MainPageController {
     public String main(Model model){
         model.addAttribute("listOfAdvertisement", advertisementService.findAll());
 
+        return "main";
+    }
+    @GetMapping("/all-sell")
+    public String findAllSell(Model model){
+        model.addAttribute("listOfAdvertisementByStatusSell", advertisementService.findAllSell());
+        return "main";
+    }
+    @GetMapping("/all-rent")
+    public String findAllRent(Model model){
+        model.addAttribute("listOfAdvertisementByStatusRent", advertisementService.findAllRent());
         return "main";
     }
 
