@@ -33,6 +33,7 @@ public class AdvertisementController {
         model.addAttribute("advertisementAttribute",advertisement);
         return "add_advertisement";
     }
+
     @PostMapping(value = "/save-advertisement")
     public String saveOrUpdateAdvertisement(@ModelAttribute("advertisementAttribute") Advertisement advertisement,
                                             BindingResult bindingResult,

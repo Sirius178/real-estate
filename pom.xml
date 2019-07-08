@@ -11,7 +11,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <thymeleaf.version>3.0.0.RELEASE</thymeleaf.version>
+        <thymeleaf.version>3.0.9.RELEASE</thymeleaf.version>
         <spring.version>5.0.4.RELEASE</spring.version>
         <spring-webflow.version>2.5.0.RELEASE</spring-webflow.version>
         <spring.security-version>3.2.5.RELEASE</spring.security-version>
@@ -84,6 +84,12 @@
                     <artifactId>spring-context</artifactId>
                 </exclusion>
             </exclusions>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-commons</artifactId>
+            <version>2.0.9.RELEASE</version>
         </dependency>
         <!-- AspectJ -->
         <dependency>
