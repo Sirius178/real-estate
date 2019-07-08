@@ -19,7 +19,6 @@ public class AdvertisementServiceImpl implements AdvertisementService {
     public List<Advertisement> findAll() {
         return advertisementDAO.findAll();
     }
-
     @Override
     public Advertisement findById(Long aLong) {
         return advertisementDAO.findById(aLong);

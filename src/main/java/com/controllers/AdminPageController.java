@@ -8,11 +8,16 @@ import com.new_buildings.services.interfaces.ApartmentService;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.multipart.commons.CommonsMultipartFile;
 
-import java.io.BufferedOutputStream;
-import java.io.FileInputStream;
+import javax.servlet.ServletInputStream;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.*;
 
 
 @Controller
@@ -28,6 +33,7 @@ public class AdminPageController {
         this.addressService = addressService;
     }
 
+
     @GetMapping("/admin-page")
     public String adminPanel() {
         return "admin-pages/index";
@@ -42,40 +48,35 @@ public class AdminPageController {
     }
 
     @PostMapping(value = "/save-apartment/{id}")
-    public  String saveOrUpdateApartment(@PathVariable("id") Long id, @ModelAttribute Apartment apartment){
+    public String saveOrUpdateApartment(@PathVariable("id") Long id, @ModelAttribute Apartment apartment) {
         Address address = addressService.findById(id);
         apartment.setAddress(address);
         apartmentService.save(apartment);
         return "redirect:/admin/address";
     }
+
     @GetMapping("/address")
     public String addressesPage(Model model) {
+        Address address = new Address();
+        model.addAttribute("addressAttribute", address);
         model.addAttribute("listOfAddresses", addressService.findAll());
         return "admin-pages/address";
     }
 
     @PostMapping(value = "/save-address")
-    public String saveOrUpdateAddress(@RequestParam(value = "address") String address,
-                               @RequestParam(value = "image") MultipartFile multipartFile) {
-        saveImageFile(address, multipartFile);
+    public String saveOrUpdateAddress(@ModelAttribute("addressAttribute") Address address,
+                                      BindingResult bindingResult,
+                                      @RequestParam("image") CommonsMultipartFile[] image) {
+        for (CommonsMultipartFile multipartFile : image) {
+            address.setImage(multipartFile.getBytes());
+        }
+        addressService.save(address);
         return "redirect:/admin/address";
     }
 
-    void saveImageFile(String address, MultipartFile multipartFile) {
-        Address object = new Address();
-        try {
 
-            byte[] byteObjects = new byte[multipartFile.getBytes().length];
-            int i = 0;
-            for (byte b : multipartFile.getBytes()) {
-                byteObjects[i++] = b;
-            }
-            object.setAddress(address);
-            object.setImage(byteObjects);
-            addressService.save(object);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+    @GetMapping("/403")
+    public String page403() {
+        return "admin-pages/403";
     }
-
 }
