@@ -7,7 +7,8 @@
 <br/>
 <div class="container">
     <div th:object="${advertisement}" class="card">
-        <img class="card-img-top" src="..." alt="Card image cap" th:src="@{'/advertisement/' + ${advertisement.id} + '/advertisement-image'}">
+        <img class="card-img-top" src="..." alt="Card image cap"
+             th:src="@{'/advertisement/' + ${advertisement.id} + '/advertisement-image'}">
         <div class="card-body">
             <div class="card-header">
                 <p th:text="${advertisement.title}"></p>

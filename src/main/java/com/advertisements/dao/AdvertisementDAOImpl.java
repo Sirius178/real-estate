@@ -23,7 +23,7 @@ public class AdvertisementDAOImpl implements AdvertisementDAO {
     @Transactional
     public List<Advertisement> findAll() {
         Session session = sessionFactory.getCurrentSession();
-        List<Advertisement> advertisements = session.createNativeQuery("select * from advertisements",Advertisement.class).list();
+        List<Advertisement> advertisements = session.createNativeQuery("select * from advertisements order by date_time desc ",Advertisement.class).list();
         return advertisements;
     }
 
@@ -52,14 +52,14 @@ public class AdvertisementDAOImpl implements AdvertisementDAO {
     @Transactional
     public List<Advertisement> findAllSell() {
         Session session = sessionFactory.getCurrentSession();
-        List<Advertisement> advertisements = session.createNativeQuery("select * from advertisements where deal_type='SELL'  ",Advertisement.class).list();
+        List<Advertisement> advertisements = session.createNativeQuery("select * from advertisements where deal_type='SELL' order by date_time desc ",Advertisement.class).list();
         return advertisements;
     }
 
     @Transactional
     public List<Advertisement> findAllRent() {
         Session session = sessionFactory.getCurrentSession();
-        List<Advertisement> advertisements = session.createNativeQuery("select * from advertisements where deal_type='RENT' ",Advertisement.class).list();
+        List<Advertisement> advertisements = session.createNativeQuery("select * from advertisements where deal_type='RENT' order by date_time desc",Advertisement.class).list();
         return advertisements;
     }
 }

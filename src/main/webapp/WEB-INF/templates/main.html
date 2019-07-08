@@ -15,7 +15,7 @@
                 <div class="col-3" th:each="advertisement : ${listOfAdvertisement}">
                     <div class="card text-center" >
                         <div>
-                            <img class="card-img-top" src="" alt="Card image cap"
+                            <img class="card-img-top" src="/resources/img/nophoto-available.png" alt="Card image cap"
                                  th:src="@{'/advertisement/' + ${advertisement.id} + '/advertisement-image'}">
                         </div>
                         <div class="card-body">
@@ -35,7 +35,7 @@
                             <a th:href="@{'/advertisement/' + ${advertisement.id}}" class="btn btn-primary">Подробнее</a>
                         </div>
                         <div class="card-footer">
-                            <small class="text-muted">Last updated 3 mins ago</small>
+                            <small class="text-muted" th:text="${advertisement.dateTime}">Last updated 3 mins ago</small>
                         </div>
                     </div>
                 </div>
@@ -62,7 +62,7 @@
                             <a th:href="@{'/advertisement/' + ${advertisement.id}}" class="btn btn-primary">Подробнее</a>
                         </div>
                         <div class="card-footer">
-                            <small class="text-muted">Last updated 3 mins ago</small>
+                            <small class="text-muted" th:text="${advertisement.dateTime}">Last updated 3 mins ago</small>
                         </div>
                     </div>
                 </div>
@@ -89,7 +89,7 @@
                             <a th:href="@{'/advertisement/' + ${advertisement.id}}" class="btn btn-primary">Подробнее</a>
                         </div>
                         <div class="card-footer">
-                            <small class="text-muted">Last updated 3 mins ago</small>
+                            <small class="text-muted" th:text="${advertisement.dateTime}">Last updated 3 mins ago</small>
                         </div>
                     </div>
                 </div>

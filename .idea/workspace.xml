@@ -7,37 +7,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5518e60-f0c0-4259-91b4-2dfc40ffb5f5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/admin-pages/403.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/advertisements/services/AdvertisementServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/advertisements/services/AdvertisementServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/controllers/AdminPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controllers/AdminPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/advertisements/controllers/AdvertisementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/advertisements/controllers/AdvertisementController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/advertisements/dao/AdvertisementDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/advertisements/dao/AdvertisementDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/advertisements/entities/Advertisement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/advertisements/entities/Advertisement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/new_buildings/controllers/NewBuildingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/new_buildings/controllers/NewBuildingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/admin-pages/address.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/admin-pages/address.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/admin-pages/apartment.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/admin-pages/apartment.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/admin-pages/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/admin-pages/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/add_advertisement.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/add_advertisement.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/advertisement.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/advertisement.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/new_building_address.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/new_building_address.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/new_building_apartment.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/new_building_apartment.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/advertisements/search/SearchCriteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/advertisements/search/SearchType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/advertisements/search/Utils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/advertisements/services/AdvertisementServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/advertisements/services/AdvertisementServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/advertisements/controllers/AdvertisementController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/advertisements/controllers/AdvertisementController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/controllers/AdminPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/controllers/AdminPageController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/new_buildings/controllers/NewBuildingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/new_buildings/controllers/NewBuildingController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/advertisements/search/SearchCriteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/advertisements/search/SearchType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/advertisements/search/Utils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/advertisements/services/AdvertisementServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/advertisements/services/AdvertisementServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/advertisements/controllers/AdvertisementController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/advertisements/controllers/AdvertisementController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/controllers/AdminPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/controllers/AdminPageController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/new_buildings/controllers/NewBuildingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/new_buildings/controllers/NewBuildingController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/templates/admin-pages/address.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/templates/admin-pages/address.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/templates/admin-pages/apartment.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/templates/admin-pages/apartment.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/templates/admin-pages/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/templates/admin-pages/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/templates/admin-pages/register.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/templates/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/templates/new_building_address.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/templates/new_building_address.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/templates/new_building_apartment.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/templates/new_building_apartment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/templates/add_advertisement.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/templates/add_advertisement.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/templates/advertisement.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/templates/advertisement.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -99,8 +85,8 @@
         <counts>
           <entry key="class" value="6" />
           <entry key="css" value="4" />
-          <entry key="html" value="25" />
-          <entry key="java" value="56" />
+          <entry key="html" value="37" />
+          <entry key="java" value="65" />
           <entry key="js" value="2" />
           <entry key="rnc" value="2" />
           <entry key="scss" value="1" />
@@ -111,8 +97,8 @@
         <counts>
           <entry key="CLASS" value="6" />
           <entry key="CSS" value="4" />
-          <entry key="HTML" value="25" />
-          <entry key="JAVA" value="56" />
+          <entry key="HTML" value="37" />
+          <entry key="JAVA" value="65" />
           <entry key="JavaScript" value="2" />
           <entry key="RNG Compact" value="2" />
           <entry key="SCSS" value="1" />
@@ -122,8 +108,8 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="31" />
-          <entry key="html" value="693" />
-          <entry key="java" value="1126" />
+          <entry key="html" value="825" />
+          <entry key="java" value="1312" />
           <entry key="sql" value="2" />
           <entry key="xml" value="62" />
         </counts>
@@ -131,8 +117,8 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="31" />
-          <entry key="HTML" value="693" />
-          <entry key="JAVA" value="1126" />
+          <entry key="HTML" value="825" />
+          <entry key="JAVA" value="1312" />
           <entry key="SQL" value="2" />
           <entry key="XML" value="62" />
         </counts>
@@ -141,99 +127,98 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/controllers/AdminPageController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="76" column="37" selection-start-line="76" selection-start-column="37" selection-end-line="76" selection-end-column="37" />
-              <folding>
-                <element signature="e#4136#4137#0" expanded="true" />
-                <element signature="e#4176#4177#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/entities/new_buildings/Apartment.hbm.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="25" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="105" selection-start-line="105" selection-end-line="105" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/new_buildings/services/impl/AddressServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="47" selection-start-line="47" selection-end-line="47" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1457#1458#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/new_buildings/controllers/NewBuildingController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="42" selection-start-line="42" selection-end-line="42" />
+            <state relative-caret-position="192">
+              <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/admin-pages/address.html">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/advertisements/entities/enums/RentType.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+            <state relative-caret-position="90">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/entities/new_buildings/Address.hbm.xml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/new_buildings/entities/Address.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+            <state relative-caret-position="24">
+              <caret line="64" column="89" selection-start-line="64" selection-start-column="89" selection-end-line="64" selection-end-column="89" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/new_buildings/entities/Apartment.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/new_building_address.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            <state relative-caret-position="15">
+              <caret line="3" column="6" lean-forward="true" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/new_buildings/entities/Status.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/new_building_apartment.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+            <state relative-caret-position="24">
+              <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/new_building_order.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
               <folding>
-                <element signature="e#191#192#0" expanded="true" />
-                <element signature="e#223#224#0" expanded="true" />
+                <element signature="n#section#0;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/add_advertisement.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="406">
+              <caret line="133" column="59" selection-start-line="133" selection-start-column="59" selection-end-line="133" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/advertisements/entities/enums/DealType.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="20" lean-forward="true" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/advertisement.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="91" lean-forward="true" selection-start-line="18" selection-start-column="91" selection-end-line="18" selection-end-column="91" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/advertisements/entities/enums/District.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="70" column="21" selection-start-line="70" selection-start-column="21" selection-end-line="70" selection-end-column="21" />
+              <folding>
+                <element signature="e#2210#2211#0" expanded="true" />
+                <element signature="e#2238#2239#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -282,32 +267,32 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/new_buildings/services/impl/AddressServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/new_buildings/dao/impl/AddressDAOImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/advertisements/entities/Advertisement.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/add_advertisement.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/poster.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/fragments/footer.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/fragments/head.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/css/card.css" />
         <option value="$PROJECT_DIR$/src/main/java/com/advertisements/services/AdvertisementService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/advertisements/dao/AdvertisementDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/advertisement.html" />
         <option value="$PROJECT_DIR$/src/main/resources/entities/new_buildings/Apartment.hbm.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/advertisements/controllers/AdvertisementController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/controllers/MainPageController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/fragments/header.html" />
         <option value="$PROJECT_DIR$/src/main/resources/entities/advertisements/Advertisement.hbm.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/advertisements/dao/AdvertisementDAOImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/main.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/new_building_apartment.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/new_building_address.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/advertisements/services/AdvertisementServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/admin-pages/apartment.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/admin-pages/index.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/admin-pages/404.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/new_buildings/controllers/NewBuildingController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/new_buildings/entities/Address.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/admin-pages/address.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/controllers/AdminPageController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/new_buildings/controllers/NewBuildingController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/advertisement.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/add_advertisement.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/advertisements/entities/Advertisement.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/advertisements/controllers/AdvertisementController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/advertisements/dao/AdvertisementDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/main.html" />
       </list>
     </option>
   </component>
@@ -410,6 +395,47 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="advertisements" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="realEstateBoard-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="realEstateBoard-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="advertisements" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="realEstateBoard-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="realEstateBoard-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="advertisements" type="462c0819:PsiDirectoryNode" />
+              <item name="entities" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="realEstateBoard-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="realEstateBoard-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="advertisements" type="462c0819:PsiDirectoryNode" />
+              <item name="entities" type="462c0819:PsiDirectoryNode" />
+              <item name="enums" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="realEstateBoard-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="realEstateBoard-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -429,7 +455,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="new_buildings" type="462c0819:PsiDirectoryNode" />
-              <item name="entities" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="realEstateBoard-master" type="b2602c69:ProjectViewProjectNode" />
@@ -437,23 +463,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="realEstateBoard-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="realEstateBoard-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="entities" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="realEstateBoard-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="realEstateBoard-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="entities" type="462c0819:PsiDirectoryNode" />
-              <item name="new_buildings" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="realEstateBoard-master" type="b2602c69:ProjectViewProjectNode" />
@@ -486,16 +495,6 @@
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="realEstateBoard-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="realEstateBoard-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="admin-pages" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -509,7 +508,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562590629591" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562596804581" />
     <property name="database.console.LAST_STATE" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../java projects/Online-Shopping-Store-master" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -692,12 +691,12 @@
       <workItem from="1562494344588" duration="3667000" />
       <workItem from="1562499212761" duration="37419000" />
       <workItem from="1562585694366" duration="2740000" />
-      <workItem from="1562589063409" duration="1499000" />
+      <workItem from="1562589063409" duration="7648000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="141750000" />
+    <option name="totallyTimeSpent" value="147899000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -723,7 +722,7 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32894737" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924242" weight="0.49835527" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924242" weight="0.24671052" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39967105" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -743,8 +742,8 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="TCPMON" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="7" weight="0.32954547" />
+      <window_info anchor="right" id="Maven Projects" order="6" weight="0.32954547" />
+      <window_info anchor="right" id="TCPMON" order="7" />
       <window_info anchor="right" id="Database" order="8" weight="0.24848485" />
       <window_info anchor="right" id="Palette&#9;" order="9" />
       <window_info anchor="right" id="Theme Preview" order="10" />
@@ -805,14 +804,6 @@
           </properties>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/com/advertisements/controllers/AdvertisementController.java</url>
-          <line>77</line>
-          <properties class="com.advertisements.controllers.AdvertisementController" method="advertisementPage">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="36" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -872,13 +863,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/block.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="244" column="16" selection-start-line="244" selection-start-column="16" selection-end-line="244" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/hide-select.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -886,13 +870,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2100">
           <caret line="140" column="1" selection-start-line="140" selection-start-column="1" selection-end-line="140" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/add_advertisement.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="74" column="40" selection-start-line="74" selection-start-column="37" selection-end-line="74" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -967,31 +944,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/advertisements/dao/AdvertisementDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="26" column="30" lean-forward="true" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/advertisements/entities/enums/RealEstateType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/advertisements/entities/enums/RentType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/advertisements/entities/enums/DealType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="20" lean-forward="true" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -1009,37 +965,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/advertisements/controllers/AdvertisementController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/advertisement.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/new_building_address.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/advertisements/entities/Advertisement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/advertisements/search/Utils.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/advertisements/services/AdvertisementServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1049,23 +974,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/admin-pages/register.html" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/new_building_order.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/new_building_apartment.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/admin-pages/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1119,13 +1027,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-375">
           <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/controllers/MainPageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="31" column="59" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="59" />
         </state>
       </provider>
     </entry>
@@ -1185,10 +1086,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/controllers/AdminPageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="69" column="7" lean-forward="true" selection-start-line="69" selection-start-column="7" selection-end-line="71" selection-end-column="9" />
+          <folding>
+            <element signature="e#2803#2804#0" expanded="true" />
+            <element signature="e#2843#2844#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/entities/new_buildings/Apartment.hbm.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="25" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/controllers/MainPageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="31" column="59" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/advertisements/controllers/AdvertisementController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="42" column="55" selection-start-line="42" selection-start-column="55" selection-end-line="42" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/advertisements/entities/Advertisement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
         </state>
       </provider>
     </entry>
@@ -1199,21 +1138,87 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/new_buildings/controllers/NewBuildingController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/advertisements/dao/AdvertisementDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        <state relative-caret-position="408">
+          <caret line="61" column="147" selection-start-line="61" selection-start-column="147" selection-end-line="61" selection-end-column="147" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/controllers/AdminPageController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/advertisements/entities/enums/RentType.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="76" column="37" selection-start-line="76" selection-start-column="37" selection-end-line="76" selection-end-column="37" />
+        <state relative-caret-position="90">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/new_buildings/controllers/NewBuildingController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/advertisements/entities/enums/District.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="70" column="21" selection-start-line="70" selection-start-column="21" selection-end-line="70" selection-end-column="21" />
           <folding>
-            <element signature="e#4136#4137#0" expanded="true" />
-            <element signature="e#4176#4177#0" expanded="true" />
+            <element signature="e#2210#2211#0" expanded="true" />
+            <element signature="e#2238#2239#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/add_advertisement.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="133" column="59" selection-start-line="133" selection-start-column="59" selection-end-line="133" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/advertisements/entities/enums/DealType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="20" lean-forward="true" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="64" column="89" selection-start-line="64" selection-start-column="89" selection-end-line="64" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/new_building_address.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="3" column="6" lean-forward="true" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/new_building_apartment.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/new_building_order.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
+          <folding>
+            <element signature="n#section#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/advertisement.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="91" lean-forward="true" selection-start-line="18" selection-start-column="91" selection-end-line="18" selection-end-column="91" />
         </state>
       </provider>
     </entry>

@@ -58,4 +58,5 @@ public class Advertisement extends BaseEntity {
     private boolean lift;
     private boolean ramp;
 
+
 }

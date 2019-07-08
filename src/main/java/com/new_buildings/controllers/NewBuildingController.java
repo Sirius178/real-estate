@@ -50,22 +50,22 @@ public class NewBuildingController {
         return "new_building_order";
     }
 
-//    @GetMapping("/address/{id}/address-image")
-//    public void renderImageFromDB(@PathVariable("id")  Long id, HttpServletResponse response) throws IOException {
-//        Address address = addressService.findById(id);
-//        ServletOutputStream outputStream =response.getOutputStream();
-//        try {
-//            response.setContentType("image/jpeg");
-//            byte[] image = address.getImage();
-//
-//            outputStream.write(image);
-//        }catch (Exception e){
-//            e.printStackTrace();
-//        }finally {
-//            outputStream.close();
-//        }
-//
-//
-//    }
+    @GetMapping("/address/{id}/address-image")
+    public void renderImageFromDB(@PathVariable("id")  Long id, HttpServletResponse response) throws IOException {
+        Address address = addressService.findById(id);
+        ServletOutputStream outputStream =response.getOutputStream();
+        try {
+            response.setContentType("image/jpeg");
+            byte[] image = address.getImage();
+
+            outputStream.write(image);
+        }catch (Exception e){
+            e.printStackTrace();
+        }finally {
+            outputStream.close();
+        }
+
+
+    }
 
 }

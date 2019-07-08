@@ -6,12 +6,15 @@ import com.advertisements.services.AdvertisementService;
 import com.new_buildings.entities.Address;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.multipart.commons.CommonsMultipartFile;
 
 import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.time.LocalDateTime;
 
 
 @Controller
@@ -25,52 +28,20 @@ public class AdvertisementController {
     }
 
     @GetMapping("/add-advertisement")
-    public String addAdvertisementPage() {
+    public String addAdvertisementPage(Model model) {
+        Advertisement advertisement = new Advertisement();
+        model.addAttribute("advertisementAttribute",advertisement);
         return "add_advertisement";
     }
-
     @PostMapping(value = "/save-advertisement")
-    public String saveOrUpdateAdvertisement(
-//            @RequestParam(value = "accountType") AccountType accountType,
-//                                            @RequestParam(value = "dealType") DealType dealType,
-//                                            @RequestParam(value = "rentType") RentType rentType,
-//                                            @RequestParam(value = "realEstateType") RealEstateType realEstateType,
-//                                            @RequestParam(value = "living") Living living,
-//                                            @RequestParam(value = "commercial") Commercial commercial,
-//                                            @RequestParam(value = "district") District district,
-//                                            @RequestParam(value = "address") String address,
-//                                            @RequestParam(value = "buildingType") BuildingType buildingType,
-//                                            @RequestParam(value = "description") String description,
-            @RequestParam(value = "photo") MultipartFile multipartFile,
-//                                            @RequestParam(value = "price") int price,
-//                                            @RequestParam(value = "deposit") int deposit,
-//                                            @RequestParam(value = "communalPayments") boolean communalPayments,
-//                                            @RequestParam(value = "numberOfRooms") NumberOfRooms numberOfRooms,
-//                                            @RequestParam(value = "square") double square,
-//                                            @RequestParam(value = "squareOfLiving") double squareOfLiving,
-//                                            @RequestParam(value = "squareOfKitchen") double squareOfKitchen,
-//                                            @RequestParam(value = "floor") int floor,
-//                                            @RequestParam(value = "repairs") Repairs repairs,
-//                                            @RequestParam(value = "animal") boolean animal,
-//                                            @RequestParam(value = "furniture") boolean furniture,
-//                                            @RequestParam(value = "windowInside") boolean windowInside,
-//                                            @RequestParam(value = "windowOutside") boolean windowOutside,
-//                                            @RequestParam(value = "balcony") boolean balcony,
-//                                            @RequestParam(value = "loggia") boolean loggia,
-//                                            @RequestParam(value = "tv") boolean tv,
-//                                            @RequestParam(value = "phone") boolean phone,
-//                                            @RequestParam(value = "bath") boolean bath,
-//                                            @RequestParam(value = "shower") boolean shower,
-//                                            @RequestParam(value = "conditioner") boolean conditioner,
-//                                            @RequestParam(value = "internet") boolean internet,
-//                                            @RequestParam(value = "separateBathroom") boolean separateBathroom,
-//                                            @RequestParam(value = "combinedBathroom") boolean combinedBathroom,
-//                                            @RequestParam(value = "lift") boolean lift,
-//                                            @RequestParam(value = "nameOfComplex") String nameOfComplex,
-//                                            @RequestParam(value = "yearOfConstruction") int yearOfConstruction,
-//                                            @RequestParam(value = "ramp") boolean ramp,
-            @RequestParam(value = "title") String title) {
-        saveImageFile(title, multipartFile);
+    public String saveOrUpdateAdvertisement(@ModelAttribute("advertisementAttribute") Advertisement advertisement,
+                                            BindingResult bindingResult,
+                                            @RequestParam("image") CommonsMultipartFile[] image ){
+        for (CommonsMultipartFile multipartFile : image) {
+            advertisement.setPhoto(multipartFile.getBytes());
+        }
+        advertisement.setDateTime(LocalDateTime.now());
+        advertisementService.save(advertisement);
         return "redirect:/";
     }
 
@@ -97,25 +68,6 @@ public class AdvertisementController {
         }
 
 
-    }
-
-
-    void saveImageFile(String title, MultipartFile multipartFile) {
-        Advertisement object = new Advertisement();
-        try {
-
-            byte[] byteObjects = new byte[multipartFile.getBytes().length];
-            int i = 0;
-            for (byte b : multipartFile.getBytes()) {
-                byteObjects[i++] = b;
-            }
-
-            object.setTitle(title);
-            object.setPhoto(byteObjects);
-            advertisementService.save(object);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
     }
 
 
