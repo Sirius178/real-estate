@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.Random;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
@@ -24,8 +25,9 @@ public class MainPageController {
         this.advertisementService = advertisementService;
     }
 
+
     @GetMapping({"/main", "/"})
-    public String main(Model model,
+    public String mainFindAll(Model model,
                        @RequestParam("page") Optional<Integer> page,
                        @RequestParam("size") Optional<Integer> size) {
         int currentPage = page.orElse(1);
@@ -53,5 +55,5 @@ public class MainPageController {
         return "main";
     }
 
-
+   
 }

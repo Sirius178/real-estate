@@ -37,7 +37,7 @@ public class NewBuildingController {
         return "new_building_address";
     }
 
-    @GetMapping(value = "address/{id}/apartment")
+    @GetMapping(value = "/address/{id}/apartment")
     public String apartmentPage(@PathVariable("id")  Long id, Model model){
         model.addAttribute("listOfApartment", apartmentService.findAllByID(id));
 

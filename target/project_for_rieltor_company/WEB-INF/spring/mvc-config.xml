@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:webflow="http://www.springframework.org/schema/webflow-config"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+           http://www.springframework.org/schema/webflow-config http://www.springframework.org/schema/webflow-config/spring-webflow-config-2.3.xsd">
+
+
+    <!--<bean id="tilesConfigurer" class="org.thymeleaf.extras.tiles2.spring.web.configurer.ThymeleafTilesConfigurer">-->
+        <!--<property name="definitions">-->
+            <!--<list>-->
+                <!--<value>classpath:/META-INF/tiles/tiles-*.xml</value>-->
+            <!--</list>-->
+        <!--</property>-->
+    <!--</bean>-->
+    <!-- Thymeleaf View Resolver - implementation of Spring's ViewResolver interface -->
+    <bean id="viewResolver" class="org.thymeleaf.spring4.view.ThymeleafViewResolver">
+        <property name="templateEngine" ref="templateEngine"/>
+        <property name="characterEncoding" value="UTF-8"/>
+    </bean>
+
+    <!-- Thymeleaf Template Engine (Spring4-specific version) -->
+    <bean id="templateEngine" class="org.thymeleaf.spring4.SpringTemplateEngine">
+        <property name="templateResolvers">
+            <set>
+                <ref bean="templateResolver"/>
+            </set>
+        </property>
+        <property name="enableSpringELCompiler" value="true"/>
+    </bean>
+    <bean id="thymeleafViewResolver" class="org.thymeleaf.spring4.view.AjaxThymeleafViewResolver">
+        <property name="viewClass"
+                  value="org.thymeleaf.spring4.view.FlowAjaxThymeleafView" />
+        <property name="templateEngine" ref="templateEngine" />
+    </bean>
+
+    <!-- Thymeleaf Template Resolver -->
+    <bean id="templateResolver" class="org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver">
+        <property name="prefix" value="/WEB-INF/templates/"/>
+        <property name="suffix" value=".html"/>
+        <property name="templateMode" value="HTML5"/>
+        <property name="cacheable" value="false"/>
+    </bean>
+
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <property name="maxUploadSize" value="20848820" />
+    </bean>
+
+</beans>

@@ -9,10 +9,10 @@
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: org.springframework.webflow:spring-webflow:2.5.0.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.webflow:spring-binding:2.5.0.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-beans:5.0.3.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-context:5.0.3.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-expression:5.0.3.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-web:5.0.3.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-beans:5.0.4.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-context:5.0.4.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-expression:5.0.4.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-web:5.0.4.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.webflow:spring-js:2.4.8.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.webflow:spring-js-resources:2.4.8.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-core:5.0.4.RELEASE" />
@@ -27,18 +27,19 @@
           <element id="library" level="project" name="Maven: org.aspectj:aspectjrt:1.7.4" />
           <element id="library" level="project" name="Maven: commons-fileupload:commons-fileupload:1.3.1" />
           <element id="library" level="project" name="Maven: commons-io:commons-io:2.6" />
-          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-core:3.2.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-core:4.2.5.RELEASE" />
           <element id="library" level="project" name="Maven: aopalliance:aopalliance:1.0" />
-          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-web:3.2.5.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-config:3.2.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-web:4.2.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-config:4.2.5.RELEASE" />
           <element id="library" level="project" name="Maven: org.thymeleaf:thymeleaf-spring4:3.0.9.RELEASE" />
           <element id="library" level="project" name="Maven: org.thymeleaf:thymeleaf:3.0.9.RELEASE" />
           <element id="library" level="project" name="Maven: org.attoparser:attoparser:2.0.4.RELEASE" />
           <element id="library" level="project" name="Maven: org.unbescape:unbescape:1.1.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.thymeleaf.extras:thymeleaf-extras-springsecurity4:2.1.3.RELEASE" />
           <element id="library" level="project" name="Maven: org.hibernate:hibernate-java8:5.3.5.Final" />
-          <element id="library" level="project" name="Maven: org.jboss.logging:jboss-logging:3.3.2.Final" />
+          <element id="library" level="project" name="Maven: org.jboss.logging:jboss-logging:3.3.1.Final" />
           <element id="library" level="project" name="Maven: org.hibernate:hibernate-core:5.3.5.Final" />
-          <element id="library" level="project" name="Maven: org.javassist:javassist:3.23.1-GA" />
+          <element id="library" level="project" name="Maven: org.javassist:javassist:3.21.0-GA" />
           <element id="library" level="project" name="Maven: antlr:antlr:2.7.7" />
           <element id="library" level="project" name="Maven: org.jboss:jandex:2.0.5.Final" />
           <element id="library" level="project" name="Maven: com.fasterxml:classmate:1.3.4" />
@@ -54,7 +55,7 @@
           <element id="library" level="project" name="Maven: org.slf4j:slf4j-log4j12:1.7.5" />
           <element id="library" level="project" name="Maven: log4j:log4j:1.2.16" />
           <element id="library" level="project" name="Maven: commons-dbcp:commons-dbcp:1.4" />
-          <element id="library" level="project" name="Maven: commons-pool:commons-pool:1.5.4" />
+          <element id="library" level="project" name="Maven: commons-pool:commons-pool:1.6" />
           <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.33" />
           <element id="library" level="project" name="Maven: javax.mail:mail:1.4" />
           <element id="library" level="project" name="Maven: javax.activation:activation:1.1" />

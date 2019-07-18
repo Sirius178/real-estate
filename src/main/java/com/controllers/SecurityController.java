@@ -15,70 +15,70 @@ import org.springframework.web.servlet.ModelAndView;
 
 import java.security.Principal;
 
-@Controller
-public class SecurityController {
-
-    @Autowired
-    private AccessDecisionManager accessDecisionManager;
-    private static final Logger logger = LoggerFactory.getLogger(SecurityController.class);
-
-
-    @RequestMapping(value = "/accessDenied", method = RequestMethod.GET)
-    public ModelAndView accesssDenied(Principal user) {
-
-        ModelAndView model = new ModelAndView();
-
-        // пока русский текст без локализации, хотя так не рекомендуется!
-        if (user != null) {
-            model.addObject("errorMsg", user.getName() + " у вас нет доступа к этой странице!");
-        } else {
-            model.addObject("errorMsg", "У вас нет доступа к этой странице!");
-        }
-
-        model.setViewName("/content/accessDenied");
-        return model;
-
-    }
-
-    @RequestMapping(value = "/user", method = RequestMethod.GET)
-    public String mainPage() {
-        printUserDetails();
-
-        return "/content/user";
-    }
-
-    @RequestMapping(value = "/admin", method = RequestMethod.GET)
-    public String adminPage() {
-
-        return "/content/admin";
-
-    }
-
-    private void printUserDetails() {
-
-        UserDetails userDetails = (UserDetails) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
-
-        logger.info("password = " + userDetails.getPassword());
-        logger.info("username = " + userDetails.getUsername());
-
-        for (GrantedAuthority auth : userDetails.getAuthorities()) {
-            logger.info(auth.getAuthority());
-        }
-
-    }
-
-    @RequestMapping(value = "/login", method = RequestMethod.GET)
-    public ModelAndView login(@RequestParam(value = "error", required = false) String error) {
-
-        ModelAndView model = new ModelAndView();
-        if (error != null) {
-            model.addObject("error", "Invalid username or password!");
-        }
-
-        model.setViewName("security/login");
-
-        return model;
-
-    }
-
-}
+//@Controller
+//public class SecurityController {
+//
+//    @Autowired
+//    private AccessDecisionManager accessDecisionManager;
+//    private static final Logger logger = LoggerFactory.getLogger(SecurityController.class);
+//
+//
+//    @RequestMapping(value = "/accessDenied", method = RequestMethod.GET)
+//    public ModelAndView accesssDenied(Principal user) {
+//
+//        ModelAndView model = new ModelAndView();
+//
+//        // пока русский текст без локализации, хотя так не рекомендуется!
+//        if (user != null) {
+//            model.addObject("errorMsg", user.getName() + " у вас нет доступа к этой странице!");
+//        } else {
+//            model.addObject("errorMsg", "У вас нет доступа к этой странице!");
+//        }
+//
+//        model.setViewName("/content/accessDenied");
+//        return model;
+//
+//    }
+//
+//    @RequestMapping(value = "/user", method = RequestMethod.GET)
+//    public String mainPage() {
+//        printUserDetails();
+//
+//        return "/content/user";
+//    }
+//
+//    @RequestMapping(value = "/admin", method = RequestMethod.GET)
+//    public String adminPage() {
+//
+//        return "/content/admin";
+//
+//    }
+//
+//    private void printUserDetails() {
+//
+//        UserDetails userDetails = (UserDetails) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+//
+//        logger.info("password = " + userDetails.getPassword());
+//        logger.info("username = " + userDetails.getUsername());
+//
+//        for (GrantedAuthority auth : userDetails.getAuthorities()) {
+//            logger.info(auth.getAuthority());
+//        }
+//
+//    }
+//
+//    @RequestMapping(value = "/login", method = RequestMethod.GET)
+//    public ModelAndView login(@RequestParam(value = "error", required = false) String error) {
+//
+//        ModelAndView model = new ModelAndView();
+//        if (error != null) {
+//            model.addObject("error", "Invalid username or password!");
+//        }
+//
+//        model.setViewName("security/login");
+//
+//        return model;
+//
+//    }
+//
+//}

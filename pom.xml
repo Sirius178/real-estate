@@ -14,13 +14,18 @@
         <thymeleaf.version>3.0.9.RELEASE</thymeleaf.version>
         <spring.version>5.0.4.RELEASE</spring.version>
         <spring-webflow.version>2.5.0.RELEASE</spring-webflow.version>
-        <spring.security-version>3.2.5.RELEASE</spring.security-version>
+        <spring.security-version>4.2.5.RELEASE</spring.security-version>
         <hibernate.version>5.3.5.Final</hibernate.version>
         <org.aspectj-version>1.7.4</org.aspectj-version>
         <slf4j-version>1.7.5</slf4j-version>
         <!--<jetty.skip>${skipTests}</jetty.skip>-->
     </properties>
-
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.5.9.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
     <dependencies>
 
         <!-- Provided dependencies -->
@@ -119,6 +124,10 @@
 
         <!-- Spring Security -->
 
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.boot</groupId>-->
+            <!--<artifactId>spring-boot-starter-security</artifactId>-->
+        <!--</dependency>-->
         <dependency>
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-core</artifactId>
@@ -144,7 +153,10 @@
             <artifactId>thymeleaf-spring4</artifactId>
             <version>${thymeleaf.version}</version>
         </dependency>
-
+        <dependency>
+            <groupId>org.thymeleaf.extras</groupId>
+            <artifactId>thymeleaf-extras-springsecurity4</artifactId>
+        </dependency>
 
         <!--hibernate-->
 
